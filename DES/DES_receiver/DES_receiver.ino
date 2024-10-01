@@ -1,14 +1,13 @@
 #include <ESP8266WiFi.h>                  //Libraries Used
 #include <PubSubClient.h>
-#include <AES.h>
-#include <Crypto.h>
+#include <DES.h>
 
 const char* nameWifi = "Test";            //Name and password of network
 const char* password = "TempPassword";    
 
 WiFiClient wifiClient;                    //Object to set up Wifi
 PubSubClient MQTTClient(wifiClient);      //Object to set up MQTT client
-AES128 aes;                               //Object of AES encryption
+DES des;                                  //Object of AES encryption
 
 const int trigPin = 12;                   //Define what pins are used to control distance sensor
 const int echoPin = 13;
@@ -24,9 +23,9 @@ unsigned long startDecryptTime = 0;
 char key[] = "Thisisatestaaaa!";          //Key used in encryption process
 
 byte keyMemory[16];                       //Variables to store encryption information
-byte messageMemory[16];
-byte encryptedData[16];
-byte decryptedData[16];
+byte messageMemory[17];
+byte encryptedData[17];
+byte decryptedData[17];
 
 //Converts a string into a byte array
 //  parameter 1 string to convert
@@ -50,7 +49,9 @@ void printByte( byte* info, int sizeOfArray) {
 //  parameter 1 const char array to encrypt
 void runEncryption(const unsigned char* payload) {
    startEncryptTime = micros();
-   aes.encryptBlock(encryptedData, payload);                     //Encrypt the char array
+   for(int i = 0; i < strlen((char*)payload); i += 8) {
+     des.encrypt(encryptedData + i, payload + i, keyMemory);             //Encrypt the char array
+   }
    encryptTime = micros() - startEncryptTime;                    //Messure the time to encrypt
 }
 
@@ -58,7 +59,9 @@ void runEncryption(const unsigned char* payload) {
 //  parameter 1 const char array to decrypt
 void runDecryption(const unsigned char* payload) {
    startDecryptTime = micros();
-   aes.decryptBlock(decryptedData, payload);                     //Encrypt the char array
+   for(int i = 0; i < strlen((char*)payload); i += 8) {
+    des.decrypt(decryptedData + i, payload + i, keyMemory);              //Encrypt the char array
+   }
    decryptTime = micros() - startDecryptTime;                    //Messure the time to encrypt
 }
 
@@ -89,23 +92,20 @@ void recieve(char* topic, byte* message, unsigned int length) {
   Serial.println();
   printByte(decryptedData, sizeof(decryptedData));                  //Print decrypted message
   Serial.println();
-  char tempDistance[5];
-  char tempEncryption[5];
-  byte messageToEncrypt[10];
-  dtostrf(distance, 4, 3, tempDistance);                            //Puts distance and decryption time in byte array
+  char tempDistance[6];
+  char tempEncryption[6];
+  byte messageToEncrypt[12];
+  dtostrf(distance, 5, 2, tempDistance);                            //Puts distance and decryption time in byte array
   dtostrf(decryptTime, 4, 0, tempEncryption);
-  memcpy(messageToEncrypt, tempDistance, sizeof(tempDistance));
-  memcpy(messageToEncrypt + sizeof(tempDistance), tempEncryption, sizeof(tempEncryption));
-  runEncryption(messageToEncrypt);                                                           //Encrypts new message
-  printByte(messageToEncrypt, sizeof(messageToEncrypt));
+  memcpy(messageToEncrypt, tempDistance, strlen(tempDistance));
+  messageToEncrypt[5] = '#';
+  memcpy(messageToEncrypt + 6, tempEncryption, strlen(tempEncryption));
+  runEncryption(messageToEncrypt);                                  //Encrypts new message
+  printByte(messageToEncrypt, strlen((char*)messageToEncrypt));
   Serial.println();
-  printByte(encryptedData, sizeof(encryptedData));
-  MQTTClient.publish("/test/reciever", encryptedData, sizeof(encryptedData), false);         //Sends MQTT message
-  Serial.println(topic);
-  currentMessage = "";
-  for(int i = 0; i < length; i++) {
-    currentMessage += (char)message[i];
-  }
+  printByte(encryptedData, strlen((char*)encryptedData));
+  Serial.println();
+  MQTTClient.publish("/test/reciever", encryptedData, strlen((char*)encryptedData), false);         //Sends MQTT message
 }
 
 //Setup code here, to run once:
@@ -133,7 +133,6 @@ void setup() {
 
   MQTTClient.subscribe("/test/sender");                   //Subscribe to topic to listen to
   convertFromString(key, keyMemory);                      //Set up encryption key
-  aes.setKey(keyMemory, 16);
   digitalWrite(trigPin, 0);                               //Set output pin to zero
 }
 

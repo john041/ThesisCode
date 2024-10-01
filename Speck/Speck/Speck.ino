@@ -30,7 +30,7 @@ void setup() {
   convertFromString(key, keyMemory);
   printByte(keyMemory, sizeof(keyMemory));
   
-  speck.setKey(keyMemory,32);
+  speck.setKey(keyMemory,16);
 
   convertFromString(message, messageMemory);
   printByte(messageMemory, sizeof(messageMemory));

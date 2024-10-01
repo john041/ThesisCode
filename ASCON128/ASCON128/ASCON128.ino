@@ -5,7 +5,7 @@
 byte keyMemory[16];
 char key[] = "Thisisatestaaaav";
 byte messageMemory[16];
-char message[] = "Encryptthi";
+char message[] = "Encryptthis";
 byte encryptedData[16];
 byte decryptedData[16];
 byte tag[16];

@@ -1,14 +1,12 @@
 #include <ESP8266WiFi.h>                      //Libraries Used
 #include <PubSubClient.h>
-#include <Ascon128.h>
-#include <Crypto.h>
+#include <present.h>
 
 const char* nameWifi = "Test";                //Name and password of network
 const char* password = "TempPassword";
 
 WiFiClient wifiClient;                        //Object to set up Wifi
 PubSubClient MQTTClient(wifiClient);          //Object to set up MQTT client
-Ascon128 ascon128;                            //Object of ASCON encryption
 
 unsigned long roundTripTime = 0;              //Variables to keep track of time, number of packets sent, and free memory
 unsigned long startRoundTripTime = 0;
@@ -23,12 +21,7 @@ int number = 0;
 char key[] = "Thisisatestaaaa!";               //Key used in encryption process
 
 byte keyMemory[16];                           //Variables to store encryption information
-byte messageMemory[17];
-byte encryptedData[16];
-byte decryptedData[16];
-byte tag[16];
-byte IV[] = { 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a};
-const char authData[] = "password";
+byte messageMemory[16];
 
 //Converts a string into a byte array
 //  parameter 1 string to convert
@@ -49,21 +42,19 @@ void printByte( byte* info, int sizeOfArray) {
 }
 
 //Encrypts a char array while messuring time and free memory
-//  parameter 1 const char array to encrypt
-void runEncryption(const unsigned char* payload) {
+void runEncryption() {
    startEncryptTime = micros();
-   ascon128.encrypt(encryptedData, payload, strlen((char*)payload));    //Encrypt the char array
-   encryptTime = micros() - startEncryptTime;                           //Messure the time to encrypt
-   freeMemoryEncrypt = ESP.getFreeHeap();                               //Messure the free memory space
+   present_encrypt(messageMemory, keyMemory);                     //Encrypt the char array
+   encryptTime = micros() - startEncryptTime;                    //Messure the time to encrypt
+   freeMemoryEncrypt = ESP.getFreeHeap();                        //Messure the free memory space
 }
 
 //Decrypts a char array while messuring time and free memory
-//  parameter 1 const char array to decrypt
-void runDecryption(const unsigned char* payload) {
+void runDecryption() {
    startDecryptTime = micros();
-   ascon128.decrypt(decryptedData, payload, strlen((char*)payload));  //Encrypt the char array
-   decryptTime = micros() - startDecryptTime;                         //Messure the time to encrypt
-   freeMemoryDecrypt = ESP.getFreeHeap();                             //Messure the free memory space
+   present_decrypt(messageMemory, keyMemory);                       //Encrypt the char array
+   decryptTime = micros() - startDecryptTime;                    //Messure the time to encrypt
+   freeMemoryDecrypt = ESP.getFreeHeap();                        //Messure the free memory space
 }
 
 //MQTT functions that runs when MQTT message is recieved
@@ -81,10 +72,11 @@ void recieve(char* topic, byte* message, unsigned int length) {
   Serial.print("#Encryption Time Sender#");
   Serial.print(decryptTime);
   Serial.print("#Message:#");
-  runDecryption(message);                                       //Decrypt MQTT message
+  messageMemory = message;
+  runDecryption();                                       //Decrypt MQTT message
   printByte(message, length);
   Serial.print("#");
-  printByte(decryptedData, sizeof(decryptedData));              //Print decrypted message and memory messurments
+  printByte(messageMemory, sizeof(messageMemory));              //Print decrypted message and memory messurments
   Serial.print("#");
   Serial.print(freeMemoryEncrypt);
   Serial.print("#");
@@ -115,9 +107,6 @@ void setup() {
 
   MQTTClient.subscribe("/test/reciever");                       //Subscribe to topic to listen to
   convertFromString(key, keyMemory);                            //Set up encryption key
-  ascon128.setKey(keyMemory, 16);
-  ascon128.setIV(IV, 16);
-  ascon128.addAuthData(authData, 8);
 }
 
 //Main code here, runs repeatedly:
@@ -128,7 +117,7 @@ void loop() {
     number = number + 1;
     convertFromString("SendDistAndTimes", messageMemory);
     startRoundTripTime = micros();
-    runEncryption(messageMemory);                              //Encrypt message and send message
-    bool result = MQTTClient.publish("/test/sender", encryptedData, sizeof(encryptedData), false);                 
+    runEncryption();                                    //Encrypt message and send message
+    bool result = MQTTClient.publish("/test/sender", messageMemory, sizeof(messageMemory), false);                 
   }
 }

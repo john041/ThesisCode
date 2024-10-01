@@ -1,6 +1,6 @@
 #include <ESP8266WiFi.h>                      //Libraries Used
 #include <PubSubClient.h>
-#include <Ascon128.h>
+#include <Speck.h>
 #include <Crypto.h>
 
 const char* nameWifi = "Test";                //Name and password of network
@@ -8,7 +8,7 @@ const char* password = "TempPassword";
 
 WiFiClient wifiClient;                        //Object to set up Wifi
 PubSubClient MQTTClient(wifiClient);          //Object to set up MQTT client
-Ascon128 ascon128;                            //Object of ASCON encryption
+Speck speck;                                  //Object of AES encryption
 
 unsigned long roundTripTime = 0;              //Variables to keep track of time, number of packets sent, and free memory
 unsigned long startRoundTripTime = 0;
@@ -23,12 +23,9 @@ int number = 0;
 char key[] = "Thisisatestaaaa!";               //Key used in encryption process
 
 byte keyMemory[16];                           //Variables to store encryption information
-byte messageMemory[17];
+byte messageMemory[16];
 byte encryptedData[16];
 byte decryptedData[16];
-byte tag[16];
-byte IV[] = { 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a};
-const char authData[] = "password";
 
 //Converts a string into a byte array
 //  parameter 1 string to convert
@@ -52,18 +49,18 @@ void printByte( byte* info, int sizeOfArray) {
 //  parameter 1 const char array to encrypt
 void runEncryption(const unsigned char* payload) {
    startEncryptTime = micros();
-   ascon128.encrypt(encryptedData, payload, strlen((char*)payload));    //Encrypt the char array
-   encryptTime = micros() - startEncryptTime;                           //Messure the time to encrypt
-   freeMemoryEncrypt = ESP.getFreeHeap();                               //Messure the free memory space
+   speck.encryptBlock(encryptedData, payload);                     //Encrypt the char array
+   encryptTime = micros() - startEncryptTime;                    //Messure the time to encrypt
+   freeMemoryEncrypt = ESP.getFreeHeap();                        //Messure the free memory space
 }
 
 //Decrypts a char array while messuring time and free memory
 //  parameter 1 const char array to decrypt
 void runDecryption(const unsigned char* payload) {
    startDecryptTime = micros();
-   ascon128.decrypt(decryptedData, payload, strlen((char*)payload));  //Encrypt the char array
-   decryptTime = micros() - startDecryptTime;                         //Messure the time to encrypt
-   freeMemoryDecrypt = ESP.getFreeHeap();                             //Messure the free memory space
+   speck.decryptBlock(decryptedData, payload);                     //Encrypt the char array
+   decryptTime = micros() - startDecryptTime;                    //Messure the time to encrypt
+   freeMemoryDecrypt = ESP.getFreeHeap();                        //Messure the free memory space
 }
 
 //MQTT functions that runs when MQTT message is recieved
@@ -115,9 +112,7 @@ void setup() {
 
   MQTTClient.subscribe("/test/reciever");                       //Subscribe to topic to listen to
   convertFromString(key, keyMemory);                            //Set up encryption key
-  ascon128.setKey(keyMemory, 16);
-  ascon128.setIV(IV, 16);
-  ascon128.addAuthData(authData, 8);
+  speck.setKey(keyMemory,16);
 }
 
 //Main code here, runs repeatedly:

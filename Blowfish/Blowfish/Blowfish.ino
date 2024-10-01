@@ -2,9 +2,9 @@
 #include <String.h>
 
 byte keyMemory[16];
-char key[] = "Thisisatestaaaa";
+char key[] = "Thisisatestaaaa!";
 byte messageMemory[16];
-char message[] = "Encryptthi";
+char message[] = "Encryptthisthis!";
 byte encryptedData[16];
 byte decryptedData[16];
 CBlowFish blowfishObject;
