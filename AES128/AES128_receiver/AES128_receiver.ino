@@ -15,7 +15,6 @@ const int echoPin = 13;
 float distance = 0;                       //Variables to calulate and save the distance
 float sensorTime = 0; 
 
-String currentMessage = "";               //Variables to keep track of time and free memory
 unsigned long encryptTime = 0;
 unsigned long startEncryptTime = 0;
 unsigned long decryptTime = 0;
@@ -48,17 +47,23 @@ void printByte( byte* info, int sizeOfArray) {
 
 //Encrypts a char array while messuring time and free memory
 //  parameter 1 const char array to encrypt
-void runEncryption(const unsigned char* payload) {
+//  parameter 2 int length of payload
+void runEncryption(const unsigned char* payload, int length) {
    startEncryptTime = micros();
-   aes.encryptBlock(encryptedData, payload);                     //Encrypt the char array
+   for(int i = 0; i < strlen((char*)payload); i += 16) {
+     aes.encryptBlock(encryptedData + i, payload + i);           //Encrypt the char array
+   }
    encryptTime = micros() - startEncryptTime;                    //Messure the time to encrypt
 }
 
 //Decrypts a char array while messuring time and free memory
 //  parameter 1 const char array to decrypt
-void runDecryption(const unsigned char* payload) {
+//  parameter 2 int length of payload
+void runDecryption(const unsigned char* payload, int length) {
    startDecryptTime = micros();
-   aes.decryptBlock(decryptedData, payload);                     //Encrypt the char array
+   for(int i = 0; i < length; i += 16) {
+     aes.decryptBlock(decryptedData + i, payload + i);                     //Encrypt the char array
+   }
    decryptTime = micros() - startDecryptTime;                    //Messure the time to encrypt
 }
 
@@ -84,28 +89,25 @@ void getDistance() {
 //  parameter 2 byte pointer that contains the message of MQTT messsage
 //  parameter 3 unsigned int of the length of the message
 void recieve(char* topic, byte* message, unsigned int length) {
-  runDecryption(message);                                           //Decrypt MQTT message
+  runDecryption(message, length);                                           //Decrypt MQTT message
   printByte(message, length);
   Serial.println();
   printByte(decryptedData, sizeof(decryptedData));                  //Print decrypted message
   Serial.println();
   char tempDistance[5];
   char tempEncryption[5];
-  byte messageToEncrypt[10];
-  dtostrf(distance, 4, 3, tempDistance);                            //Puts distance and decryption time in byte array
+  byte messageToEncrypt[11];
+  dtostrf(distance, 5, 2, tempDistance);                            //Puts distance and decryption time in byte array
+  memcpy(messageToEncrypt, tempDistance, strlen(tempDistance));
   dtostrf(decryptTime, 4, 0, tempEncryption);
-  memcpy(messageToEncrypt, tempDistance, sizeof(tempDistance));
-  memcpy(messageToEncrypt + sizeof(tempDistance), tempEncryption, sizeof(tempEncryption));
-  runEncryption(messageToEncrypt);                                                           //Encrypts new message
+  messageToEncrypt[5] = '#';
+  memcpy(messageToEncrypt + 6, tempEncryption, strlen(tempEncryption));
+  runEncryption(messageToEncrypt, strlen((char*)messageToEncrypt));                           //Encrypts new message
   printByte(messageToEncrypt, sizeof(messageToEncrypt));
   Serial.println();
   printByte(encryptedData, sizeof(encryptedData));
+  Serial.println();
   MQTTClient.publish("/test/reciever", encryptedData, sizeof(encryptedData), false);         //Sends MQTT message
-  Serial.println(topic);
-  currentMessage = "";
-  for(int i = 0; i < length; i++) {
-    currentMessage += (char)message[i];
-  }
 }
 
 //Setup code here, to run once:

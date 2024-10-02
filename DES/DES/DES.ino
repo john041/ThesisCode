@@ -2,9 +2,9 @@
 #include <String.h>
 
 byte keyMemory[16];
-char key[] = "Thisisatestaaaa";
+char key[] = "Thisisatestaaaa!";
 byte messageMemory[16];
-char message[] = "Encryptt";
+char message[] = "SendDistAndTimes";
 byte encryptedData[16];
 byte decryptedData[16];
 DES des;
@@ -34,14 +34,18 @@ void setup() {
 
 
   float startTime = micros();
-  des.encrypt(encryptedData, messageMemory, keyMemory);  
+  for(int i = 0; i < sizeof(messageMemory); i += 8) {
+    des.encrypt(encryptedData + i, messageMemory + i, keyMemory);
+  }  
   float totalTime = micros() - startTime;
   printByte(encryptedData, sizeof(encryptedData));
   Serial.print("Total time to encrypt is ");
   Serial.println(totalTime);
 
   startTime = micros();
-  des.decrypt(decryptedData, encryptedData, keyMemory);
+  for(int i = 0; i < sizeof(encryptedData); i += 8) {
+    des.decrypt(decryptedData + i, encryptedData + i, keyMemory);
+  }
   totalTime = micros() - startTime;
   printByte(decryptedData, sizeof(decryptedData));
   Serial.print("Total time to decrypt is ");

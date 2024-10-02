@@ -22,9 +22,9 @@ int number = 0;
 char key[] = "Thisisatestaaaa!";               //Key used in encryption process
 
 byte keyMemory[16];                           //Variables to store encryption information
-byte messageMemory[17];
-byte encryptedData[17];
-byte decryptedData[17];
+byte messageMemory[16];
+byte encryptedData[16];
+byte decryptedData[16];
 
 //Converts a string into a byte array
 //  parameter 1 string to convert
@@ -46,10 +46,11 @@ void printByte( byte* info, int sizeOfArray) {
 
 //Encrypts a char array while messuring time and free memory
 //  parameter 1 const char array to encrypt
-void runEncryption(const unsigned char* payload) {
+//  parameter 2 int length of payload
+void runEncryption(const unsigned char* payload, int length) {
    startEncryptTime = micros();
-   for(int i = 0; i < strlen((char*)payload); i += 8) {
-     des.encrypt(encryptedData + i, payload + i, keyMemory);             //Encrypt the char array
+   for(int i = 0; i < length; i += 8) {
+     des.encrypt(encryptedData + i, payload + i, keyMemory);     //Encrypt the char array
    }                     
    encryptTime = micros() - startEncryptTime;                    //Messure the time to encrypt
    freeMemoryEncrypt = ESP.getFreeHeap();                        //Messure the free memory space
@@ -57,10 +58,11 @@ void runEncryption(const unsigned char* payload) {
 
 //Decrypts a char array while messuring time and free memory
 //  parameter 1 const char array to decrypt
-void runDecryption(const unsigned char* payload) {
+//  parameter 2 int length of payload
+void runDecryption(const unsigned char* payload, int length) {
    startDecryptTime = micros();
-   for(int i = 0; i < strlen((char*)payload); i += 8) {
-      des.decrypt(decryptedData + i, payload + i, keyMemory);            //Encrypt the char array
+   for(int i = 0; i < length; i += 8) {
+      des.decrypt(decryptedData + i, payload + i, keyMemory);    //Encrypt the char array
    }
    decryptTime = micros() - startDecryptTime;                    //Messure the time to encrypt
    freeMemoryDecrypt = ESP.getFreeHeap();                        //Messure the free memory space
@@ -71,7 +73,7 @@ void runDecryption(const unsigned char* payload) {
 //  parameter 2 byte pointer that contains the message of MQTT messsage
 //  parameter 3 unsigned int of the length of the message
 void recieve(char* topic, byte* message, unsigned int length) {
-  runDecryption(message);                                       //Decrypt MQTT message
+  runDecryption(message, length);                                       //Decrypt MQTT message
   roundTripTime = micros() - startRoundTripTime;
   Serial.print("Packet Sent:#");                                //Print roundtrip time, encrypt time, and decrypt time
   Serial.print(number);
@@ -123,9 +125,9 @@ void loop() {
   delay(1000);
   if(number < 200) {                                           //Send 200 packets every 1 second
     number = number + 1;
-    convertFromString("SendDistAndTimes\0", messageMemory);
+    convertFromString("SendDistAndTimes", messageMemory);
     startRoundTripTime = micros();
-    runEncryption(messageMemory);                              //Encrypt message and send message
-    bool result = MQTTClient.publish("/test/sender", encryptedData, sizeof(encryptedData), false);                 
+    runEncryption(messageMemory, sizeof(messageMemory));                              //Encrypt message and send message
+    MQTTClient.publish("/test/sender", encryptedData, sizeof(encryptedData), false);                 
   }
 }
