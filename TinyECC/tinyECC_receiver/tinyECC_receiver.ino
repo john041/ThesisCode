@@ -1,30 +1,26 @@
 #include <ESP8266WiFi.h>                  //Libraries Used
 #include <PubSubClient.h>
-#include <Blowfish.h>
+#include <tinyECC.h>
 
 const char* nameWifi = "Test";            //Name and password of network
 const char* password = "TempPassword";    
 
 WiFiClient wifiClient;                    //Object to set up Wifi
 PubSubClient MQTTClient(wifiClient);      //Object to set up MQTT client
-CBlowFish blowfishObject;                 //Object of Blowfish encryption
+tinyECC tinyEcc;                          //Object of AES encryption
 
 const int trigPin = 12;                   //Define what pins are used to control distance sensor
 const int echoPin = 13;
 float distance = 0;                       //Variables to calulate and save the distance
 float sensorTime = 0; 
 
-unsigned long encryptTime = 0;            //Variables to keep track of time and free memory
+unsigned long encryptTime = 0;
 unsigned long startEncryptTime = 0;
 unsigned long decryptTime = 0;
 unsigned long startDecryptTime = 0;
 
-char key[] = "Thisisatestaaaa!";          //Key used in encryption process
-
-byte keyMemory[16];                       //Variables to store encryption information
-byte messageMemory[16];
-byte encryptedData[16];
-byte decryptedData[16];
+char encryptedData[300];
+char decryptedData[16];
 
 //Converts a string into a byte array
 //  parameter 1 string to convert
@@ -46,18 +42,22 @@ void printByte( byte* info, int sizeOfArray) {
 
 //Encrypts a char array while messuring time and free memory
 //  parameter 1 const char array to encrypt
-void runEncryption(unsigned char* payload, int length) {
+void runEncryption(const char* payload) {
    startEncryptTime = micros();
-   blowfishObject.Encode(payload, encryptedData, length);  //Encrypt the char array
-   encryptTime = micros() - startEncryptTime;                              //Messure the time to encrypt
+   tinyEcc.plaintext = payload;
+   tinyEcc.encrypt();                                            //Encrypt the char array
+   encryptTime = micros() - startEncryptTime;                    //Messure the time to encrypt
+   strcpy(encryptedData, (tinyEcc.ciphertext).c_str());
 }
 
 //Decrypts a char array while messuring time and free memory
 //  parameter 1 const char array to decrypt
-void runDecryption(unsigned char* payload, int length) {
+void runDecryption(const char* payload) {
    startDecryptTime = micros();
-   blowfishObject.Decode(payload, decryptedData, length); //Encrypt the char array
-   decryptTime = micros() - startDecryptTime;                             //Messure the time to encrypt
+   tinyEcc.ciphertext = payload;
+   tinyEcc.decrypt();                                            //Encrypt the char array
+   decryptTime = micros() - startDecryptTime;                    //Messure the time to encrypt
+   strcpy(decryptedData, (tinyEcc.plaintext).c_str());
 }
 
 //Calculates distance from the distance sensor 
@@ -82,12 +82,11 @@ void getDistance() {
 //  parameter 2 byte pointer that contains the message of MQTT messsage
 //  parameter 3 unsigned int of the length of the message
 void recieve(char* topic, byte* message, unsigned int length) {
-  Serial.println(length);
-  runDecryption(message, 73);                                           //Decrypt MQTT message
+  Serial.println("Worked");
+  runDecryption((char*)message);                                           //Decrypt MQTT message
   printByte(message, length);
   Serial.println();
-  printByte(decryptedData, sizeof(decryptedData));                  //Print decrypted message
-  Serial.println();
+  Serial.println(decryptedData);                                    //Print decrypted message
   char tempDistance[5];
   char tempEncryption[5];
   byte messageToEncrypt[11];
@@ -96,12 +95,11 @@ void recieve(char* topic, byte* message, unsigned int length) {
   dtostrf(decryptTime, 4, 0, tempEncryption);
   messageToEncrypt[5] = '#';
   memcpy(messageToEncrypt + 6, tempEncryption, strlen(tempEncryption));
-  runEncryption(messageToEncrypt, strlen((char*)messageToEncrypt));                                                           //Encrypts new message
+  runEncryption((char*)messageToEncrypt);                           //Encrypts new message
   printByte(messageToEncrypt, sizeof(messageToEncrypt));
   Serial.println();
-  printByte(encryptedData, sizeof(encryptedData));
-  Serial.println();
-  MQTTClient.publish("/test/reciever", encryptedData, sizeof(encryptedData), false);         //Sends MQTT message
+  Serial.println(encryptedData);
+  MQTTClient.publish("/test/reciever", encryptedData);              //Sends MQTT message
 }
 
 //Setup code here, to run once:
@@ -127,13 +125,10 @@ void setup() {
     Serial.println("Problem connecting to Broker");
   }
 
-  MQTTClient.subscribe("/test/sender");                   //Subscribe to topic to listen to
-  convertFromString(key, keyMemory);                      //Set up encryption key
-  blowfishObject.Initialize(keyMemory,16);
-  digitalWrite(trigPin, 0);                               //Set output pin to zero
-
-    MQTTClient.setBufferSize(1024);
+  MQTTClient.setBufferSize(1024);
   Serial.println(MQTTClient.getBufferSize());
+  MQTTClient.subscribe("/test/sender");                   //Subscribe to topic to listen to
+  digitalWrite(trigPin, 0);                               //Set output pin to zero
 }
 
 //Main code here, runs repeatedly

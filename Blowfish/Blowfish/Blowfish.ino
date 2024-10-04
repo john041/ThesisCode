@@ -3,10 +3,10 @@
 
 byte keyMemory[16];
 char key[] = "Thisisatestaaaa!";
-byte messageMemory[16];
-char message[] = "Encryptthisthis!";
-byte encryptedData[16];
-byte decryptedData[16];
+byte messageMemory[1048];
+char message[] = "This is super long to test how well thisdoes and if it is a block cifer";
+byte encryptedData[1048];
+byte decryptedData[1048];
 CBlowFish blowfishObject;
 
 void convertFromString( const char* info, byte* memory ) {
@@ -27,24 +27,24 @@ void setup() {
   Serial.begin(9600);
   
   convertFromString(key, keyMemory);
-  printByte(keyMemory, sizeof(keyMemory));
+  printByte(keyMemory, strlen((char*)keyMemory));
   
   blowfishObject.Initialize(keyMemory,16);
 
   convertFromString(message, messageMemory);
-  printByte(messageMemory, sizeof(messageMemory));
+  printByte(messageMemory, strlen((char*)messageMemory));
 
   float startTime = micros();
-  blowfishObject.Encode(messageMemory, encryptedData, 16);  
+  blowfishObject.Encode(messageMemory, encryptedData, strlen((char*)messageMemory));  
   float totalTime = micros() - startTime;
-  printByte(encryptedData, sizeof(encryptedData));
+  printByte(encryptedData, strlen((char*)encryptedData));
   Serial.print("Total time to encrypt is ");
   Serial.println(totalTime);
 
   startTime = micros();
-  blowfishObject.Decode(encryptedData, decryptedData, 16);
+  blowfishObject.Decode(encryptedData, decryptedData, strlen((char*)encryptedData));
   totalTime = micros() - startTime;
-  printByte(decryptedData, sizeof(decryptedData));
+  printByte(decryptedData, strlen((char*)decryptedData));
   Serial.print("Total time to decrypt is ");
   Serial.println(totalTime);
 }

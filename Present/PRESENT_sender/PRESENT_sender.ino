@@ -62,6 +62,7 @@ void runDecryption() {
 //  parameter 2 byte pointer that contains the message of MQTT messsage
 //  parameter 3 unsigned int of the length of the message
 void recieve(char* topic, byte* message, unsigned int length) {
+  runDecryption();                                              //Decrypt MQTT message
   roundTripTime = micros() - startRoundTripTime;
   Serial.print("Packet Sent:#");                                //Print roundtrip time, encrypt time, and decrypt time
   Serial.print(number);
@@ -72,8 +73,7 @@ void recieve(char* topic, byte* message, unsigned int length) {
   Serial.print("#Encryption Time Sender#");
   Serial.print(decryptTime);
   Serial.print("#Message:#");
-  messageMemory = message;
-  runDecryption();                                       //Decrypt MQTT message
+  memcpy(messageMemory, message, length);
   printByte(message, length);
   Serial.print("#");
   printByte(messageMemory, sizeof(messageMemory));              //Print decrypted message and memory messurments

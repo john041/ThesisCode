@@ -50,7 +50,7 @@ void printByte( byte* info, int sizeOfArray) {
 //  parameter 2 int length of payload
 void runEncryption(const unsigned char* payload, int length) {
    startEncryptTime = micros();
-   for(int i = 0; i < strlen((char*)payload); i += 16) {
+   for(int i = 0; i < length; i += 16) {
      aes.encryptBlock(encryptedData + i, payload + i);           //Encrypt the char array
    }
    encryptTime = micros() - startEncryptTime;                    //Messure the time to encrypt
