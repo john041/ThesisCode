@@ -2,9 +2,9 @@
 #include <string.h>
 
 byte keyMemory[16];
-char key[] = "Testthis!!";
+char key[] = "Thisisatestaaaa!";
 byte messageMemory[16];
-char message[] = "Encryptt";
+char message[] = "SendDistAndTimes";
 
 void convertFromString( const char* info, byte* memory ) {
   for( int i = 0; i < strlen(info); i++ ) {

@@ -1,71 +1,83 @@
-#include <ESP8266WiFi.h>               //Libraries Used                                    //Included Libraries
+#include <ESP8266WiFi.h>                      //Libraries Used
 #include <PubSubClient.h>
 
-const char* nameWifi = "Test";         //Name and password of network
+const char* nameWifi = "Test";                //Name and password of network
 const char* password = "TempPassword";
 
-WiFiClient wifiClient;                 //Object to set up Wifi
-PubSubClient MQTTClient(wifiClient);   //Object to set up MQTT client
+WiFiClient wifiClient;                        //Object to set up Wifi
+PubSubClient MQTTClient(wifiClient);          //Object to set up MQTT client
 
-String currentMessage = "";
-unsigned long roundTripTime = 0;
+unsigned long roundTripTime = 0;              //Variables to keep track of time, number of packets sent, and free memory
 unsigned long startRoundTripTime = 0;
-//unsigned long encryptTime = 0;
-//unsigned long startEncryptTime = 0;
-//unsigned long decryptTime = 0;
-//unsigned long startDecryptTime = 0;
 int number = 0;
 
+byte messageMemory[16];
+
+//Converts a string into a byte array
+//  parameter 1 string to convert
+//  parameter 2 byte array to copy to
+void convertFromString( const char* info, byte* memory ) {
+  for( int i = 0; i < strlen(info); i++ ) {
+    memory[i] = (byte)info[i];
+  }
+}
+
+//Prints a byte array to serial output
+//  parameter 1 byte to print
+//  parameter 2 int of the size of the byte array
+void printByte( byte* info, int sizeOfArray) {
+  for( int i = 0; i < sizeOfArray; i++ ) {
+    Serial.write(info[i]);
+  }
+}
+
+//MQTT functions that runs when MQTT message is recieved
+//  parameter 1 char pointer that stores the topic that the message comes from
+//  parameter 2 byte pointer that contains the message of MQTT messsage
+//  parameter 3 unsigned int of the length of the message
 void recieve(char* topic, byte* message, unsigned int length) {
-  //Serial.println(topic);
   roundTripTime = micros() - startRoundTripTime;
-  Serial.print("Packet Sent:#");
+  Serial.print("Packet Sent:#");                                //Print roundtrip time
   Serial.print(number);
   Serial.print("#Round Trip Time#");
   Serial.print(roundTripTime);
-  //Serial.print("#Encryption Time Sender#");
-  //Serial.print(encryptTime);
-  //Serial.print("#Encryption Time Sender#");
-  //Serial.print(decryptTime);
   Serial.print("#Message:#");
-  currentMessage = "";
-  for(int i = 0; i < length; i++) {
-    currentMessage += (char)message[i];
-  }
-  Serial.println(currentMessage);
+  printByte(message, length);
+  Serial.print("#");
+  Serial.println(ESP.getFreeHeap());
 }
 
+//Setup code here, to run once:
 void setup() {
-  // put your setup code here, to run once:
-  Serial.begin(9600);                                                 //Set clock for serial
+  Serial.begin(9600);                                            //Set clock for serial
 
   Serial.println("Connecting to WiFi");                                 
-  WiFi.begin(nameWifi, password);                                     //Connect to Wifi Network
+  WiFi.begin(nameWifi, password);                                //Connect to Wifi Network
   while (WiFi.status() != WL_CONNECTED) {
     Serial.print("-");
   }
-  
-  Serial.println("Wifi connected");                                   //Send message that Wifi connection   
+  Serial.println("Wifi connected");                              //Send message that Wifi connection   
 
-  MQTTClient.setServer("192.168.1.113", 1883);
+  MQTTClient.setServer("192.168.1.113", 1883);                   //MQTT settings setup               
   MQTTClient.setCallback(recieve);
   
-  if(MQTTClient.connect("Sensor")) {
+  if(MQTTClient.connect("Sensor")) {                             //Connect to MQTT broker
     Serial.println("Connected to Broker");    
   } else {
     Serial.println("Problem connecting to Broker");
   }
 
-  MQTTClient.subscribe("/test/reciever"); 
+  MQTTClient.subscribe("/test/reciever");                       //Subscribe to topic to listen to
 }
 
+//Main code here, runs repeatedly:
 void loop() {
-  // put your main code here, to run repeatedly:
-  MQTTClient.loop();
-  delay(4000);
-  if(number < 200) {
+  MQTTClient.loop();                                           //Check for MQTT messages
+  delay(1000);
+  if(number < 200) {                                           //Send 200 packets every 1 second
     number = number + 1;
+    convertFromString("SendDistAndTimes", messageMemory);
     startRoundTripTime = micros();
-    bool result = MQTTClient.publish("/test/sender", "GET /index.php?stop=Stop HTTP/1.1");                 
+    MQTTClient.publish("/test/sender", messageMemory, sizeof(messageMemory), false);                 
   }
 }

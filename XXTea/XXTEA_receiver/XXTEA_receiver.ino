@@ -18,10 +18,12 @@ unsigned long startEncryptTime = 0;
 unsigned long decryptTime = 0;
 unsigned long startDecryptTime = 0;
 
-char keyMemory[] = "Thisisatestaaaa!";                       //Variables to store encryption information
-char messageMemory[] = "SendDistAndTimes";
-char encryptedData[33];
-char decryptedData[16];
+char key[] = "Thisisatestaaaa!";
+
+byte keyMemory[16];                       //Variables to store encryption information
+byte messageMemory[16];
+byte encryptedData[12];
+int len = 12;
 
 //Converts a string into a byte array
 //  parameter 1 string to convert
@@ -44,10 +46,16 @@ void printByte( byte* info, int sizeOfArray) {
 //Encrypts a char array while messuring time and free memory
 //  parameter 1 const char array to encrypt
 //  parameter 2 int length of payload
-void runEncryption(const char* payload, int length) {
+void runEncryption(unsigned char* payload, int length) {
+   int num = length;
    startEncryptTime = micros();
    for(int i = 0; i < length; i += 80) {
-     strcpy(encryptedData + i, (xxtea.encrypt(payload)).c_str());           //Encrypt the char array
+     if(num > 80){
+        xxtea_encrypt(payload + i, num % 80, encryptedData + i, &len);                                //Encrypt the char array
+        num = num - 80;
+     } else {
+        xxtea_encrypt(payload + i, num, encryptedData + i, &len);
+     }
    }
    encryptTime = micros() - startEncryptTime;                    //Messure the time to encrypt
 }
@@ -55,13 +63,16 @@ void runEncryption(const char* payload, int length) {
 //Decrypts a char array while messuring time and free memory
 //  parameter 1 const char array to decrypt
 //  parameter 2 int length of payload
-void runDecryption(const char* payload, int length) {
-   xxtea.setKey(keyMemory);
+void runDecryption(unsigned char* payload, int length) {
+   int num = length;
    startDecryptTime = micros();
-   for(int i = 0; i < length; i += 160) {
-    Serial.println(payload);
-    Serial.println(xxtea.decrypt(payload));
-     strcpy(decryptedData + i, (xxtea.decrypt(payload)).c_str());                     //Encrypt the char array
+   for(int i = 0; i < length; i += 80) {
+     if(num > 80){
+       xxtea_decrypt(payload + i, num % 80);                     //Encrypt the char array
+       num = num - 80;
+     } else {
+       xxtea_decrypt(payload + i, num);
+     }
    }
    decryptTime = micros() - startDecryptTime;                    //Messure the time to encrypt
 }
@@ -88,10 +99,11 @@ void getDistance() {
 //  parameter 2 byte pointer that contains the message of MQTT messsage
 //  parameter 3 unsigned int of the length of the message
 void recieve(char* topic, byte* message, unsigned int length) {
-  runDecryption((char*)message, length);                                           //Decrypt MQTT message
   printByte(message, length);
+  Serial.println(); 
+  runDecryption(message, length);                                  //Decrypt MQTT message
+  printByte(message, length);                       //Print decrypted message                                             
   Serial.println();
-  Serial.println(decryptedData);                                                  //Print decrypted message
   char tempDistance[5];
   char tempEncryption[6];
   byte messageToEncrypt[12];
@@ -100,11 +112,12 @@ void recieve(char* topic, byte* message, unsigned int length) {
   dtostrf(decryptTime, 6, 0, tempEncryption);
   messageToEncrypt[5] = '#';
   memcpy(messageToEncrypt + 6, tempEncryption, strlen(tempEncryption));
-  runEncryption((char*)messageToEncrypt, sizeof(messageToEncrypt));                           //Encrypts new message
+  runEncryption(messageToEncrypt, sizeof(messageToEncrypt));                           //Encrypts new message
   printByte(messageToEncrypt, sizeof(messageToEncrypt));
   Serial.println();
-  Serial.println(encryptedData);
-  MQTTClient.publish("/test/reciever", encryptedData);                                        //Sends MQTT message
+  printByte(encryptedData, sizeof(encryptedData));
+  Serial.println();
+  MQTTClient.publish("/test/reciever", encryptedData, sizeof(encryptedData), false);                                        //Sends MQTT message
 }
 
 //Setup code here, to run once:
@@ -131,7 +144,8 @@ void setup() {
   }
 
   MQTTClient.subscribe("/test/sender");                   //Subscribe to topic to listen to
-  
+  convertFromString(key, keyMemory);
+  xxtea_setup(keyMemory, strlen((char*)keyMemory));
   digitalWrite(trigPin, 0);                               //Set output pin to zero
 }
 

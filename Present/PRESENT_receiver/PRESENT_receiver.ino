@@ -13,8 +13,7 @@ const int echoPin = 13;
 float distance = 0;                       //Variables to calulate and save the distance
 float sensorTime = 0; 
 
-String currentMessage = "";               //Variables to keep track of time and free memory
-unsigned long encryptTime = 0;
+unsigned long encryptTime = 0;            //Variables to keep track of time and free memory
 unsigned long startEncryptTime = 0;
 unsigned long decryptTime = 0;
 unsigned long startDecryptTime = 0;
@@ -22,7 +21,8 @@ unsigned long startDecryptTime = 0;
 char key[] = "Thisisatestaaaa!";          //Key used in encryption process
 
 byte keyMemory[16];                       //Variables to store encryption information
-byte messageMemory[16];
+byte decryptedMemory[16];
+byte encryptedMemory[16];
 
 //Converts a string into a byte array
 //  parameter 1 string to convert
@@ -44,16 +44,22 @@ void printByte( byte* info, int sizeOfArray) {
 
 //Encrypts a char array while messuring time and free memory
 void runEncryption() {
+   int length = sizeof(encryptedMemory);
    startEncryptTime = micros();
-   present_encrypt(messageMemory, keyMemory);                    //Encrypt the char array
-   encryptTime = micros() - startEncryptTime;                    //Messure the time to encrypt
+   for( int i = 0; i < length; i += 8) {
+      present_encrypt(encryptedMemory + i, keyMemory);             //Encrypt the char array
+   }
+   encryptTime = micros() - startEncryptTime;                     //Messure the time to encrypt
 }
 
 //Decrypts a char array while messuring time and free memory
 void runDecryption() {
+   int length = sizeof(decryptedMemory);
    startDecryptTime = micros();
-   present_decrypt(messageMemory, keyMemory);                    //Encrypt the char array
-   decryptTime = micros() - startDecryptTime;                    //Messure the time to encrypt
+   for( int i = 0; i < length; i += 8) {
+     present_decrypt(decryptedMemory + i, keyMemory);              //Encrypt the char array
+   }
+   decryptTime = micros() - startDecryptTime;                     //Messure the time to encrypt
 }
 
 //Calculates distance from the distance sensor 
@@ -78,25 +84,27 @@ void getDistance() {
 //  parameter 2 byte pointer that contains the message of MQTT messsage
 //  parameter 3 unsigned int of the length of the message
 void recieve(char* topic, byte* message, unsigned int length) {
-  messageMemory = message;
+  memcpy(decryptedMemory, message, length);
   runDecryption();                                           //Decrypt MQTT message
   printByte(message, length);
   Serial.println();
-  printByte(messageMemory, sizeof(messageMemory));                  //Print decrypted message
+  printByte(decryptedMemory, sizeof(decryptedMemory));                  //Print decrypted message
   Serial.println();
-  char tempDistance[5];
-  char tempEncryption[5];
-  byte messageToEncrypt[10];
-  dtostrf(distance, 4, 3, tempDistance);                            //Puts distance and decryption time in byte array
-  dtostrf(decryptTime, 4, 0, tempEncryption);
-  memcpy(messageToEncrypt, tempDistance, sizeof(tempDistance));
-  memcpy(messageToEncrypt + sizeof(tempDistance), tempEncryption, sizeof(tempEncryption));
-  messageMemory = messageToEncrypt;
+  char tempDistance[7];
+  char tempEncryption[8];
+  byte messageToEncrypt[16];
+  dtostrf(distance, 7, 2, tempDistance);                            //Puts distance and decryption time in byte array
+  memcpy(messageToEncrypt, tempDistance, strlen(tempDistance));
+  dtostrf(decryptTime, 8, 0, tempEncryption);
+  messageToEncrypt[7] = '#';
+  memcpy(messageToEncrypt + 8, tempEncryption, strlen(tempEncryption));
+  memcpy(encryptedMemory, messageToEncrypt, sizeof(messageToEncrypt));
   runEncryption();                                                           //Encrypts new message
   printByte(messageToEncrypt, sizeof(messageToEncrypt));
   Serial.println();
-  printByte(messageMemory, sizeof(messageMemory));
-  MQTTClient.publish("/test/reciever", messageMemory, sizeof(messageMemory), false);         //Sends MQTT message
+  printByte(encryptedMemory, sizeof(encryptedMemory));
+  Serial.println();
+  MQTTClient.publish("/test/reciever", encryptedMemory, sizeof(encryptedMemory), false);         //Sends MQTT message
 }
 
 //Setup code here, to run once:

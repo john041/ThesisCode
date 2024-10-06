@@ -1,31 +1,41 @@
 #include <xxtea-iot-crypt.h>
 
-char key[] = "Thisisatestaaaa!";
-char message[] = "SendDistAndTimes";
-char encryptedData[33];
-char decryptedData[16];
+byte key[] = "Thisisatestaaaa!";
+byte message[] = "SendDistAndTimes";
+byte encryptedData[32];
+byte decryptedData[16];
+int len = 32;
+
+void printByte( byte* info, int sizeOfArray) {
+  for( int i = 0; i < sizeOfArray; i++ ) {
+    Serial.write(info[i]);
+  }
+}
 
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
 
-  xxtea.setKey(key);
-  Serial.println(key);
-  Serial.println(message);
+  xxtea_setup(key, strlen((char*)key));
+  printByte(key, strlen((char*)key));
+  Serial.println();
+  printByte(message, strlen((char*)message));
+  Serial.println();
 
   float startTime = micros();
-  strcpy(encryptedData, (xxtea.encrypt(message)).c_str());
+  xxtea_encrypt(message, strlen((char*)message), encryptedData, &len);
   float totalTime = micros() - startTime;
-  Serial.println(strlen(encryptedData));
-  Serial.println(encryptedData);
+  printByte(encryptedData, strlen((char*)encryptedData));
+  Serial.println();
   Serial.print("Total time to encrypt is ");
   Serial.println(totalTime);
 
 
   startTime = micros();
-  strcpy(decryptedData, (xxtea.decrypt(encryptedData)).c_str());
+  xxtea_decrypt(encryptedData, len);
   totalTime = micros() - startTime;
-  Serial.println(decryptedData);
+  printByte(encryptedData, strlen((char*)encryptedData));
+  Serial.println();
   Serial.print("Total time to decrypt is ");
   Serial.println(totalTime);
 }
