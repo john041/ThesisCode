@@ -3,9 +3,9 @@
 #include <string.h>
 
 byte keyMemory[16];
-char key[] = "Thisisatestaaaav";
+char key[] = "Thisisatestaaaa!";
 byte messageMemory[16];
-char message[] = "Encryptthis";
+char message[] = "SendDistAndTimes";
 byte encryptedData[16];
 byte decryptedData[16];
 byte tag[16];
@@ -37,7 +37,7 @@ void setup() {
   
   ascon128.setKey(keyMemory, 16);
   ascon128.setIV(IV, 16);
-  ascon128.addAuthData(password, 8);
+  //ascon128.addAuthData(password, 8);
   
 
   convertFromString(message, messageMemory);
@@ -45,21 +45,21 @@ void setup() {
 
 
   float startTime = micros();
-  ascon128.encrypt(encryptedData, messageMemory, 10);
+  ascon128.encrypt(encryptedData, messageMemory, 16);
   //ascon128.computeTag(tag, 8);  
   float totalTime = micros() - startTime;
   printByte(encryptedData, sizeof(encryptedData));
   Serial.print("Total time to encrypt is ");
   Serial.println(totalTime);
 
-  ascon128.clear();
+  //ascon128.clear();
 
   ascon128.setKey(keyMemory,16);
   ascon128.setIV(IV, 16);
-  ascon128.addAuthData(password, 8);
+  //ascon128.addAuthData(password, 8);
 
   startTime = micros();
-  ascon128.decrypt(decryptedData, encryptedData, 10);
+  ascon128.decrypt(decryptedData, encryptedData, 16);
   //ascon128.checkTag(tag, 8);
   totalTime = micros() - startTime;
   printByte(decryptedData, sizeof(decryptedData));

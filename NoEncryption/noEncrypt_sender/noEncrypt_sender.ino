@@ -10,6 +10,7 @@ PubSubClient MQTTClient(wifiClient);          //Object to set up MQTT client
 unsigned long roundTripTime = 0;              //Variables to keep track of time, number of packets sent, and free memory
 unsigned long startRoundTripTime = 0;
 int number = 0;
+int nextNum = 1;
 
 byte messageMemory[16];
 
@@ -37,14 +38,16 @@ void printByte( byte* info, int sizeOfArray) {
 //  parameter 3 unsigned int of the length of the message
 void recieve(char* topic, byte* message, unsigned int length) {
   roundTripTime = micros() - startRoundTripTime;
+  number = number + 1;
   Serial.print("Packet Sent:#");                                //Print roundtrip time
   Serial.print(number);
   Serial.print("#Round Trip Time#");
   Serial.print(roundTripTime);
+  Serial.print("#");
+  Serial.print(ESP.getFreeHeap());
   Serial.print("#Message:#");
   printByte(message, length);
-  Serial.print("#");
-  Serial.println(ESP.getFreeHeap());
+  Serial.println();
 }
 
 //Setup code here, to run once:
@@ -68,16 +71,18 @@ void setup() {
   }
 
   MQTTClient.subscribe("/test/reciever");                       //Subscribe to topic to listen to
+  delay(5000);
 }
 
 //Main code here, runs repeatedly:
 void loop() {
   MQTTClient.loop();                                           //Check for MQTT messages
-  delay(1000);
   if(number < 200) {                                           //Send 200 packets every 1 second
-    number = number + 1;
-    convertFromString("SendDistAndTimes", messageMemory);
-    startRoundTripTime = micros();
-    MQTTClient.publish("/test/sender", messageMemory, sizeof(messageMemory), false);                 
+    if(number == (nextNum - 1)) {
+      nextNum = nextNum + 1;
+      convertFromString("SendDistAndTimes", messageMemory);
+      startRoundTripTime = micros();
+      MQTTClient.publish("/test/sender", messageMemory, sizeof(messageMemory), false);                 
+    }
   }
 }

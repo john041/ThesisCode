@@ -18,6 +18,7 @@ unsigned long startDecryptTime = 0;
 unsigned long freeMemoryEncrypt = 0;
 unsigned long freeMemoryDecrypt = 0;
 int number = 0;
+int nextNum = 1;
 
 char encryptedData[300];
 char decryptedData[16];
@@ -69,6 +70,7 @@ void runDecryption(const char* payload) {
 void recieve(char* topic, byte* message, unsigned int length) {
   runDecryption((char*)message);                                       //Decrypt MQTT message
   roundTripTime = micros() - startRoundTripTime;
+  number = number + 1;
   Serial.print("Packet Sent:#");                                //Print roundtrip time, encrypt time, and decrypt time
   Serial.print(number);
   Serial.print("#Round Trip Time#");
@@ -111,16 +113,18 @@ void setup() {
   MQTTClient.setBufferSize(2024);
   Serial.println(MQTTClient.getBufferSize());
   MQTTClient.subscribe("/test/reciever");                       //Subscribe to topic to listen to
+  delay(5000);
 }
 
 //Main code here, runs repeatedly:
 void loop() {
   MQTTClient.loop();                                           //Check for MQTT messages
-  delay(1000);
   if(number < 200) {                                           //Send 200 packets every 1 second
-    number = number + 1;
-    startRoundTripTime = micros();
-    runEncryption("SendDistAndTimes");                              //Encrypt message and send message
-    MQTTClient.publish("/test/sender", encryptedData);                 
+    if(number == (nextNum - 1)) {
+      nextNum = nextNum + 1;
+      startRoundTripTime = micros();
+      runEncryption("SendDistAndTimes");                              //Encrypt message and send message
+      MQTTClient.publish("/test/sender", encryptedData);                 
+    }
   }
 }

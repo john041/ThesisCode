@@ -3,13 +3,11 @@
 #include <string.h>
 
 byte keyMemory[16];
-char key[] = "Thisisatestaaaav";
-byte messageMemory[16];
-char message[] = "Encryptthi";
-byte encryptedData[16];
-byte decryptedData[16];
-byte IV[] = { 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a};
-byte counter[] = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08};
+char key[] = "Thisisatestaaaa!";
+byte messageMemory[72];
+char message[] = "This is super long to test how well thisdoes and if it is a block cifer";
+byte encryptedData[72];
+byte decryptedData[72];
 ChaCha chacha20;
 
 void convertFromString( const char* info, byte* memory ) {
@@ -31,41 +29,41 @@ void setup() {
   
   convertFromString(key, keyMemory);
   printByte(keyMemory, sizeof(keyMemory));
-  
-  Serial.println((bool)chacha20.setKey(keyMemory,16));
-  Serial.println((bool)chacha20.setIV(IV, 8));
-  Serial.println((bool)chacha20.setCounter(counter, 8));
-  chacha20.setNumRounds(20);
-  
-
-  
-
 
   convertFromString(message, messageMemory);
   printByte(messageMemory, sizeof(messageMemory));
 
-
-  float startTime = micros();
-  chacha20.encrypt(encryptedData, messageMemory, 10);  
-  float totalTime = micros() - startTime;
-  printByte(encryptedData, sizeof(encryptedData));
-  Serial.print("Total time to encrypt is ");
-  Serial.println(totalTime);
-
-
-  chacha20.clear();
-
-  Serial.println((bool)chacha20.setKey(keyMemory,16));
-  Serial.println((bool)chacha20.setIV(IV, 8));
-  Serial.println((bool)chacha20.setCounter(counter, 8));
   chacha20.setNumRounds(20);
 
-  startTime = micros();
-  chacha20.decrypt(decryptedData, encryptedData, 10);
-  totalTime = micros() - startTime;
-  printByte(decryptedData, sizeof(decryptedData));
-  Serial.print("Total time to decrypt is ");
-  Serial.println(totalTime);
+  for(int i = 0; i < 5; i++) {
+    byte IV[8] = {(rand() % (10)), (rand() % (10)), (rand() % (10)), (rand() % (10)), (rand() % (10)), (rand() % (10)), (rand() % (10)), (rand() % (10))};
+    byte counter[8] = {(rand() % (10)), (rand() % (10)), (rand() % (10)), (rand() % (10)), (rand() % (10)), (rand() % (10)), (rand() % (10)), (rand() % (10))};
+    //printByte(IV, 8);
+    chacha20.setKey(keyMemory,16);
+    chacha20.setIV(IV, 8);
+    chacha20.setCounter(counter, 8);
+    
+    float startTime = micros();
+    chacha20.encrypt(encryptedData, messageMemory, 72);  
+    float totalTime = micros() - startTime;
+    printByte(encryptedData, sizeof(encryptedData));
+    Serial.print("Total time to encrypt is ");
+    Serial.println(totalTime);
+    
+    
+    chacha20.setKey(keyMemory,16);
+    chacha20.setIV(IV, 8);
+    chacha20.setCounter(counter, 8);
+    
+    startTime = micros();
+    chacha20.decrypt(decryptedData, encryptedData, 72);
+    totalTime = micros() - startTime;
+    printByte(decryptedData, sizeof(decryptedData));
+    Serial.print("Total time to decrypt is ");
+    Serial.println(totalTime);
+    Serial.print(ESP.getFreeHeap());
+    Serial.println("_____________________________________________");
+  }
 }
 
 void loop() {

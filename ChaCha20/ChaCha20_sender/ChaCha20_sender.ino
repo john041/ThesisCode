@@ -1,15 +1,15 @@
 #include <ESP8266WiFi.h>                      //Libraries Used
 #include <PubSubClient.h>
-#include <xxtea-iot-crypt.h>
+#include <ChaCha.h>
+#include <Crypto.h>
 
 const char* nameWifi = "Test";                //Name and password of network
 const char* password = "TempPassword";
 
 WiFiClient wifiClient;                        //Object to set up Wifi
 PubSubClient MQTTClient(wifiClient);          //Object to set up MQTT client
+ChaCha chacha20;                              //Object of ChaCha encryption
 
-int number = 0;
-int nextNum = 1;
 unsigned long roundTripTime = 0;              //Variables to keep track of time, number of packets sent, and free memory
 unsigned long startRoundTripTime = 0;
 unsigned long encryptTime = 0;
@@ -18,13 +18,15 @@ unsigned long decryptTime = 0;
 unsigned long startDecryptTime = 0;
 unsigned long freeMemoryEncrypt = 0;
 unsigned long freeMemoryDecrypt = 0;
+int number = 0;
+int nextNum = 1;
 
-char key[] = "Thisisatestaaaa!";
+char key[] = "Thisisatestaaaa!";               //Key used in encryption process
 
-byte keyMemory[16];                           //Variables to store encryption information
+byte keyMemory[16];                            //Variables to store encryption information
 byte messageMemory[16];
 byte encryptedData[16];
-int len = 16;
+byte decryptedData[11];
 
 //Converts a string into a byte array
 //  parameter 1 string to convert
@@ -44,20 +46,22 @@ void printByte( byte* info, int sizeOfArray) {
   }
 }
 
+//Sets the key, IV, and counter for ChaCha
+void setUpChaCha() {
+  byte IV[8] = {(rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (10)), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32)};
+  byte counter[8] = {(rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (10)), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32)};
+  chacha20.setKey(keyMemory,16);
+  chacha20.setIV(IV, 8);
+  chacha20.setCounter(counter, 8);
+}
+
 //Encrypts a char array while messuring time and free memory
 //  parameter 1 const char array to encrypt
 //  parameter 2 int length of payload
-void runEncryption(unsigned char* payload, int length) {
-   int num = length;
+void runEncryption(const unsigned char* payload, int length) {
    startEncryptTime = micros();
-   for(int i = 0; i < length; i += 80) {
-     if(num > 80){
-        xxtea_encrypt(payload + i, num % 80, encryptedData + i, &len);                                //Encrypt the char array
-        num = num - 80;
-     } else {
-        xxtea_encrypt(payload + i, num, encryptedData + i, &len);
-     }
-   }
+   setUpChaCha();
+   chacha20.encrypt(encryptedData, payload, length);             //Encrypt the char array
    encryptTime = micros() - startEncryptTime;                    //Messure the time to encrypt
    freeMemoryEncrypt = ESP.getFreeHeap();                        //Messure the free memory space
 }
@@ -65,18 +69,11 @@ void runEncryption(unsigned char* payload, int length) {
 //Decrypts a char array while messuring time and free memory
 //  parameter 1 const char array to decrypt
 //  parameter 2 int length of payload
-void runDecryption(unsigned char* payload, int length) {
-   int num = length;
+void runDecryption(const unsigned char* payload, int length) {
    startDecryptTime = micros();
-   for(int i = 0; i < length; i += 80) {
-     if(num > 80){
-       xxtea_decrypt(payload + i, num % 80);                     //Encrypt the char array
-       num = num - 80;
-     } else {
-       xxtea_decrypt(payload + i, num);
-     }
-   }
-   decryptTime = micros() - startDecryptTime;                    //Messure the time to encrypt
+   setUpChaCha(); 
+   chacha20.decrypt(decryptedData, payload, length);             //Encrypt the char array
+   decryptTime = micros() - startDecryptTime;                    //Messure the time to decrypt
    freeMemoryDecrypt = ESP.getFreeHeap();                        //Messure the free memory space
 }
 
@@ -85,12 +82,10 @@ void runDecryption(unsigned char* payload, int length) {
 //  parameter 2 byte pointer that contains the message of MQTT messsage
 //  parameter 3 unsigned int of the length of the message
 void recieve(char* topic, byte* message, unsigned int length) {
-  Serial.print("Message:#");
-  printByte(message, length);
-  runDecryption(message, length);
+  runDecryption(message, length);                                //Decrypt MQTT message
   roundTripTime = micros() - startRoundTripTime;
   number = number + 1;
-  Serial.print("#Packet Sent:#");                                //Print roundtrip time, encrypt time, and decrypt time
+  Serial.print("Packet Sent:#");                                 //Print roundtrip time, encrypt time, and decrypt time
   Serial.print(number);
   Serial.print("#Round Trip Time#");
   Serial.print(roundTripTime);
@@ -99,13 +94,16 @@ void recieve(char* topic, byte* message, unsigned int length) {
   Serial.print("#Decryption Time Sender#");
   Serial.print(decryptTime);
   Serial.print("#");
-  printByte(message, 12);              //Print decrypted message and memory messurments
-  Serial.print("#");
   Serial.print(freeMemoryEncrypt);
   Serial.print("#");
   Serial.print(freeMemoryDecrypt);
   Serial.print("#");
-  Serial.println(ESP.getFreeHeap());
+  Serial.print(ESP.getFreeHeap());
+  Serial.print("#Message:#");
+  printByte(decryptedData, sizeof(decryptedData));        //Print decrypted message and memory messurments
+  Serial.print("#");
+  //printByte(message, length);
+  Serial.println();
 }
 
 //Setup code here, to run once:
@@ -128,16 +126,17 @@ void setup() {
     Serial.println("Problem connecting to Broker");
   }
 
-  MQTTClient.subscribe("/test/reciever");                       //Subscribe to topic to listen to
-  convertFromString(key, keyMemory);
-  xxtea_setup(keyMemory, strlen((char*)keyMemory));
+  MQTTClient.subscribe("/test/reciever");                        //Subscribe to topic to listen to
+  convertFromString(key, keyMemory);                             //Set up encryption key
+  chacha20.setNumRounds(20);
   delay(5000);
 }
 
 //Main code here, runs repeatedly:
 void loop() {
-  MQTTClient.loop();                                           //Check for MQTT messages
-  if(number < 200) {                                           //Send 200 packets every 1 second
+  MQTTClient.loop();                                             //Check for MQTT messages
+  delay(1000);
+  if(number < 200) {                                             //Send 200 packets every 1 second
     if(number == (nextNum - 1)) {
       nextNum = nextNum + 1;
       convertFromString("SendDistAndTimes", messageMemory);

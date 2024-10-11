@@ -18,6 +18,7 @@ unsigned long startDecryptTime = 0;
 unsigned long freeMemoryEncrypt = 0;
 unsigned long freeMemoryDecrypt = 0;
 int number = 0;
+int nextNum = 1;
 
 char key[] = "Thisisatestaaaa!";               //Key used in encryption process
 
@@ -69,6 +70,7 @@ void runDecryption(unsigned char* payload, int length) {
 void recieve(char* topic, byte* message, unsigned int length) {
   runDecryption(message, length);                               //Decrypt MQTT message
   roundTripTime = micros() - startRoundTripTime;
+  number = number + 1;
   Serial.print("Packet Sent:#");                                //Print roundtrip time, encrypt time, and decrypt time
   Serial.print(number);
   Serial.print("#Round Trip Time#");
@@ -113,19 +115,21 @@ void setup() {
   convertFromString(key, keyMemory);                            //Set up encryption key
   blowfishObject.Initialize(keyMemory,16);
 
-    MQTTClient.setBufferSize(1024);
+  MQTTClient.setBufferSize(1024);
   Serial.println(MQTTClient.getBufferSize());
+  delay(5000);
 }
 
 //Main code here, runs repeatedly:
 void loop() {
   MQTTClient.loop();                                           //Check for MQTT messages
-  delay(1000);
-  if(number < 200) {                                           //Send 200 packets every 1 second
-    number = number + 1;
-    convertFromString("SendDistAndTimes", messageMemory);
-    startRoundTripTime = micros();
-    runEncryption(messageMemory, sizeof(messageMemory));                              //Encrypt message and send message
-    bool result = MQTTClient.publish("/test/sender", encryptedData, sizeof(encryptedData), false);                 
+  if(number < 200) { 
+    if(number == (nextNum - 1)) {
+      nextNum = nextNum + 1;
+      convertFromString("SendDistAndTimes", messageMemory);
+      startRoundTripTime = micros();
+      runEncryption(messageMemory, sizeof(messageMemory));                              //Encrypt message and send message
+      bool result = MQTTClient.publish("/test/sender", encryptedData, sizeof(encryptedData), false);                 
+    }
   }
 }
