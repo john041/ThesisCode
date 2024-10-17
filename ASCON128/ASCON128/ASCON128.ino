@@ -4,10 +4,10 @@
 
 byte keyMemory[16];
 char key[] = "Thisisatestaaaa!";
-byte messageMemory[16];
-char message[] = "SendDistAndTimes";
-byte encryptedData[16];
-byte decryptedData[16];
+byte messageMemory[32];
+char message[] = "SendDistAndTimesSendDistAndTimes";
+byte encryptedData[32];
+byte decryptedData[32];
 byte tag[16];
 byte IV[] = { 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a,0x0a};
 const char password[] = "password";
@@ -45,7 +45,7 @@ void setup() {
 
 
   float startTime = micros();
-  ascon128.encrypt(encryptedData, messageMemory, 16);
+  ascon128.encrypt(encryptedData, messageMemory, 32);
   //ascon128.computeTag(tag, 8);  
   float totalTime = micros() - startTime;
   printByte(encryptedData, sizeof(encryptedData));
@@ -59,7 +59,7 @@ void setup() {
   //ascon128.addAuthData(password, 8);
 
   startTime = micros();
-  ascon128.decrypt(decryptedData, encryptedData, 16);
+  ascon128.decrypt(decryptedData, encryptedData, 32);
   //ascon128.checkTag(tag, 8);
   totalTime = micros() - startTime;
   printByte(decryptedData, sizeof(decryptedData));

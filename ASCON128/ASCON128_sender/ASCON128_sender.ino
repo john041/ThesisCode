@@ -19,16 +19,15 @@ unsigned long startDecryptTime = 0;
 unsigned long freeMemoryEncrypt = 0;
 unsigned long freeMemoryDecrypt = 0;
 int number = 0;
+int nextNum = 1;
 
 char key[] = "Thisisatestaaaa!";               //Key used in encryption process
 
 byte keyMemory[16];                           //Variables to store encryption information
-byte messageMemory[17];
+byte messageMemory[16];
 byte encryptedData[16];
 byte decryptedData[16];
 byte tag[16];
-byte IV[] = { 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a};
-const char authData[] = "password";
 
 //Converts a string into a byte array
 //  parameter 1 string to convert
@@ -48,21 +47,32 @@ void printByte( byte* info, int sizeOfArray) {
   }
 }
 
+//Sets the key, IV, and counter for ChaCha
+void setUpAscon() {
+  byte IV[16] = {(rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (10)), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (10)), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32)};
+  ascon128.setKey(keyMemory,16);
+  ascon128.setIV(IV, 16);
+}
+
 //Encrypts a char array while messuring time and free memory
 //  parameter 1 const char array to encrypt
-void runEncryption(const unsigned char* payload) {
+void runEncryption(const unsigned char* payload, int length) {
    startEncryptTime = micros();
-   ascon128.encrypt(encryptedData, payload, strlen((char*)payload));    //Encrypt the char array
+   setUpAscon();
+   ascon128.encrypt(encryptedData, payload, length);    //Encrypt the char array
    encryptTime = micros() - startEncryptTime;                           //Messure the time to encrypt
+   ascon128.computeTag(tag, 16); 
    freeMemoryEncrypt = ESP.getFreeHeap();                               //Messure the free memory space
 }
 
 //Decrypts a char array while messuring time and free memory
 //  parameter 1 const char array to decrypt
-void runDecryption(const unsigned char* payload) {
+void runDecryption(const unsigned char* payload, int length) {
    startDecryptTime = micros();
-   ascon128.decrypt(decryptedData, payload, strlen((char*)payload));  //Encrypt the char array
-   decryptTime = micros() - startDecryptTime;                         //Messure the time to encrypt
+   setUpAscon();
+   ascon128.decrypt(decryptedData, payload, length);  //Encrypt the char array
+   decryptTime = micros() - startDecryptTime;                        //Messure the time to encrypt
+   ascon128.checkTag(tag, 16);
    freeMemoryDecrypt = ESP.getFreeHeap();                             //Messure the free memory space
 }
 
@@ -71,7 +81,9 @@ void runDecryption(const unsigned char* payload) {
 //  parameter 2 byte pointer that contains the message of MQTT messsage
 //  parameter 3 unsigned int of the length of the message
 void recieve(char* topic, byte* message, unsigned int length) {
+  runDecryption(message, length);                                       //Decrypt MQTT message
   roundTripTime = micros() - startRoundTripTime;
+  number = number + 1;
   Serial.print("Packet Sent:#");                                //Print roundtrip time, encrypt time, and decrypt time
   Serial.print(number);
   Serial.print("#Round Trip Time#");
@@ -80,17 +92,16 @@ void recieve(char* topic, byte* message, unsigned int length) {
   Serial.print(encryptTime);
   Serial.print("#Encryption Time Sender#");
   Serial.print(decryptTime);
-  Serial.print("#Message:#");
-  runDecryption(message);                                       //Decrypt MQTT message
-  printByte(message, length);
-  Serial.print("#");
-  printByte(decryptedData, sizeof(decryptedData));              //Print decrypted message and memory messurments
   Serial.print("#");
   Serial.print(freeMemoryEncrypt);
   Serial.print("#");
   Serial.print(freeMemoryDecrypt);
   Serial.print("#");
-  Serial.println(ESP.getFreeHeap());
+  Serial.print(ESP.getFreeHeap());
+  Serial.print("#Message:#");
+  printByte(decryptedData, sizeof(decryptedData));              //Print decrypted message and memory messurments
+  Serial.println("#");
+  //printByte(message, length);
 }
 
 //Setup code here, to run once:
@@ -115,20 +126,19 @@ void setup() {
 
   MQTTClient.subscribe("/test/reciever");                       //Subscribe to topic to listen to
   convertFromString(key, keyMemory);                            //Set up encryption key
-  ascon128.setKey(keyMemory, 16);
-  ascon128.setIV(IV, 16);
-  ascon128.addAuthData(authData, 8);
+  delay(5000);
 }
 
 //Main code here, runs repeatedly:
 void loop() {
   MQTTClient.loop();                                           //Check for MQTT messages
-  delay(1000);
   if(number < 200) {                                           //Send 200 packets every 1 second
-    number = number + 1;
-    convertFromString("SendDistAndTimes", messageMemory);
-    startRoundTripTime = micros();
-    runEncryption(messageMemory);                              //Encrypt message and send message
-    bool result = MQTTClient.publish("/test/sender", encryptedData, sizeof(encryptedData), false);                 
+    if(number == (nextNum - 1)) {
+      nextNum = nextNum + 1;
+      convertFromString("SendDistAndTimes", messageMemory);
+      startRoundTripTime = micros();
+      runEncryption(messageMemory, sizeof(messageMemory));                              //Encrypt message and send message
+      bool result = MQTTClient.publish("/test/sender", encryptedData, sizeof(encryptedData), false);                 
+    }
   }
 }
