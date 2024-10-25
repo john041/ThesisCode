@@ -1,12 +1,12 @@
-#include <TinyJAMBU.h>
+#include <tinyjambu-aead.h>
 #include <string.h>
 
 byte keyMemory[16];
-char key[] = "Thisisatestaaaav";
+char key[] = "Thisisatestaaaa!";
 byte messageMemory[16];
-char message[] = "Encryptthi";
-byte encryptedData[32];
-byte decryptedData[32];
+char message[] = "SendDistAndTimes";
+byte encryptedData[24];
+byte decryptedData[16];
 char auth[] = "password";
 byte authMemory[8];
 byte IV[] = { 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a};
@@ -40,7 +40,7 @@ void setup() {
 
   size_t sizeOfEncrypted = sizeof(encryptedData);
   float startTime = micros();
-  tinyjambu_128_aead_encrypt(encryptedData, &sizeOfEncrypted, messageMemory, 10, authMemory, 8, IV, keyMemory);  
+  tiny_jambu_128_aead_encrypt(encryptedData, &sizeOfEncrypted, messageMemory, 16, authMemory, 8, IV, keyMemory);  
   float totalTime = micros() - startTime;
   printByte(encryptedData, sizeof(encryptedData));
   Serial.print("Total time to encrypt is ");
@@ -49,11 +49,12 @@ void setup() {
 
   size_t sizeOfDecrypted = sizeof(decryptedData);
   startTime = micros();
-  tinyjambu_128_aead_decrypt(decryptedData, &sizeOfDecrypted, encryptedData, 18, authMemory, 8, IV, keyMemory);
+  bool authentication = tiny_jambu_128_aead_decrypt(decryptedData, &sizeOfDecrypted, encryptedData, 24, authMemory, 8, IV, keyMemory);
   totalTime = micros() - startTime;
   printByte(decryptedData, sizeof(decryptedData));
   Serial.print("Total time to decrypt is ");
   Serial.println(totalTime);
+  Serial.println(authentication);
 }
 
 
