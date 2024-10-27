@@ -1,16 +1,15 @@
 #include <MemoryUsage.h>
 #include <Crypto.h>
 #include <Ascon128.h>
-#include <string.h>
 
 byte keyMemory[16];
 char key[] = "Thisisatestaaaa!";
 byte messageMemory[16];
 char message[] = "SendDistAndTimes";
-byte encryptedData[24];
+byte encryptedData[16];
 byte decryptedData[16];
 byte tag[16];
-byte IV[] = { 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a,0x0a};
+bool authenticated;
 const char password[] = "password";
 Ascon128 ascon128;
 float startTime;
@@ -29,15 +28,18 @@ void printByte( byte* info, int sizeOfArray) {
   }
 }
 
+//Sets the key, IV, and counter for ChaCha
+void setUpAscon(const unsigned char* IV) {
+  ascon128.setKey(keyMemory,16);
+  ascon128.setIV(IV, 16);
+  ascon128.addAuthData(password, 8);
+}
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
   convertFromString(key, keyMemory);
   printByte(keyMemory, sizeof(keyMemory));
-  
-  ascon128.setKey(keyMemory, 16);
-  ascon128.setIV(IV, 16);
-  ascon128.addAuthData(password, 8);
   
   convertFromString(message, messageMemory);
   printByte(messageMemory, sizeof(messageMemory));
@@ -51,14 +53,15 @@ void loop() {
     j++;
     Serial.print("Number#");
     Serial.print(j);
+    byte IV[16] = {(rand()%(127-32+1)+32),(rand()%(127-32+1)+32),(rand()%(127-32+1)+32),(rand()%(127-32+1)+32),(rand()%(127-32+1)+32),(rand()%(127-32+1)+32),(rand()%(127-32+1)+32),(rand()%(127-32+1)+32),(rand()%(127-32+1)+32),(rand()%(127-32+1)+32),(rand()%(127-32+1)+32),(rand()%(127-32+1)+32),(rand()%(127-32+1)+32),(rand()%(127-32+1)+32),(rand()%(127-32+1)+32),(rand()%(127-32+1)+32)};
 
-    ascon128.setKey(keyMemory,16);
-    ascon128.setIV(IV, 16);
-    ascon128.addAuthData(password, 8);
-
+ 
+    delay(1000);
     startTime = micros();
+    setUpAscon(IV);
     ascon128.encrypt(encryptedData, messageMemory, sizeof(messageMemory));
     totalTime = micros() - startTime;
+    ascon128.computeTag(tag, sizeof(tag));
     Serial.print("#Encrypted Message#");
     printByte(encryptedData, sizeof(encryptedData));
     Serial.print("#EncryptTime#");
@@ -66,19 +69,20 @@ void loop() {
     Serial.print("#");
     MEMORY_PRINT_FREERAM;
 
-    ascon128.setKey(keyMemory,16);
-    ascon128.setIV(IV, 16);
-    ascon128.addAuthData(password, 8);
-    
+    delay(1000);
     startTime = micros();
-    ascon128.decrypt(decryptedData, encryptedData, 16);
+    setUpAscon(IV);
+    ascon128.decrypt(decryptedData, encryptedData, sizeof(encryptedData));
     totalTime = micros() - startTime;
+    authenticated = ascon128.checkTag(tag, sizeof(tag));
     Serial.print("#Decrypted Message#");
     printByte(decryptedData, sizeof(decryptedData));
     Serial.print("#DecryptTime#");
     Serial.print(totalTime);
     Serial.print("#");
     MEMORY_PRINT_FREERAM;
+    Serial.print("#Authenticated#");
+    if(authenticated){ Serial.print("True"); } else { Serial.print("False"); }
     Serial.println("");
   }
 }

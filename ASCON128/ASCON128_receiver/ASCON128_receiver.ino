@@ -19,14 +19,17 @@ unsigned long encryptTime = 0;            //Variables to keep track of time and 
 unsigned long startEncryptTime = 0;
 unsigned long decryptTime = 0;
 unsigned long startDecryptTime = 0;
-byte tag[16];
 
+bool authenticated;
+const char authData[] = "password";
 char key[] = "Thisisatestaaaa!";          //Key used in encryption process
 
 byte keyMemory[16];                       //Variables to store encryption information
 byte messageMemory[16];
-byte encryptedData[16];
 byte decryptedData[16];
+byte tag[16];
+byte encryptedData[28];
+
 
 //Converts a string into a byte array
 //  parameter 1 string to convert
@@ -51,6 +54,7 @@ void setUpAscon() {
   byte IV[16] = {(rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (10)), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (10)), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32)};
   ascon128.setKey(keyMemory,16);
   ascon128.setIV(IV, 16);
+  ascon128.addAuthData(authData, 8);
 }
 
 //Encrypts a char array while messuring time and free memory
@@ -60,17 +64,17 @@ void runEncryption(const unsigned char* payload, int length) {
    setUpAscon();
    ascon128.encrypt(encryptedData, payload, length);    //Encrypt the char array
    encryptTime = micros() - startEncryptTime;                           //Messure the time to encrypt
-   ascon128.computeTag(tag, 16); 
+   ascon128.computeTag(encryptedData + length, 16); 
 }
 
 //Decrypts a char array while messuring time and free memory
 //  parameter 1 const char array to decrypt
-void runDecryption(const unsigned char* payload, int length) {
+void runDecryption(unsigned char* payload, int length) {
    startDecryptTime = micros();
    setUpAscon();
    ascon128.decrypt(decryptedData, payload, length);    //Encrypt the char array
    decryptTime = micros() - startDecryptTime;                          //Messure the time to encrypt
-   ascon128.checkTag(tag, 16);
+   authenticated = ascon128.checkTag(payload + length, 16);
 }
 
 //Calculates distance from the distance sensor 
@@ -95,24 +99,25 @@ void getDistance() {
 //  parameter 2 byte pointer that contains the message of MQTT messsage
 //  parameter 3 unsigned int of the length of the message
 void recieve(char* topic, byte* message, unsigned int length) {
-  runDecryption(message, length);                                           //Decrypt MQTT message
+  runDecryption(message, length - 16);                                           //Decrypt MQTT message
   printByte(message, length);
   Serial.println();
   printByte(decryptedData, sizeof(decryptedData));                  //Print decrypted message
   Serial.println();
   char tempDistance[5];
   char tempEncryption[5];
-  byte messageToEncrypt[11];
+  byte messageToEncrypt[12];
   dtostrf(distance, 5, 2, tempDistance);                           //Puts distance and decryption time in byte array
   memcpy(messageToEncrypt, tempDistance, strlen(tempDistance));
-  dtostrf(decryptTime, 4, 0, tempEncryption);
+  dtostrf(decryptTime, 6, 0, tempEncryption);
   messageToEncrypt[5] = '#';
   memcpy(messageToEncrypt + 6, tempEncryption, strlen(tempEncryption));
-  runEncryption(messageToEncrypt, strlen((char*)messageToEncrypt));                                                           //Encrypts new message
+  runEncryption(messageToEncrypt, sizeof(messageToEncrypt));                                                           //Encrypts new message
   printByte(messageToEncrypt, sizeof(messageToEncrypt));
   Serial.println();
   printByte(encryptedData, sizeof(encryptedData));
-  Serial.println();
+  Serial.print("#Authenticated#");
+  Serial.println(authenticated);
   MQTTClient.publish("/test/reciever", encryptedData, sizeof(encryptedData), false);         //Sends MQTT message
 }
 

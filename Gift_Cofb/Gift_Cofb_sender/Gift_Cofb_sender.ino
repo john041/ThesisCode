@@ -94,7 +94,7 @@ void recieve(char* topic, byte* message, unsigned int length) {
   Serial.print("#");
   Serial.print(ESP.getFreeHeap());
   Serial.print("#Tag#");
-  Serial.print(tag);
+  if(tag == 0){ Serial.print("True"); } else { Serial.print("False"); }
   Serial.print("#Message:#");
   printByte(decryptedData, sizeof(decryptedData));              //Print decrypted message and memory messurments
   Serial.print("#");

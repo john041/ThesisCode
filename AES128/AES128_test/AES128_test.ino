@@ -1,7 +1,6 @@
 #include <MemoryUsage.h>
 #include <Crypto.h>
 #include <AES.h> 
-#include <string.h>
 
 byte keyMemory[16];
 char key[] = "Thisisatestaaaa!";
@@ -46,6 +45,7 @@ void loop() {
     Serial.print("Number#");
     Serial.print(j);
 
+    delay(1000);
     startTime = micros();
     for(int i = 0; i < sizeof(messageMemory); i += 16) {
      aes.encryptBlock(encryptedData + i, messageMemory + i);                     //Encrypt the char array
@@ -57,7 +57,8 @@ void loop() {
     Serial.print(totalTime);
     Serial.print("#");
     MEMORY_PRINT_FREERAM;
-    
+
+    delay(1000);
     startTime = micros();
     for(int i = 0; i < sizeof(encryptedData); i += 16) {
      aes.decryptBlock(decryptedData + i, encryptedData + i);                     //Encrypt the char array
