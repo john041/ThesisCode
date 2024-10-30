@@ -5,7 +5,7 @@ byte keyMemory[16];
 char key[] = "Thisisatestaaaa!";
 byte messageMemory[16];
 char message[] = "SendDistAndTimes";
-byte encryptedData[16];
+byte encryptedData[32];
 byte decryptedData[16];
 byte authMemory[16];
 int authenticated;
@@ -53,7 +53,7 @@ void loop() {
     delay(1000);
     size_t sizeOfEncrypted = sizeof(encryptedData);
     startTime = micros();
-    gift_cofb_aead_encrypt(encryptedData, &sizeOfEncrypted, messageMemory, sizeof(messageMemory), 0, 0, 0, keyMemory);  
+    gift_cofb_aead_encrypt(encryptedData, &sizeOfEncrypted, messageMemory, sizeof(messageMemory), authMemory, 16, IV, keyMemory);  
     totalTime = micros() - startTime;
     Serial.print("#Encrypted Message#");
     printByte(encryptedData, sizeof(encryptedData));
@@ -65,7 +65,7 @@ void loop() {
     delay(1000);
     size_t sizeOfDecrypted = sizeof(decryptedData);
     startTime = micros();
-    authenticated = gift_cofb_aead_decrypt(decryptedData, &sizeOfDecrypted, encryptedData, sizeof(encryptedData), 0, 0, 0, keyMemory);
+    authenticated = gift_cofb_aead_decrypt(decryptedData, &sizeOfDecrypted, encryptedData, sizeof(encryptedData), authMemory, 16, IV, keyMemory);
     totalTime = micros() - startTime;
     Serial.print("#Decrypted Message#");
     printByte(decryptedData, sizeof(decryptedData));

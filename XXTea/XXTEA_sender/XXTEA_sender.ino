@@ -24,7 +24,7 @@ char key[] = "Thisisatestaaaa!";
 byte keyMemory[16];                           //Variables to store encryption information
 byte messageMemory[16];
 byte encryptedData[16];
-int len = 16;
+long int len = 16;
 
 //Converts a string into a byte array
 //  parameter 1 string to convert

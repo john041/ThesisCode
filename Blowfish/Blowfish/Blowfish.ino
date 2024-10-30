@@ -1,4 +1,4 @@
-//#include <MemoryUsage.h>
+#include <MemoryUsage.h>
 #include <Blowfish.h>
 
 byte keyMemory[16];
@@ -44,6 +44,7 @@ void loop() {
     Serial.print("Number#");
     Serial.print(j);
 
+    delay(1000);
     startTime = micros();
     blowfishObject.Encode(messageMemory, encryptedData, sizeof(messageMemory));
     totalTime = micros() - startTime;
@@ -54,8 +55,7 @@ void loop() {
     Serial.print("#");
     //MEMORY_PRINT_FREERAM;
 
-    //delay(1000);
-    
+    delay(1000);
     startTime = micros();
     blowfishObject.Decode(encryptedData, decryptedData, sizeof(encryptedData));
     totalTime = micros() - startTime;

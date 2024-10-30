@@ -1,5 +1,5 @@
+#include <MemoryUsage.h>
 #include <tinyjambu-aead.h>
-#include <string.h>
 
 byte keyMemory[16];
 char key[] = "Thisisatestaaaa!";
@@ -7,9 +7,12 @@ byte messageMemory[16];
 char message[] = "SendDistAndTimes";
 byte encryptedData[24];
 byte decryptedData[16];
-char auth[] = "password";
 byte authMemory[8];
-byte IV[] = { 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a, 0x0a};
+int authenticated;
+char auth[] = "password";
+float startTime;
+float totalTime;
+int j = 0;
 
 void convertFromString( const char* info, byte* memory ) {
   for( int i = 0; i < strlen(info); i++ ) {
@@ -21,7 +24,6 @@ void printByte( byte* info, int sizeOfArray) {
   for( int i = 0; i < sizeOfArray; i++ ) {
     Serial.write(info[i]);
   }
-  Serial.println();
 }
 
 void setup() {
@@ -30,35 +32,48 @@ void setup() {
   
   convertFromString(key, keyMemory);
   printByte(keyMemory, sizeof(keyMemory));
-
   convertFromString(message, messageMemory);
   printByte(messageMemory, sizeof(messageMemory));
 
   convertFromString(auth, authMemory);
   printByte(authMemory, sizeof(authMemory));
-
-
-  size_t sizeOfEncrypted = sizeof(encryptedData);
-  float startTime = micros();
-  tiny_jambu_128_aead_encrypt(encryptedData, &sizeOfEncrypted, messageMemory, 16, authMemory, 8, IV, keyMemory);  
-  float totalTime = micros() - startTime;
-  printByte(encryptedData, sizeof(encryptedData));
-  Serial.print("Total time to encrypt is ");
-  Serial.println(totalTime);
-
-
-  size_t sizeOfDecrypted = sizeof(decryptedData);
-  startTime = micros();
-  bool authentication = tiny_jambu_128_aead_decrypt(decryptedData, &sizeOfDecrypted, encryptedData, 24, authMemory, 8, IV, keyMemory);
-  totalTime = micros() - startTime;
-  printByte(decryptedData, sizeof(decryptedData));
-  Serial.print("Total time to decrypt is ");
-  Serial.println(totalTime);
-  Serial.println(authentication);
+  Serial.println();
+  delay(5000);
 }
-
 
 void loop() {
   // put your main code here, to run repeatedly:
+  if(j < 200) {
+    j++;
+    Serial.print("Number#");
+    Serial.print(j);
+    byte IV[12] = {(rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32)};
 
+    delay(1000);
+    size_t sizeOfEncrypted = sizeof(encryptedData);
+    startTime = micros();
+    tiny_jambu_128_aead_encrypt(encryptedData, &sizeOfEncrypted, messageMemory, sizeof(messageMemory), authMemory, 8, IV, keyMemory);  
+    totalTime = micros() - startTime;
+    Serial.print("#Encrypted Message#");
+    printByte(encryptedData, sizeof(encryptedData));
+    Serial.print("#EncryptTime#");
+    Serial.print(totalTime);
+    Serial.print("#");
+    MEMORY_PRINT_FREERAM;
+
+    delay(1000);
+    size_t sizeOfDecrypted = sizeof(decryptedData);
+    startTime = micros();
+    authenticated = tiny_jambu_128_aead_decrypt(decryptedData, &sizeOfDecrypted, encryptedData, sizeof(encryptedData), authMemory, 8, IV, keyMemory);
+    totalTime = micros() - startTime;
+    Serial.print("#Decrypted Message#");
+    printByte(decryptedData, sizeof(decryptedData));
+    Serial.print("#DecryptTime#");
+    Serial.print(totalTime);
+    Serial.print("#");
+    MEMORY_PRINT_FREERAM;
+    Serial.print("#Authenticated#");
+    if(authenticated == 0){ Serial.print("True"); } else { Serial.print("False"); }
+    Serial.println("");
+  }
 }
