@@ -2,8 +2,8 @@
 #include <Crypto.h>
 #include <Speck.h>
 
-byte keyMemory[16];
-char key[] = "Thisisatestaaaaa!";
+byte keyMemory[32];
+char key[] = "Thisisatestaaaa!Thisisatestaaaa!";
 byte messageMemory[16];
 char message[] = "SendDistAndTimes";
 byte encryptedData[16];
@@ -31,7 +31,7 @@ void setup() {
   
   convertFromString(key, keyMemory);
   printByte(keyMemory, sizeof(keyMemory));
-  speck.setKey(keyMemory,16);
+  speck.setKey(keyMemory, sizeof(keyMemory));
   convertFromString(message, messageMemory);
   printByte(messageMemory, sizeof(messageMemory));
   Serial.println();

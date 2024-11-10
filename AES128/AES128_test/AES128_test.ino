@@ -11,6 +11,7 @@ byte decryptedData[16];
 float startTime;
 float totalTime;
 AES128 aes;
+//AES256 aes;
 int j = 0;
 
 void convertFromString( const char* info, byte* memory ) {
@@ -31,7 +32,7 @@ void setup() {
   
   convertFromString(key, keyMemory);
   printByte(keyMemory, sizeof(keyMemory));
-  aes.setKey(keyMemory, 16);
+  aes.setKey(keyMemory, sizeof(keyMemory));
   convertFromString(message, messageMemory);
   printByte(messageMemory, sizeof(messageMemory));
   Serial.println();

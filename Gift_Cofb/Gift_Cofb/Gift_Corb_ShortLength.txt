@@ -1,0 +1,11 @@
+(Without the memory measurements)
+Sketch uses 16860 bytes (117%) of program storage space. Maximum is 14336 bytes.
+Global variables use 466 bytes (45%) of dynamic memory, leaving 558 bytes for local variables. Maximum is 1024 bytes.
+
+(Without memory measurements and Auth Tokens)
+Sketch uses 16796 bytes (117%) of program storage space. Maximum is 14336 bytes.
+Global variables use 432 bytes (42%) of dynamic memory, leaving 592 bytes for local variables. Maximum is 1024 bytes.
+
+(Without memory measurements, Auth Tokens, IV)
+Sketch uses 16462 bytes (114%) of program storage space. Maximum is 14336 bytes.
+Global variables use 428 bytes (41%) of dynamic memory, leaving 596 bytes for local variables. Maximum is 1024 bytes.

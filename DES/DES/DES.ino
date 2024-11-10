@@ -1,8 +1,8 @@
 #include <MemoryUsage.h>
 #include <DES.h>
 
-byte keyMemory[16];
-char key[] = "Thisisatestaaaa!";
+byte keyMemory[8];
+char key[] = "Thisisat";
 byte messageMemory[16];
 char message[] = "SendDistAndTimes";
 byte encryptedData[16];

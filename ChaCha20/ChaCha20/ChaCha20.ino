@@ -2,8 +2,8 @@
 #include <Crypto.h>
 #include <ChaCha.h>
 
-byte keyMemory[16];
-char key[] = "Thisisatestaaaa!";
+byte keyMemory[32];
+char key[] = "Thisisatestaaaa!Thisisatestaaaa!";
 byte messageMemory[16];
 char message[] = "SendDistAndTimes";
 byte encryptedData[16];
@@ -59,7 +59,7 @@ void loop() {
     chacha20.encrypt(encryptedData, messageMemory, sizeof(messageMemory));
     totalTime = micros() - startTime;
     Serial.print("#Encrypted Message#");
-    printByte(encryptedData, sizeof(encryptedData));
+    //printByte(encryptedData, sizeof(encryptedData));
     Serial.print("#EncryptTime#");
     Serial.print(totalTime);
     Serial.print("#");
