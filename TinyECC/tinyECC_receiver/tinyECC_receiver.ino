@@ -82,7 +82,6 @@ void getDistance() {
 //  parameter 2 byte pointer that contains the message of MQTT messsage
 //  parameter 3 unsigned int of the length of the message
 void recieve(char* topic, byte* message, unsigned int length) {
-  Serial.println("Worked");
   runDecryption((char*)message);                                           //Decrypt MQTT message
   printByte(message, length);
   Serial.println();

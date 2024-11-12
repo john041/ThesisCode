@@ -9,6 +9,7 @@ const char* password = "TempPassword";
 WiFiClient wifiClient;                        //Object to set up Wifi
 PubSubClient MQTTClient(wifiClient);          //Object to set up MQTT client
 AES128 aes;                                   //Object of AES encryption
+//AES256 aes;
 
 unsigned long roundTripTime = 0;              //Variables to keep track of time, number of packets sent, and free memory
 unsigned long startRoundTripTime = 0;
