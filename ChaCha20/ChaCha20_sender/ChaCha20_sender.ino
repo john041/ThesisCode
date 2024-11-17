@@ -50,7 +50,7 @@ void printByte( byte* info, int sizeOfArray) {
 void setUpChaCha() {
   byte IV[8] = {(rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (10)), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32)};
   byte counter[8] = {(rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (10)), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32)};
-  chacha20.setKey(keyMemory,16);
+  chacha20.setKey(keyMemory, sizeof(keyMemory));
   chacha20.setIV(IV, 8);
   chacha20.setCounter(counter, 8);
 }
@@ -102,7 +102,7 @@ void recieve(char* topic, byte* message, unsigned int length) {
   Serial.print("#Message:#");
   printByte(decryptedData, sizeof(decryptedData));        //Print decrypted message and memory messurments
   Serial.print("#");
-  //printByte(message, length);
+  printByte(message, length);
   Serial.println();
 }
 

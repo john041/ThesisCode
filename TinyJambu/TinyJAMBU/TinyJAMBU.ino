@@ -52,7 +52,7 @@ void loop() {
     delay(1000);
     size_t sizeOfEncrypted = sizeof(encryptedData);
     startTime = micros();
-    tiny_jambu_256_aead_encrypt(encryptedData, &sizeOfEncrypted, messageMemory, sizeof(messageMemory), authMemory, 8, IV, keyMemory);  
+    tiny_jambu_128_aead_encrypt(encryptedData, &sizeOfEncrypted, messageMemory, sizeof(messageMemory), authMemory, 8, IV, keyMemory);  
     totalTime = micros() - startTime;
     Serial.print("#Encrypted Message#");
     //printByte(encryptedData, sizeof(encryptedData));
@@ -64,7 +64,7 @@ void loop() {
     delay(1000);
     size_t sizeOfDecrypted = sizeof(decryptedData);
     startTime = micros();
-    authenticated = tiny_jambu_256_aead_decrypt(decryptedData, &sizeOfDecrypted, encryptedData, sizeof(encryptedData), authMemory, 8, IV, keyMemory);
+    authenticated = tiny_jambu_128_aead_decrypt(decryptedData, &sizeOfDecrypted, encryptedData, sizeof(encryptedData), authMemory, 8, IV, keyMemory);
     totalTime = micros() - startTime;
     Serial.print("#Decrypted Message#");
     printByte(decryptedData, sizeof(decryptedData));

@@ -1,0 +1,200 @@
+Packet Sent:#1#Round Trip Time#312339#Encryption Time Sender#398#Encryption Time Sender#292#50056#50056#50056#Tag#True#Message:#56.42#   408#{⸮⸮KH5ÐL⸮u*⸮⸮j6⸮
+Packet Sent:#2#Round Trip Time#209087#Encryption Time Sender#163#Encryption Time Sender#242#50056#50056#50056#Tag#True#Message:#58.19#   313#⸮⸮C⸮⸮v⸮⸮O⸮>⸮76#⸮⸮P
+Packet Sent:#3#Round Trip Time#203559#Encryption Time Sender#167#Encryption Time Sender#225#50056#50056#50056#Tag#True#Message:#56.19#   301#zD⸮~⸮⸮&⸮}⸮u⸮⸮J⸮⸮&⸮K
+Packet Sent:#4#Round Trip Time#204772#Encryption Time Sender#159#Encryption Time Sender#249#50056#50056#50056#Tag#True#Message:#57.44#   313#⸮}0⸮⸮⸮C⸮⸮⸮⸮⸮wP⸮⸮3
+Packet Sent:#5#Round Trip Time#208825#Encryption Time Sender#163#Encryption Time Sender#212#50056#50056#50056#Tag#True#Message:#60.59#   336#]Wmi⸮<⸮⸮M<xJCV 
+Packet Sent:#6#Round Trip Time#212803#Encryption Time Sender#159#Encryption Time Sender#253#50056#50056#50056#Tag#True#Message:#60.98#   312#^I ⸮@⸮,⸮⸮uf?⸮⸮⸮l<v⸮
+Packet Sent:#7#Round Trip Time#209359#Encryption Time Sender#163#Encryption Time Sender#224#50056#50056#50056#Tag#True#Message:#60.63#   336#⸮W⸮m⸮⸮⸮⸮>؛⸮=⸮⸮C
+Packet Sent:#8#Round Trip Time#205539#Encryption Time Sender#166#Encryption Time Sender#245#50056#50056#50056#Tag#True#Message:#57.45#   313#⸮y⸮0⸮⸮z⸮.⸮⸮⸮Gf&⸮w⸮
+Packet Sent:#9#Round Trip Time#204079#Encryption Time Sender#163#Encryption Time Sender#220#50056#50056#50056#Tag#True#Message:#55.98#   336#⸮⸮w⸮z⸮⸮⸮nк⸮⸮hj⸮*
+Packet Sent:#10#Round Trip Time#208468#Encryption Time Sender#155#Encryption Time Sender#247#50056#50056#50056#Tag#True#Message:#59.20#   313#⸮⸮⸮⸮jͨI2PX⸮c⸮⸮s
+Packet Sent:#11#Round Trip Time#208727#Encryption Time Sender#160#Encryption Time Sender#225#50056#50056#50056#Tag#True#Message:#59.83#   337#⸮Ag⸮⸮PUz⸮q4⸮⸮H⸮⸮,
+Packet Sent:#12#Round Trip Time#205603#Encryption Time Sender#160#Encryption Time Sender#252#50056#50056#50056#Tag#True#Message:#56.86#   313#M⸮RZ ⸮f^j 9⸮⸮⸮<⸮⸮
+Packet Sent:#13#Round Trip Time#206450#Encryption Time Sender#159#Encryption Time Sender#214#50056#50056#50056#Tag#True#Message:#58.98#   336# ⸮⸮xSU*8OVn⸮⸮⸮mF
+Packet Sent:#14#Round Trip Time#148897#Encryption Time Sender#160#Encryption Time Sender#252#50056#49944#49944#Tag#True#Message:#18.45#   313#⸮⸮⸮ğ⸮⸮~⸮⸮\+n>E⸮~
+Packet Sent:#15#Round Trip Time#203822#Encryption Time Sender#172#Encryption Time Sender#213#50056#50056#50056#Tag#True#Message:#56.83#   297#⸮⸮⸮i"⸮⸮⸮⸮⸮r>>⸮⸮
+Packet Sent:#16#Round Trip Time#159783#Encryption Time Sender#159#Encryption Time Sender#249#50056#50056#50056#Tag#True#Message:#27.36#   336#⸮/⸮KiAKF⸮2⸮.⸮⸮_%⸮
+Packet Sent:#17#Round Trip Time#191523#Encryption Time Sender#164#Encryption Time Sender#221#50056#50056#50056#Tag#True#Message:#44.44#   313#/⸮V\⸮:⸮⸮⸮4⸮X⸮:շ⸮3
+Packet Sent:#18#Round Trip Time#202420#Encryption Time Sender#160#Encryption Time Sender#248#50056#50056#50056#Tag#True#Message:#59.20#   337#⸮_⸮⸮F⸮X⸮⸮⸮⸮⸮⸮E⸮⸮u
+Packet Sent:#19#Round Trip Time#207517#Encryption Time Sender#164#Encryption Time Sender#213#50056#50056#50056#Tag#True#Message:#57.61#   314#⸮aӨ*3⸮	JlYS.⸮⸮%H⸮⸮[
+Packet Sent:#20#Round Trip Time#203579#Encryption Time Sender#167#Encryption Time Sender#301#50056#49552#49552#Tag#True#Message:#57.19#   336#?⸮QO⸮!⸮⸮_⸮⸮⸮\⸮-B⸮
+Packet Sent:#21#Round Trip Time#168737#Encryption Time Sender#162#Encryption Time Sender#261#49552#49552#49552#Tag#True#Message:#33.16#   312#o}⸮<L⸮,⸮⸮⸮⸮F⸮%⸮:⸮⸮
+Packet Sent:#22#Round Trip Time#210949#Encryption Time Sender#219#Encryption Time Sender#257#49440#49552#49552#Tag#True#Message:#60.38#   337#⸮⸮v⸮f⸮C	"⸮⸮⸮⸮g⸮⸮
+Packet Sent:#23#Round Trip Time#203381#Encryption Time Sender#155#Encryption Time Sender#273#49552#49552#49552#Tag#True#Message:#57.81#   313#⸮⸮!⸮⸮⸮⸮/^"+IR⸮⸮>⸮⸮K-
+Packet Sent:#24#Round Trip Time#206290#Encryption Time Sender#183#Encryption Time Sender#254#49552#49552#49552#Tag#True#Message:#58.20#   277#⸮yd⸮⸮~jE⸮s⸮g⸮⸮⸮⸮ ⸮O
+Packet Sent:#25#Round Trip Time#209717#Encryption Time Sender#154#Encryption Time Sender#281#49552#49552#49552#Tag#True#Message:#58.77#   327#i⸮⸮݇w4h<rz⸮#$J@=n⸮
+Packet Sent:#26#Round Trip Time#208008#Encryption Time Sender#159#Encryption Time Sender#256#49552#49552#49552#Tag#True#Message:#58.85#   289#?6e⸮⸮V⸮j⸮⸮⸮Z⸮K⸮⸮&⸮
+Packet Sent:#27#Round Trip Time#205780#Encryption Time Sender#156#Encryption Time Sender#280#49552#49552#49552#Tag#True#Message:#57.44#   345#иKƳ⸮X⸮⸮f⸮⸮ѽڡ⸮V⸮
+Packet Sent:#28#Round Trip Time#204423#Encryption Time Sender#159#Encryption Time Sender#293#49552#49440#49440#Tag#True#Message:#59.83#   288#50⸮⸮X⸮⸮⸮⸮⸮w⸮⸮⸮݀
+Packet Sent:#29#Round Trip Time#207498#Encryption Time Sender#184#Encryption Time Sender#236#49552#49552#49552#Tag#True#Message:#59.78#   341#⸮7⸮2⸮7⸮⸮⸮⸮m⸮⸮⸮+nf⸮
+Packet Sent:#30#Round Trip Time#215651#Encryption Time Sender#156#Encryption Time Sender#288#49552#49552#49552#Tag#True#Message:#59.47#   316#⸮⸮⸮Ԏ⸮?⸮:⸮0⸮⸮R~⸮'⸮
+Packet Sent:#31#Round Trip Time#201481#Encryption Time Sender#172#Encryption Time Sender#240#49552#49552#49552#Tag#True#Message:#60.20#   337#p⸮⸮⸮⸮DU⸮⸮⸮4fM⸮l⸮Q⸮⸮
+Packet Sent:#32#Round Trip Time#212282#Encryption Time Sender#179#Encryption Time Sender#280#49552#49552#49552#Tag#True#Message:#60.40#   317#⸮⸮⸮⸮⸮'⸮⸮@Q⸮⸮⸮⸮MT
+Packet Sent:#33#Round Trip Time#206976#Encryption Time Sender#159#Encryption Time Sender#252#49552#49552#49552#Tag#True#Message:#60.39#   336#l⸮⸮⸮jx⸮⸮q⸮⸮⸮⸮⸮⸮vjR
+Packet Sent:#34#Round Trip Time#210845#Encryption Time Sender#168#Encryption Time Sender#281#49552#49552#49552#Tag#True#Message:#59.66#   317#⸮⸮⸮⸮=cj⸮	⸮D⸮⸮⸮|⸮⸮
+Packet Sent:#35#Round Trip Time#212591#Encryption Time Sender#159#Encryption Time Sender#248#49552#49552#49552#Tag#True#Message:#60.82#   340#dI⸮⸮Qa⸮⸮T⸮T~q⸮⸮⸮
+Packet Sent:#36#Round Trip Time#206116#Encryption Time Sender#167#Encryption Time Sender#285#49552#49552#49552#Tag#True#Message:#58.61#   286#h⸮[u⸮X d`E%E⸮a3ȅN
+Packet Sent:#37#Round Trip Time#204607#Encryption Time Sender#160#Encryption Time Sender#248#49552#49552#49552#Tag#True#Message:#60.71#   317#F⸮⸮;4F~⸮⸮M⸮⸮V⸮XVT
+Packet Sent:#38#Round Trip Time#209079#Encryption Time Sender#156#Encryption Time Sender#285#49552#49552#49552#Tag#True#Message:#59.83#   305#⸮⸮0VЦ⸮ֱ|⸮⸮⸮X⸮d⸮
+Packet Sent:#39#Round Trip Time#208450#Encryption Time Sender#182#Encryption Time Sender#241#49552#49552#49552#Tag#True#Message:#59.99#   313#⸮kڄ,U⸮⸮3⸮s⸮`K⸮^⸮1
+Packet Sent:#40#Round Trip Time#208278#Encryption Time Sender#155#Encryption Time Sender#293#49552#49552#49552#Tag#True#Message:#58.86#   340#N⸮z⸮⸮⸮j⸮⸮⸮⸮B⸮ƛI
+Packet Sent:#41#Round Trip Time#208123#Encryption Time Sender#160#Encryption Time Sender#244#49552#49552#49552#Tag#True#Message:#59.94#   287#Oԁ⸮T⸮B⸮⸮,⸮⸮Y⸮f⸮
+Packet Sent:#42#Round Trip Time#207712#Encryption Time Sender#155#Encryption Time Sender#287#49552#49552#49552#Tag#True#Message:#59.42#   340#⸮⸮*⸮⸮ o+⸮#k⸮6D⸮
+Packet Sent:#43#Round Trip Time#207769#Encryption Time Sender#159#Encryption Time Sender#282#49552#49440#49440#Tag#True#Message:#57.91#   301#?DN7Ef$⸮3,h⸮Ѥi⸮⸮4|
+Packet Sent:#44#Round Trip Time#208222#Encryption Time Sender#183#Encryption Time Sender#249#49552#49552#49552#Tag#True#Message:#60.70#   336#⸮Fi⸮⸮⸮P⸮k.⸮⸮SWOӝ⸮$
+Packet Sent:#45#Round Trip Time#208522#Encryption Time Sender#155#Encryption Time Sender#280#49552#49552#49552#Tag#True#Message:#59.66#   316#F⸮1S܆⸮z⸮]⸮A0M⸮⸮,⸮⸮
+Packet Sent:#46#Round Trip Time#209876#Encryption Time Sender#160#Encryption Time Sender#252#49552#49552#49552#Tag#True#Message:#59.45#   341#h⸮*⸮⸮⸮⸮.)⸮⸮,⸮yc⸮
+Packet Sent:#47#Round Trip Time#208400#Encryption Time Sender#156#Encryption Time Sender#281#49552#49552#49552#Tag#True#Message:#61.11#   313#5y⸮l*y:u⸮⸮U⸮9a⸮⸮E
+Packet Sent:#48#Round Trip Time#211345#Encryption Time Sender#160#Encryption Time Sender#256#49552#49552#49552#Tag#True#Message:#60.95#   341#⸮	⸮9jm⸮L!l+~S⸮ݦ`⸮
+Packet Sent:#49#Round Trip Time#207918#Encryption Time Sender#180#Encryption Time Sender#269#49552#49552#49552#Tag#True#Message:#60.28#   317#⸮Ȳ⸮⸮⸮⸮=⸮l⸮⸮⸮#⸮
+Packet Sent:#50#Round Trip Time#217567#Encryption Time Sender#159#Encryption Time Sender#260#49552#49552#49552#Tag#True#Message:#59.13#   336#s⸮<	⸮@K⸮⸮⸮⸮z{
+Packet Sent:#51#Round Trip Time#200708#Encryption Time Sender#168#Encryption Time Sender#269#49552#49552#49552#Tag#True#Message:#59.34#   313#⸮⸮⸮⸮M&5̽⸮⸮~⸮⸮śs⸮
+Packet Sent:#52#Round Trip Time#214609#Encryption Time Sender#159#Encryption Time Sender#265#49552#49552#49552#Tag#True#Message:#60.28#   276#⸮M18=⸮F@5⸮lډӄo⸮
+Packet Sent:#53#Round Trip Time#206072#Encryption Time Sender#155#Encryption Time Sender#276#49552#49552#49552#Tag#True#Message:#61.01#   341#⸮⸮&⸮⸮I⸮⸮%⸮⸮zr!⸮F⸮
+Packet Sent:#54#Round Trip Time#208928#Encryption Time Sender#183#Encryption Time Sender#244#49552#49552#49552#Tag#True#Message:#59.85#   312#~f⸮⸮⸮cϐQc/⸮⸮⸮⸮⸮	⸮⸮
+Packet Sent:#55#Round Trip Time#211677#Encryption Time Sender#156#Encryption Time Sender#284#49552#49552#49552#Tag#True#Message:#61.06#   305#⸮⸮⸮⸮;⸮⸮Y⸮Qi⸮⸮⸮g⸮4T/
+Packet Sent:#56#Round Trip Time#210298#Encryption Time Sender#172#Encryption Time Sender#249#49552#49552#49552#Tag#True#Message:#61.13#   313#S<a⸮l⸮©⸮pf+⸮⸮⸮⸮N
+Packet Sent:#57#Round Trip Time#220817#Encryption Time Sender#222#Encryption Time Sender#300#49552#49440#49440#Tag#True#Message:#61.19#   304#⸮⸮ɪ⸮)⸮⸮f⸮⸮4⸮%⸮⸮=⸮
+Packet Sent:#58#Round Trip Time#199284#Encryption Time Sender#180#Encryption Time Sender#233#49552#49552#49552#Tag#True#Message:#60.66#   317#⸮T⸮Fd⸮ۀ⸮ K⸮ﴍy⸮⸮
+Packet Sent:#59#Round Trip Time#211412#Encryption Time Sender#155#Encryption Time Sender#293#49552#49552#49552#Tag#True#Message:#60.97#   336#⸮3hz`⸮⸮⸮a8⸮⸮⸮)⸮N⸮⸮6
+Packet Sent:#60#Round Trip Time#205219#Encryption Time Sender#159#Encryption Time Sender#245#49552#49552#49552#Tag#True#Message:#59.99#   317#^⸮d⸮⸮C⸮E⸮:⸮,<R⸮⸮⸮
+Packet Sent:#61#Round Trip Time#209915#Encryption Time Sender#178#Encryption Time Sender#281#49552#49552#49552#Tag#True#Message:#61.07#   336#⸮⸮⸮Iغ⸮⸮D⸮rx⸮B⸮c7G
+Packet Sent:#62#Round Trip Time#211136#Encryption Time Sender#159#Encryption Time Sender#253#49552#49552#49552#Tag#True#Message:#61.01#   317#im⸮TBhQ⸮⸮4 ⸮⸮⸮⸮⸮8⸮⸮
+Packet Sent:#63#Round Trip Time#210956#Encryption Time Sender#167#Encryption Time Sender#276#49552#49552#49552#Tag#True#Message:#60.98#   336#=⸮aYD⸮⸮f⸮G⸮⸮⸮⸮⸮
+Packet Sent:#64#Round Trip Time#211988#Encryption Time Sender#159#Encryption Time Sender#256#49552#49552#49552#Tag#True#Message:#60.74#   316#i}9ׇ⸮⸮⸮&3⸮:M⸮⸮&⸮
+Packet Sent:#65#Round Trip Time#208246#Encryption Time Sender#155#Encryption Time Sender#280#49552#49552#49552#Tag#True#Message:#60.57#   340#`Y⸮⸮/1⸮T⸮⸮!6⸮⸮⸮⸮
+Packet Sent:#66#Round Trip Time#209383#Encryption Time Sender#184#Encryption Time Sender#239#49552#49552#49552#Tag#True#Message:#60.73#   285#⸮QX7d⸮⸮k~⸮⸮X⸮g(⸮
+Packet Sent:#67#Round Trip Time#210877#Encryption Time Sender#155#Encryption Time Sender#289#49552#49552#49552#Tag#True#Message:#60.47#   317#⸮⸮⸮@⸮j⸮⸮⸮⸮⸮⸮⸮⸮⸮⸮⸮
+Packet Sent:#68#Round Trip Time#208379#Encryption Time Sender#172#Encryption Time Sender#245#49552#49552#49552#Tag#True#Message:#60.85#   309#⸮1޾⸮⸮ȧm=⸮⸮S⸮Ls⸮
+Packet Sent:#69#Round Trip Time#210519#Encryption Time Sender#155#Encryption Time Sender#292#49552#49552#49552#Tag#True#Message:#59.97#   292#7⸮⸮jMs⸮⸮⸮⸮<)⸮$⸮uC
+Packet Sent:#70#Round Trip Time#209072#Encryption Time Sender#160#Encryption Time Sender#240#49552#49552#49552#Tag#True#Message:#59.86#   310#⸮U⸮⸮⸮k⸮`^⸮m⸮⸮%⸮⸮⸮
+Packet Sent:#71#Round Trip Time#210606#Encryption Time Sender#156#Encryption Time Sender#301#49552#49440#49440#Tag#True#Message:#60.12#   317#!⸮⸮6⸮s⸮N⸮⸮(⸮⸮⸮⸮⸮ 
+Packet Sent:#72#Round Trip Time#208780#Encryption Time Sender#160#Encryption Time Sender#234#49552#49552#49552#Tag#True#Message:#61.18#   324#⸮uO⸮⸮⸮)⸮0⸮?⸮Ws7⸮⸮⸮
+Packet Sent:#73#Round Trip Time#207690#Encryption Time Sender#179#Encryption Time Sender#280#49552#49552#49552#Tag#True#Message:#60.11#   313#v⸮5⸮QƼl,⸮f.d⸮m@.^
+Packet Sent:#74#Round Trip Time#203541#Encryption Time Sender#159#Encryption Time Sender#243#49552#49552#49552#Tag#True#Message:#56.62#   324#⸮2⸮"s⸮j⸮0⸮܂⸮e⸮Pc⸮
+Packet Sent:#75#Round Trip Time#171716#Encryption Time Sender#155#Encryption Time Sender#284#49552#49552#49552#Tag#True#Message:#33.53#   317#⸮⸮⸮⸮M⸮#⸮⸮2⸮-N⸮Zh⸮f
+Packet Sent:#76#Round Trip Time#201548#Encryption Time Sender#160#Encryption Time Sender#245#49552#49552#49552#Tag#True#Message:#41.69#   336#⸮⸮R⸮e⸮Cde⸮D⸮uۛ⸮⸮
+Packet Sent:#77#Round Trip Time#126688#Encryption Time Sender#166#Encryption Time Sender#283#49552#49552#49552#Tag#True#Message:#19.90#   288#7+⸮⸮^⸮⸮⸮⸮7#h⸮⸮
+Packet Sent:#78#Round Trip Time#205641#Encryption Time Sender#160#Encryption Time Sender#244#49552#49552#49552#Tag#True#Message:#59.81#   313#f|⸮(?L⸮F⸮⸮<⸮⸮⸮)⸮⸮⸮
+Packet Sent:#79#Round Trip Time#209989#Encryption Time Sender#156#Encryption Time Sender#284#49552#49552#49552#Tag#True#Message:#61.09#   314#⸮"e⸮⸮9Ń⸮⸮G⸮⸮⸮$⸮q⸮
+Packet Sent:#80#Round Trip Time#163219#Encryption Time Sender#159#Encryption Time Sender#245#49552#49552#49552#Tag#True#Message:#30.56#   305#⸮P.>⸮%`v(⸮i⸮Y2X~⸮⸮
+Packet Sent:#81#Round Trip Time#152273#Encryption Time Sender#155#Encryption Time Sender#283#49552#49552#49552#Tag#True#Message:#21.48#   340#⸮~$	⸮⸮⸮G⸮@F⸮vA⸮⸮⸮
+Packet Sent:#82#Round Trip Time#164231#Encryption Time Sender#159#Encryption Time Sender#245#49552#49552#49552#Tag#True#Message:#16.94#   316#f⸮⸮⸮⸮⸮⸮b`⸮Ca⸮⸮Y!
+Packet Sent:#83#Round Trip Time#141286#Encryption Time Sender#155#Encryption Time Sender#285#49552#49552#49552#Tag#True#Message:#15.26#   289#⸮⸮yj⸮⸮M#3⸮⸮N⸮⸮⸮z⸮ĸ
+Packet Sent:#84#Round Trip Time#121806#Encryption Time Sender#182#Encryption Time Sender#236#49552#49552#49552#Tag#True#Message:#14.38#   338#ͽ⸮<Z⸮⸮⸮}⸮`⸮K
+Packet Sent:#85#Round Trip Time#131073#Encryption Time Sender#155#Encryption Time Sender#301#49552#49440#49440#Tag#True#Message:#15.36#   316#⸮⸮u⸮G#<⸮⸮Nu8⸮.⸮~⸮⸮⸮
+Packet Sent:#86#Round Trip Time#147087#Encryption Time Sender#160#Encryption Time Sender#232#49552#49552#49552#Tag#True#Message:#20.09#   337#⸮1⸮LѶ{⸮⸮3|⸮j⸮⸮ E4
+Packet Sent:#87#Round Trip Time#165740#Encryption Time Sender#155#Encryption Time Sender#300#49552#49552#49552#Tag#True#Message:#29.23#   277#:?⸮c|=W⸮⸮6ʪl⸮?⸮⸮⸮
+Packet Sent:#88#Round Trip Time#188166#Encryption Time Sender#160#Encryption Time Sender#236#49552#49552#49552#Tag#True#Message:#46.43#   313#⸮⸮Ӗ⸮⸮K⸮⸮⸮⸮⸮L⸮dTc⸮
+Packet Sent:#89#Round Trip Time#210686#Encryption Time Sender#156#Encryption Time Sender#296#49552#49552#49552#Tag#True#Message:#61.20#   341#⸮O⸮R⸮`=~_⸮~K⸮⸮[⸮
+Packet Sent:#90#Round Trip Time#209771#Encryption Time Sender#170#Encryption Time Sender#240#49552#49552#49552#Tag#True#Message:#60.49#   312#⸮W3⸮F⸮b3B2⸮)u⸮*&N⸮I
+Packet Sent:#91#Round Trip Time#212642#Encryption Time Sender#154#Encryption Time Sender#293#49552#49552#49552#Tag#True#Message:#60.55#   339#⸮⸮-⸮⸮he⸮⸮]⸮[⸮
+Packet Sent:#92#Round Trip Time#207124#Encryption Time Sender#159#Encryption Time Sender#245#49552#49552#49552#Tag#True#Message:#60.69#   313# ⸮a}⸮ȡ&⸮-\⸮bfg⸮
+Packet Sent:#93#Round Trip Time#207590#Encryption Time Sender#179#Encryption Time Sender#276#49552#49552#49552#Tag#True#Message:#59.76#   340#wR"jN⸮⸮-⸮⸮⸮<⸮T⸮⸮B
+Packet Sent:#94#Round Trip Time#215356#Encryption Time Sender#158#Encryption Time Sender#251#49552#49552#49552#Tag#True#Message:#59.47#   316#⸮Ӆ⸮⸮⸮⸮⸮i⸮⸮ȵ&ӪD!
+Packet Sent:#95#Round Trip Time#203741#Encryption Time Sender#168#Encryption Time Sender#280#49552#49552#49552#Tag#True#Message:#60.90#   337#~]⸮e⸮`L@؀⸮'⸮7Ż⸮	|⸮
+Packet Sent:#96#Round Trip Time#208248#Encryption Time Sender#159#Encryption Time Sender#253#49552#49552#49552#Tag#True#Message:#60.37#   317#n⸮⸮~⸮.U⸮s⸮⸮⸮⸮_⸮z⸮
+Packet Sent:#97#Round Trip Time#213814#Encryption Time Sender#156#Encryption Time Sender#285#49552#49552#49552#Tag#True#Message:#61.11#   281#W⸮F⸮⸮!a<@⸮sR⸮&I|
+Packet Sent:#98#Round Trip Time#209674#Encryption Time Sender#160#Encryption Time Sender#248#49552#49552#49552#Tag#True#Message:#60.87#   340#⸮⸮SB`⸮qD⸮ ⸮⸮⸮⸮pj⸮
+Packet Sent:#99#Round Trip Time#211573#Encryption Time Sender#156#Encryption Time Sender#292#49552#49440#49440#Tag#True#Message:#60.62#   274#⸮⸮c⸮⸮&Ө⸮}yM⸮⸮ɦ⸮⸮G
+Packet Sent:#100#Round Trip Time#207935#Encryption Time Sender#183#Encryption Time Sender#229#49552#49552#49552#Tag#True#Message:#60.14#   341#L⸮|5⸮⸮e⸮⸮x⸮_⸮⸮⸮⸮VOB
+Packet Sent:#101#Round Trip Time#208792#Encryption Time Sender#157#Encryption Time Sender#292#49552#49552#49552#Tag#True#Message:#59.89#   298#⸮Y⸮0bz⸮⸮⸮_⸮⸮s⸮4⸮~⸮
+Packet Sent:#102#Round Trip Time#210820#Encryption Time Sender#171#Encryption Time Sender#232#49552#49552#49552#Tag#True#Message:#61.42#   340#0Z⸮L⸮_⸮_v⸮4⸮ A⸮⸮⸮⸮A⸮
+Packet Sent:#103#Round Trip Time#207420#Encryption Time Sender#155#Encryption Time Sender#296#49552#49552#49552#Tag#True#Message:#61.24#   300#fj⸮E⸮W⸮$⸮⸮DI⸮⸮}⸮!⸮
+Packet Sent:#104#Round Trip Time#209688#Encryption Time Sender#159#Encryption Time Sender#241#49552#49552#49552#Tag#True#Message:#61.20#   336#3⸮@d⸮⸮u⸮⸮F⸮͸⸮vS
+Packet Sent:#105#Round Trip Time#223808#Encryption Time Sender#178#Encryption Time Sender#276#49552#49552#49552#Tag#True#Message:#61.13#   316#⸮Rg⸮⸮4⸮.⸮v⸮⸮⸮fo⸮⸮"
+Packet Sent:#106#Round Trip Time#206094#Encryption Time Sender#160#Encryption Time Sender#248#49552#49552#49552#Tag#True#Message:#60.99#   341#⸮⸮z⸮`⸮A⸮⸮⸮/tf)S⸮7g
+Packet Sent:#107#Round Trip Time#199849#Encryption Time Sender#167#Encryption Time Sender#280#49552#49552#49552#Tag#True#Message:#61.06#   317#⸮⸮">⸮⸮8ƨ⸮P⸮⸮Ek⸮y
+Packet Sent:#108#Round Trip Time#223881#Encryption Time Sender#159#Encryption Time Sender#253#49552#49552#49552#Tag#True#Message:#61.01#   336#;⸮⸮<⸮# ⸮l⸮⸮⸮⸮w⸮a⸮
+Packet Sent:#109#Round Trip Time#195751#Encryption Time Sender#167#Encryption Time Sender#277#49552#49552#49552#Tag#True#Message:#61.12#   285#WȽ⸮⸮⸮-⸮⸮⸮L⸮⸮#⸮⸮
+Packet Sent:#110#Round Trip Time#175074#Encryption Time Sender#159#Encryption Time Sender#252#49552#49552#49552#Tag#True#Message:#38.24#   305#⸮˾W⸮R{⸮B⸮⸮,⸮\"}7
+Packet Sent:#111#Round Trip Time#191242#Encryption Time Sender#223#Encryption Time Sender#248#49440#49552#49552#Tag#True#Message:#50.07#   313#`ٌ⸮%{⸮}l⸮⸮r՛*⸮⸮
+Packet Sent:#112#Round Trip Time#208348#Encryption Time Sender#155#Encryption Time Sender#285#49552#49552#49552#Tag#True#Message:#60.96#   304#⸮⸮⸮]⸮3ϚF⸮o⸮⸮⸮⸮⸮
+Packet Sent:#113#Round Trip Time#209783#Encryption Time Sender#171#Encryption Time Sender#284#49552#49440#49440#Tag#True#Message:#61.07#   340#⸮T⸮⸮2_⸮⸮ȼ⸮⸮⸮⸮q
+Packet Sent:#114#Round Trip Time#206999#Encryption Time Sender#159#Encryption Time Sender#249#49552#49552#49552#Tag#True#Message:#59.99#   317#cG⸮NUП6⸮⸮m⸮y⸮)⸮⸮
+Packet Sent:#115#Round Trip Time#210221#Encryption Time Sender#168#Encryption Time Sender#275#49552#49552#49552#Tag#True#Message:#61.24#   333#⸮`-Ʋ⸮2⸮⸮⸮`ϣ⸮>
+Packet Sent:#116#Round Trip Time#209663#Encryption Time Sender#160#Encryption Time Sender#252#49552#49552#49552#Tag#True#Message:#61.01#   317#⸮⸮⸮|n⸮>/⸮b⸮⸮?|L⸮cv
+Packet Sent:#117#Round Trip Time#182391#Encryption Time Sender#155#Encryption Time Sender#280#49552#49552#49552#Tag#True#Message:#42.57#   336#⸮⸮⸮0S$f#⸮c⸮i⸮⸮Zqm
+Packet Sent:#118#Round Trip Time#208670#Encryption Time Sender#182#Encryption Time Sender#241#49552#49552#49552#Tag#True#Message:#60.65#   312#W`Z 5⸮0⸮b<⸮ط⸮j⸮⸮	
+Packet Sent:#119#Round Trip Time#208716#Encryption Time Sender#155#Encryption Time Sender#293#49552#49552#49552#Tag#True#Message:#60.99#   280#⸮⸮⸮>⸮zabUp⸮⸮f⸮⸮⸮
+Packet Sent:#120#Round Trip Time#202202#Encryption Time Sender#159#Encryption Time Sender#244#49552#49552#49552#Tag#True#Message:#56.39#   337#⸮⸮⸮⸮w⸮⸮⸮⸮⸮⸮⸮=⸮⸮A⸮
+Packet Sent:#121#Round Trip Time#209942#Encryption Time Sender#178#Encryption Time Sender#280#49552#49552#49552#Tag#True#Message:#60.80#   316#Yg⸮⸮⸮⸮.(⸮"⸮⸮.⸮
+Packet Sent:#122#Round Trip Time#205877#Encryption Time Sender#159#Encryption Time Sender#253#49552#49552#49552#Tag#True#Message:#59.41#   301#⸮⸮⸮⸮⸮	y⸮⸮_Z⸮H⸮`⸮⸮
+Packet Sent:#123#Round Trip Time#209939#Encryption Time Sender#167#Encryption Time Sender#276#49552#49552#49552#Tag#True#Message:#60.95#   317#2K⸮5⸮}⸮I,uFŒ⸮⸮N⸮
+Packet Sent:#124#Round Trip Time#208158#Encryption Time Sender#159#Encryption Time Sender#255#49552#49552#49552#Tag#True#Message:#61.01#   320#⸮⸮̌*⸮L⸮⸮⸮.⸮˦⸮
+Packet Sent:#125#Round Trip Time#174332#Encryption Time Sender#155#Encryption Time Sender#281#49552#49552#49552#Tag#True#Message:#38.23#   316#0⸮⸮⸮䜎⸮⸮⸮⸮A⸮⸮g
+Packet Sent:#126#Round Trip Time#209600#Encryption Time Sender#157#Encryption Time Sender#253#49552#49552#49552#Tag#True#Message:#59.83#   334#⸮⸮֥0⸮⸮⸮⸮s⸮⸮[⸮0Mʒ⸮
+Packet Sent:#127#Round Trip Time#150931#Encryption Time Sender#155#Encryption Time Sender#288#49552#49440#49440#Tag#True#Message:#22.78#   317#⸮⸮⸮+⸮ŷK2Y⸮Fd|D⸮R⸮5
+Packet Sent:#128#Round Trip Time#174207#Encryption Time Sender#182#Encryption Time Sender#240#49552#49552#49552#Tag#True#Message:#36.63#   335#J⸮⸮a⸮⸮⸮⸮⸮⸮h⸮f⸮
+Packet Sent:#129#Round Trip Time#207506#Encryption Time Sender#254#Encryption Time Sender#240#49440#49552#49552#Tag#True#Message:#60.93#   289#⸮⸮⸮e⸮%⸮⸮+-⸮⸮KߦX⸮
+Packet Sent:#130#Round Trip Time#209786#Encryption Time Sender#155#Encryption Time Sender#284#49552#49552#49552#Tag#True#Message:#60.48#   309#⸮⸮⸮⸮I⸮W⸮yG⸮Y@Y(⸮⸮?⸮⸮
+Packet Sent:#131#Round Trip Time#208273#Encryption Time Sender#172#Encryption Time Sender#245#49552#49552#49552#Tag#True#Message:#59.56#   313#⸮⸮⸮A⸮믍⸮⸮⸮	>-J⸮⸮
+Packet Sent:#132#Round Trip Time#205975#Encryption Time Sender#155#Encryption Time Sender#288#49552#49552#49552#Tag#True#Message:#60.71#   297#⸮⸮S⸮@⸮⸮⸮?h⸮⸮g⸮7⸮
+Packet Sent:#133#Round Trip Time#205786#Encryption Time Sender#161#Encryption Time Sender#249#49552#49552#49552#Tag#True#Message:#56.21#   308#͕H⸮⸮⸮⸮ԚN]^A⸮ ⸮⸮-_
+Packet Sent:#134#Round Trip Time#207567#Encryption Time Sender#179#Encryption Time Sender#273#49552#49552#49552#Tag#True#Message:#60.11#   316#Ґ⸮⸮V⸮⸮ľ^ͷ*Y⸮9⸮⸮
+Packet Sent:#135#Round Trip Time#203763#Encryption Time Sender#159#Encryption Time Sender#256#49552#49552#49552#Tag#True#Message:#58.91#   305#uӴ⸮y⸮>⸮⸮O⸮z⸮ '⸮z⸮
+Packet Sent:#136#Round Trip Time#214372#Encryption Time Sender#167#Encryption Time Sender#272#49552#49552#49552#Tag#True#Message:#58.52#   312#~晊pؘ⸮⸮⸮⸮{⸮⸮⸮⸮sF
+Packet Sent:#137#Round Trip Time#198573#Encryption Time Sender#160#Encryption Time Sender#256#49552#49552#49552#Tag#True#Message:#59.75#   325#⸮⸮u⸮⸮|r⸮n⸮⸮c~⸮ j_⸮
+Packet Sent:#138#Round Trip Time#203816#Encryption Time Sender#156#Encryption Time Sender#278#49552#49552#49552#Tag#True#Message:#57.61#   313#⸮⸮⸮%I⸮GT⸮⸮⸮!⸮ά#z>⸮
+Packet Sent:#139#Round Trip Time#205594#Encryption Time Sender#183#Encryption Time Sender#248#49552#49552#49552#Tag#True#Message:#58.14#   341#U1⸮}⸮%⸮S&⸮⸮⸮b⸮⸮⸮⸮
+Packet Sent:#140#Round Trip Time#147902#Encryption Time Sender#156#Encryption Time Sender#281#49552#49552#49552#Tag#True#Message:#19.75#   313#eNՇ⸮ȁ+\⸮⸮⸮K⸮NX⸮
+Packet Sent:#141#Round Trip Time#178609#Encryption Time Sender#161#Encryption Time Sender#292#49552#49440#49440#Tag#True#Message:#40.35#   341#⸮⸮B;⸮⸮⸮⸮⸮$5⸮⸮0⸮⸮0
+Packet Sent:#142#Round Trip Time#194307#Encryption Time Sender#161#Encryption Time Sender#245#49552#49552#49552#Tag#True#Message:#49.98#   315#sa-ĽXxo⸮⸮5⸮⸮A⸮
+Packet Sent:#143#Round Trip Time#203700#Encryption Time Sender#155#Encryption Time Sender#287#49552#49552#49552#Tag#True#Message:#57.38#   277#d>⸮'⸮⸮z0M⸮⸮⸮6⸮⸮񗑞⸮
+Packet Sent:#144#Round Trip Time#207766#Encryption Time Sender#182#Encryption Time Sender#249#49552#49552#49552#Tag#True#Message:#60.88#   335#B=p'⸮⸮⸮⸮y⸮⸮⸮Է⸮ca
+Packet Sent:#145#Round Trip Time#209080#Encryption Time Sender#156#Encryption Time Sender#299#49552#49552#49552#Tag#True#Message:#60.67#   277#m~⸮⸮;⸮r⸮⸮⸮⸮ԡ⸮oD⸮
+Packet Sent:#146#Round Trip Time#202147#Encryption Time Sender#171#Encryption Time Sender#241#49552#49552#49552#Tag#True#Message:#56.35#   340#⸮?⸮9k4⸮⸮⸮⸮⸮G⸮⸮A⸮h
+Packet Sent:#147#Round Trip Time#208883#Encryption Time Sender#154#Encryption Time Sender#289#49552#49552#49552#Tag#True#Message:#60.63#   312#9I⸮vd	⸮f(⸮⸮6y⸮,w⸮
+Packet Sent:#148#Round Trip Time#211922#Encryption Time Sender#159#Encryption Time Sender#245#49552#49552#49552#Tag#True#Message:#60.59#   340#⸮⸮= ⸮⸮ؾK⸮Q,Ȕ⸮Ǥ⸮
+Packet Sent:#149#Round Trip Time#208122#Encryption Time Sender#179#Encryption Time Sender#281#49552#49552#49552#Tag#True#Message:#59.48#   313#[E⸮.⸮⸮͘y}<⸮d3>O⸮U
+Packet Sent:#150#Round Trip Time#203692#Encryption Time Sender#191#Encryption Time Sender#253#49440#49552#49552#Tag#True#Message:#57.29#   340#⸮⸮Ӹ͓V⸮{⸮|a⸮c⸮Cs
+Packet Sent:#151#Round Trip Time#207284#Encryption Time Sender#166#Encryption Time Sender#272#49552#49552#49552#Tag#True#Message:#59.67#   308#E⸮-|⸮,⸮b⸮RP⸮⸮v⸮K⸮`
+Packet Sent:#152#Round Trip Time#209586#Encryption Time Sender#160#Encryption Time Sender#257#49552#49552#49552#Tag#True#Message:#60.84#   341#;H⸮ ⸮'⸮⸮0⸮⸮	&⸮⸮Eo
+Packet Sent:#153#Round Trip Time#220953#Encryption Time Sender#154#Encryption Time Sender#281#49552#49552#49552#Tag#True#Message:#59.74#   312#⸮h⸮a⸮⸮Q⸮s1⸮L[ID⸮ӡ⸮
+Packet Sent:#154#Round Trip Time#196964#Encryption Time Sender#160#Encryption Time Sender#257#49552#49552#49552#Tag#True#Message:#61.09#   340#n⸮3O^⸮FH⸮⸮E⸮⸮⸮}⸮h⸮
+Packet Sent:#155#Round Trip Time#205822#Encryption Time Sender#156#Encryption Time Sender#280#49552#49440#49440#Tag#True#Message:#59.64#   313#)⸮J⸮M⸮N+T)⸮⸮F⸮⸮⸮
+Packet Sent:#156#Round Trip Time#214768#Encryption Time Sender#183#Encryption Time Sender#241#49552#49552#49552#Tag#True#Message:#60.74#   341#⸮⸮*⸮	⸮cɐ⸮⸮⸮⸮⸮Lxo
+Packet Sent:#157#Round Trip Time#207238#Encryption Time Sender#156#Encryption Time Sender#288#49552#49552#49552#Tag#True#Message:#59.46#   313#⸮⸮uJ⸮⸮⸮޼⸮VxB⸮D
+Packet Sent:#158#Round Trip Time#197270#Encryption Time Sender#159#Encryption Time Sender#249#49552#49552#49552#Tag#True#Message:#54.16#   340#cGAs⸮⸮⸮)⸮6⸮⸮I⸮.⸮⸮A9q
+Packet Sent:#159#Round Trip Time#204698#Encryption Time Sender#179#Encryption Time Sender#272#49552#49552#49552#Tag#True#Message:#58.22#   285#⸮gǂ2⸮5⸮B⸮#⸮⸮⸮⸮⸮
+Packet Sent:#160#Round Trip Time#210229#Encryption Time Sender#159#Encryption Time Sender#261#49552#49552#49552#Tag#True#Message:#60.76#   309#w⸮⸮YHJ⸮⸮4⸮V$⸮⸮⸮y
+Packet Sent:#161#Round Trip Time#210109#Encryption Time Sender#168#Encryption Time Sender#272#49552#49552#49552#Tag#True#Message:#61.11#   341#⸮A⸮⸮r⸮	⸮⸮k⸮t ⸮⸮⸮⸮⸮⸮
+Packet Sent:#162#Round Trip Time#203819#Encryption Time Sender#160#Encryption Time Sender#260#49552#49552#49552#Tag#True#Message:#57.73#   262#⸮ k⸮O]B⸮Q⸮⸮,⸮⸮b(<R
+Packet Sent:#163#Round Trip Time#210588#Encryption Time Sender#156#Encryption Time Sender#272#49552#49552#49552#Tag#True#Message:#60.74#   342#⸮d]⸮⸮⸮)⸮⸮⸮⸮⸮)
+Packet Sent:#164#Round Trip Time#204471#Encryption Time Sender#182#Encryption Time Sender#249#49552#49552#49552#Tag#True#Message:#58.37#   317#⸮⸮⸮⸮l⸮u⸮6⸮j
+Packet Sent:#165#Round Trip Time#203777#Encryption Time Sender#157#Encryption Time Sender#288#49552#49552#49552#Tag#True#Message:#58.37#   341#kj⸮⸮⸮<8⸮⸮⸮nhƀ#!@B⸮
+Packet Sent:#166#Round Trip Time#191537#Encryption Time Sender#171#Encryption Time Sender#245#49552#49552#49552#Tag#True#Message:#48.81#   313#6r⸮	⸮⸮KO⸮P⸮⸮𶒔t⸮⸮
+Packet Sent:#167#Round Trip Time#204551#Encryption Time Sender#178#Encryption Time Sender#272#49552#49552#49552#Tag#True#Message:#57.93#   340#j 	e⸮⸮"VՕ⸮G⸮⸮#⸮⸮
+Packet Sent:#168#Round Trip Time#202826#Encryption Time Sender#160#Encryption Time Sender#261#49552#49552#49552#Tag#True#Message:#56.20#   317#⸮⸮⸮ܟ⸮⸮嫂⸮f⸮"H)33a
+Packet Sent:#169#Round Trip Time#204900#Encryption Time Sender#247#Encryption Time Sender#244#49552#49552#49552#Tag#True#Message:#57.13#   337#HO⸮⸮⸮⸮⸮⸮݆"{u[⸮⸮⸮⸮⸮
+Packet Sent:#170#Round Trip Time#161561#Encryption Time Sender#223#Encryption Time Sender#303#49440#49440#49440#Tag#True#Message:#24.45#   285#Ԙ⸮hA⸮pc⸮⸮Ѐ0⸮@i⸮|
+Packet Sent:#171#Round Trip Time#192173#Encryption Time Sender#173#Encryption Time Sender#238#49552#49552#49552#Tag#True#Message:#54.82#   318#a*⸮⸮⸮⸮h^é⸮⸮⸮;~SB
+Packet Sent:#172#Round Trip Time#214835#Encryption Time Sender#155#Encryption Time Sender#292#49552#49552#49552#Tag#True#Message:#59.81#   321#⸮⸮⸮⸮ܠ6I⸮⸮⸮⸮⸮⸮UJ
+Packet Sent:#173#Round Trip Time#201571#Encryption Time Sender#170#Encryption Time Sender#236#49552#49552#49552#Tag#True#Message:#59.85#   315#+⸮ɞ?⸮Z;⸮K⸮⸮d⸮5⸮⸮
+Packet Sent:#174#Round Trip Time#208634#Encryption Time Sender#155#Encryption Time Sender#297#49552#49552#49552#Tag#True#Message:#58.64#   340#T⸮{⸮⸮⸮⸮⸮⸮{⸮⸮ׯ⸮1⸮⸮⸮
+Packet Sent:#175#Round Trip Time#184875#Encryption Time Sender#159#Encryption Time Sender#240#49552#49552#49552#Tag#True#Message:#47.26#   313#k⸮⸮C'⸮⸮g⸮&⸮⸮⸮i_>̡⸮
+Packet Sent:#176#Round Trip Time#207447#Encryption Time Sender#179#Encryption Time Sender#281#49552#49552#49552#Tag#True#Message:#59.89#   336#⸮	⸮⸮⸮⸮L⸮֗8⸮T⸮x݄J
+Packet Sent:#177#Round Trip Time#220499#Encryption Time Sender#159#Encryption Time Sender#254#49552#49552#49552#Tag#True#Message:#61.23#   312#⸮⸮⸮⸮⸮x⸮⸮⸮#⸮⸮z⸮J*
+Packet Sent:#178#Round Trip Time#195827#Encryption Time Sender#155#Encryption Time Sender#284#49552#49552#49552#Tag#True#Message:#58.51#   288#⸮<⸮f)⸮⸮⸮⸮⸮	r5⸮⸮i⸮s
+Packet Sent:#179#Round Trip Time#206162#Encryption Time Sender#184#Encryption Time Sender#244#49552#49552#49552#Tag#True#Message:#59.19#   337#,⸮⸮'p⸮f⸮⸮R⸮⸮⸮⸮⸮_⸮
+Packet Sent:#180#Round Trip Time#211748#Encryption Time Sender#156#Encryption Time Sender#292#49552#49552#49552#Tag#True#Message:#60.32#   282#⸮?ܻ⸮⸮⸮,圝!⸮⸮⸮A⸮⸮
+Packet Sent:#181#Round Trip Time#209274#Encryption Time Sender#169#Encryption Time Sender#237#49552#49552#49552#Tag#True#Message:#61.29#   338#⸮⸮8?⸮⸮U4⸮⸮⸮)⸮⸮~
+Packet Sent:#182#Round Trip Time#206642#Encryption Time Sender#155#Encryption Time Sender#297#49552#49552#49552#Tag#True#Message:#61.31#   312#f⸮f#⸮$⸮4⸮⸮⸮⸮⸮⸮9⸮	k
+Packet Sent:#183#Round Trip Time#209590#Encryption Time Sender#159#Encryption Time Sender#240#49552#49552#49552#Tag#True#Message:#61.28#   340#⸮DL8⸮z⸮bţ{⸮_h ~m⸮⸮
+Packet Sent:#184#Round Trip Time#212899#Encryption Time Sender#179#Encryption Time Sender#285#49552#49440#49440#Tag#True#Message:#61.29#   313#*d⸮8⸮⸮[⸮	⸮⸮⸮<9=⸮v
+Packet Sent:#185#Round Trip Time#205567#Encryption Time Sender#159#Encryption Time Sender#245#49552#49552#49552#Tag#True#Message:#61.05#   340#9&⸮ҁ⸮ʅ⸮⸮⸮>⸮q⸮Vy1
+Packet Sent:#186#Round Trip Time#209651#Encryption Time Sender#168#Encryption Time Sender#285#49552#49552#49552#Tag#True#Message:#61.18#   313#⸮d⸮⸮*⸮⸮⸮⸮⸮⸮U2/⸮⸮⸮⸮⸮
+Packet Sent:#187#Round Trip Time#210918#Encryption Time Sender#160#Encryption Time Sender#253#49552#49552#49552#Tag#True#Message:#61.13#   340#⸮Għ⸮#AY⸮n⸮⸮⸮D⸮⸮'
+Packet Sent:#188#Round Trip Time#206827#Encryption Time Sender#167#Encryption Time Sender#278#49552#49552#49552#Tag#True#Message:#56.76#   312#⸮⸮I⸮Jg⸮⸮⸮⸮⸮k⸮⸮⸮!
+Packet Sent:#189#Round Trip Time#173858#Encryption Time Sender#160#Encryption Time Sender#253#49552#49552#49552#Tag#True#Message:#38.19#   290#&Q⸮⸮⸮P⸮⸮⸮AiP⸮# %⸮H{
+Packet Sent:#190#Round Trip Time#208318#Encryption Time Sender#155#Encryption Time Sender#288#49552#49552#49552#Tag#True#Message:#61.15#   332#h⸮Η⸮⸮⸮⸮޸⸮⸮1⸮⸮B⸮r⸮
+Packet Sent:#191#Round Trip Time#208666#Encryption Time Sender#160#Encryption Time Sender#249#49552#49552#49552#Tag#True#Message:#61.01#   313#Èj⸮⸮A⸮⸮⸮~v?⸮V⸮L⸮<⸮
+Packet Sent:#192#Round Trip Time#210100#Encryption Time Sender#167#Encryption Time Sender#281#49552#49552#49552#Tag#True#Message:#61.11#   340#⸮w#⸮⸮⸮}⸮⸮⸮⸮⸮⸮⸮ ⸮
+Packet Sent:#193#Round Trip Time#212706#Encryption Time Sender#160#Encryption Time Sender#249#49552#49552#49552#Tag#True#Message:#61.17#   313#⸮b⸮⸮⸮⸮j⸮.⸮U⸮⸮o⸮
+Packet Sent:#194#Round Trip Time#218463#Encryption Time Sender#167#Encryption Time Sender#285#49552#49552#49552#Tag#True#Message:#60.80#   347#⸮⸮⸮⸮Lr⸮⸮JO⸮h7⸮⸮&⸮ȃ
+Packet Sent:#195#Round Trip Time#201371#Encryption Time Sender#160#Encryption Time Sender#248#49552#49552#49552#Tag#True#Message:#61.41#   312#M⸮⸮[⸮5(C4⸮⸮<⸮⸮|rX
+Packet Sent:#196#Round Trip Time#220472#Encryption Time Sender#168#Encryption Time Sender#281#49552#49552#49552#Tag#True#Message:#60.84#   340#\Y霹⸮W⸮⸮"⸮⸮⸮ 25⸮$
+Packet Sent:#197#Round Trip Time#198269#Encryption Time Sender#160#Encryption Time Sender#248#49552#49552#49552#Tag#True#Message:#60.89#   318#g⸮Z4⸮⸮⸮S⸮⸮nL⸮El	؛
+Packet Sent:#198#Round Trip Time#183093#Encryption Time Sender#154#Encryption Time Sender#288#49552#49440#49440#Tag#True#Message:#42.46#   339#s⸮j݇⸮⸮q⸮@⸮⸮V\⸮⸮⸮⸮⸮
+Packet Sent:#199#Round Trip Time#208233#Encryption Time Sender#191#Encryption Time Sender#240#49552#49552#49552#Tag#True#Message:#61.03#   282#⸮⸮8⸮⸮ ⸮⸮f⸮⸮^⸮⸮⸮⸮
+Packet Sent:#200#Round Trip Time#209952#Encryption Time Sender#156#Encryption Time Sender#302#49552#49552#49552#Tag#True#Message:#60.99#   309#⸮⸮⸮⸮⸮z⸮o⸮⸮⸮⸮⸮⸮7h⸮O

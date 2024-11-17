@@ -88,7 +88,7 @@ void recieve(char* topic, byte* message, unsigned int length) {
   Serial.print("#Message:#");
   printByte(message, length);
   Serial.print("#");
-  printByte(decryptedData, sizeof(decryptedData));              //Print decrypted message and memory messurments
+  printByte(decryptedData, 10);              //Print decrypted message and memory messurments
   Serial.print("#");
   Serial.print(freeMemoryEncrypt);
   Serial.print("#");

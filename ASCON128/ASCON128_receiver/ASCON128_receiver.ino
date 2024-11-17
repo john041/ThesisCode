@@ -52,7 +52,7 @@ void printByte( byte* info, int sizeOfArray) {
 //Sets the key, IV, and counter for ChaCha
 void setUpAscon() {
   byte IV[16] = {(rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (10)), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32), (rand() % (10)), (rand() % (127 - 32 + 1) + 32), (rand() % (127 - 32 + 1) + 32)};
-  ascon128.setKey(keyMemory,16);
+  ascon128.setKey(keyMemory, sizeof(keyMemory));
   ascon128.setIV(IV, 16);
   ascon128.addAuthData(authData, 8);
 }

@@ -1,4 +1,4 @@
-#include <MemoryUsage.h>
+//#include <MemoryUsage.h>
 #include <xoodyak-aead.h>
 
 byte keyMemory[16];
@@ -48,7 +48,7 @@ void loop() {
     Serial.print("Number#");
     Serial.print(j);
     byte IV[16] = {(rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32)};
-
+    
     delay(1000);
     size_t sizeOfEncrypted = sizeof(encryptedData);
     startTime = micros();
@@ -59,7 +59,7 @@ void loop() {
     Serial.print("#EncryptTime#");
     Serial.print(totalTime);
     Serial.print("#");
-    MEMORY_PRINT_FREERAM;
+    //MEMORY_PRINT_FREERAM;
 
     delay(1000);
     size_t sizeOfDecrypted = sizeof(decryptedData);
@@ -71,7 +71,7 @@ void loop() {
     Serial.print("#DecryptTime#");
     Serial.print(totalTime);
     Serial.print("#");
-    MEMORY_PRINT_FREERAM;
+    //MEMORY_PRINT_FREERAM;
     Serial.print("#Authenticated#");
     if(authenticated == 0){ Serial.print("True"); } else { Serial.print("False"); }
     Serial.println("");

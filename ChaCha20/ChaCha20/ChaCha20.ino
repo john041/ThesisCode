@@ -26,7 +26,7 @@ void printByte( byte* info, int sizeOfArray) {
 }
 
 void setUpChaCha20(const unsigned char* IV, const unsigned char* counter) {
-  chacha20.setKey(keyMemory,16);
+  chacha20.setKey(keyMemory, sizeof(keyMemory));
   chacha20.setIV(IV, 8);
   chacha20.setCounter(counter, 8);
 }

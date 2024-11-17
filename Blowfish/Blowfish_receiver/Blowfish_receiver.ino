@@ -82,21 +82,20 @@ void getDistance() {
 //  parameter 2 byte pointer that contains the message of MQTT messsage
 //  parameter 3 unsigned int of the length of the message
 void recieve(char* topic, byte* message, unsigned int length) {
-  Serial.println(length);
-  runDecryption(message, 73);                                           //Decrypt MQTT message
+  runDecryption(message, length);                                           //Decrypt MQTT message
   printByte(message, length);
   Serial.println();
   printByte(decryptedData, sizeof(decryptedData));                  //Print decrypted message
   Serial.println();
   char tempDistance[5];
   char tempEncryption[5];
-  byte messageToEncrypt[11];
+  byte messageToEncrypt[12];
   dtostrf(distance, 5, 2, tempDistance);                            //Puts distance and decryption time in byte array
   memcpy(messageToEncrypt, tempDistance, strlen(tempDistance));
   dtostrf(decryptTime, 4, 0, tempEncryption);
   messageToEncrypt[5] = '#';
   memcpy(messageToEncrypt + 6, tempEncryption, strlen(tempEncryption));
-  runEncryption(messageToEncrypt, strlen((char*)messageToEncrypt));                                                           //Encrypts new message
+  runEncryption(messageToEncrypt, sizeof(messageToEncrypt));                                                           //Encrypts new message
   printByte(messageToEncrypt, sizeof(messageToEncrypt));
   Serial.println();
   printByte(encryptedData, sizeof(encryptedData));
@@ -129,10 +128,10 @@ void setup() {
 
   MQTTClient.subscribe("/test/sender");                   //Subscribe to topic to listen to
   convertFromString(key, keyMemory);                      //Set up encryption key
-  blowfishObject.Initialize(keyMemory,16);
+  blowfishObject.Initialize(keyMemory, sizeof(keyMemory));
   digitalWrite(trigPin, 0);                               //Set output pin to zero
 
-    MQTTClient.setBufferSize(1024);
+  //MQTTClient.setBufferSize(1024);
   Serial.println(MQTTClient.getBufferSize());
 }
 

@@ -25,7 +25,7 @@ char key[] = "Thisisatestaaaa!";               //Key used in encryption process
 byte keyMemory[16];                           //Variables to store encryption information
 byte messageMemory[16];
 byte encryptedData[16];
-byte decryptedData[16];
+byte decryptedData[12];
 
 //Converts a string into a byte array
 //  parameter 1 string to convert
@@ -82,7 +82,7 @@ void recieve(char* topic, byte* message, unsigned int length) {
   Serial.print("#Message:#");
   printByte(message, length);
   Serial.print("#");
-  printByte(decryptedData, sizeof(decryptedData));              //Print decrypted message and memory messurments
+  printByte(decryptedData, 10);              //Print decrypted message and memory messurments
   Serial.print("#");
   Serial.print(freeMemoryEncrypt);
   Serial.print("#");
@@ -113,9 +113,9 @@ void setup() {
 
   MQTTClient.subscribe("/test/reciever");                       //Subscribe to topic to listen to
   convertFromString(key, keyMemory);                            //Set up encryption key
-  blowfishObject.Initialize(keyMemory,16);
+  blowfishObject.Initialize(keyMemory, sizeof(keyMemory));
 
-  MQTTClient.setBufferSize(1024);
+  //MQTTClient.setBufferSize(1024);
   Serial.println(MQTTClient.getBufferSize());
   delay(5000);
 }

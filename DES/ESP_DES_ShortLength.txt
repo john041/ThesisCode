@@ -1,0 +1,200 @@
+Packet Sent:#1#Round Trip Time#1008927#Encryption Time Sender#3751#Decryption Time Sender#3756#Message:#⸮⸮܂⸮⸮⸮Ȁ⸮m⸮⸮Y7{#97.30#3776#50064#49560#49560
+Packet Sent:#2#Round Trip Time#1012940#Encryption Time Sender#3763#Decryption Time Sender#3790#Message:#f⸮⸮U⸮⸮G⸮⸮⸮m⸮⸮Y7{#99.89#3776#49560#49560#49560
+Packet Sent:#3#Round Trip Time#1012900#Encryption Time Sender#3766#Decryption Time Sender#3775#Message:#⸮{d⸮.W⸮⸮m⸮⸮Y7{#98.62#3776#49560#49560#49560
+Packet Sent:#4#Round Trip Time#1012999#Encryption Time Sender#3767#Decryption Time Sender#3776#Message:#⸮{s⸮?W⸮⸮⸮m⸮⸮Y7{#99.39#3776#49560#49560#49560
+Packet Sent:#5#Round Trip Time#1012695#Encryption Time Sender#3766#Decryption Time Sender#3772#Message:#⸮~⸮~⸮⸮⸮⸮m⸮⸮Y7{#97.74#3776#49560#49560#49560
+Packet Sent:#6#Round Trip Time#1012910#Encryption Time Sender#3764#Decryption Time Sender#3776#Message:#T⸮P⸮À⸮m⸮⸮Y7{#99.20#3776#49560#49560#49560
+Packet Sent:#7#Round Trip Time#1012981#Encryption Time Sender#3767#Decryption Time Sender#3775#Message:#⸮⸮ߒ⸮⸮⸮m⸮⸮Y7{#99.63#3776#49560#49560#49560
+Packet Sent:#8#Round Trip Time#1012933#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#⸮⸮c⸮B]⸮⸮⸮m⸮⸮Y7{#97.92#3776#49560#49560#49560
+Packet Sent:#9#Round Trip Time#1012677#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#⸮.⸮⸮-⸮V⸮⸮m⸮⸮Y7{#99.67#3776#49560#49560#49560
+Packet Sent:#10#Round Trip Time#1012783#Encryption Time Sender#3766#Decryption Time Sender#3776#Message:#)t⸮⸮@+3⸮A ⸮⸮ӆ#97.11#3775#49560#49560#49560
+Packet Sent:#11#Round Trip Time#1013721#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#⸮⤳⸮⸮7Ns⸮⸮Z?⸮l#96.34#3779#49560#49560#49560
+Packet Sent:#12#Round Trip Time#1012799#Encryption Time Sender#3763#Decryption Time Sender#3771#Message:#d:⸮⸮Q⸮⸮⸮⸮m⸮⸮Y7{#96.42#3776#49560#49560#49560
+Packet Sent:#13#Round Trip Time#1010120#Encryption Time Sender#3766#Decryption Time Sender#3776#Message:#;w⸮$⸮⸮2⸮⸮m⸮⸮Y7{#98.02#3776#49560#49560#49560
+Packet Sent:#14#Round Trip Time#1012741#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#⸮⸮⸮⸮@>X⸮⸮Q⸮!⸮N#97.46#3772#49560#49560#49560
+Packet Sent:#15#Round Trip Time#1012886#Encryption Time Sender#3778#Decryption Time Sender#3772#Message:#⸮⸮Y⸮	Ns⸮⸮Z?⸮l#98.87#3779#49560#49560#49560
+Packet Sent:#16#Round Trip Time#1013740#Encryption Time Sender#3765#Decryption Time Sender#3772#Message:#⸮⸮⸮o@⸮⸮⸮'BD⸮(#99.84#3790#49560#49448#49448
+Packet Sent:#17#Round Trip Time#1012930#Encryption Time Sender#3766#Decryption Time Sender#3775#Message:#⸮b⸮⸮ZЀ⸮m⸮⸮Y7{#98.98#3776#49560#49560#49560
+Packet Sent:#18#Round Trip Time#1012595#Encryption Time Sender#3763#Decryption Time Sender#3775#Message:#{h3SET	⸮⸮⸮m⸮⸮Y7{#95.28#3776#49560#49560#49560
+Packet Sent:#19#Round Trip Time#1012974#Encryption Time Sender#3766#Decryption Time Sender#3776#Message:#-⸮YK⸮W⸮Ns⸮⸮Z?⸮l#98.14#3779#49560#49560#49560
+Packet Sent:#20#Round Trip Time#1012912#Encryption Time Sender#3763#Decryption Time Sender#3790#Message:#⸮⸮⸮PN⸮⸮⸮⸮m⸮⸮Y7{#99.45#3776#49560#49560#49560
+Packet Sent:#21#Round Trip Time#1012775#Encryption Time Sender#3763#Decryption Time Sender#3772#Message:#⸮x=M5*Ns⸮⸮Z?⸮l#101.5#3779#49560#49560#49560
+Packet Sent:#22#Round Trip Time#1012808#Encryption Time Sender#3765#Decryption Time Sender#3792#Message:#f⸮⸮U⸮⸮G⸮3⸮A ⸮⸮ӆ#99.89#3775#49560#49560#49560
+Packet Sent:#23#Round Trip Time#1012693#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#360RO⸮ϒ⸮⸮m⸮⸮Y7{#101.9#3776#49560#49560#49560
+Packet Sent:#24#Round Trip Time#1013057#Encryption Time Sender#3766#Decryption Time Sender#3772#Message:#dRp!⸮⸮⸮m⸮⸮Y7{#101.3#3776#49560#49560#49560
+Packet Sent:#25#Round Trip Time#1012684#Encryption Time Sender#3763#Decryption Time Sender#3772#Message:#⸮⸮­⸮Ǥ3⸮A ⸮⸮ӆ#98.21#3775#49560#49560#49560
+Packet Sent:#26#Round Trip Time#1013397#Encryption Time Sender#3764#Decryption Time Sender#3775#Message:#⸮^⸮̀ 磀⸮m⸮⸮Y7{#99.72#3776#49560#49560#49560
+Packet Sent:#27#Round Trip Time#1012869#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#⸮6$⸮ˀ⸮m⸮⸮Y7{#98.01#3776#49560#49560#49560
+Packet Sent:#28#Round Trip Time#1012689#Encryption Time Sender#3766#Decryption Time Sender#3772#Message:#зq⸮⸮6T'Ns⸮⸮Z?⸮l#99.77#3779#49560#49560#49560
+Packet Sent:#29#Round Trip Time#1012722#Encryption Time Sender#3763#Decryption Time Sender#3775#Message:#&_⸮⸮⸮⸮/v⸮⸮m⸮⸮Y7{#98.23#3776#49560#49560#49560
+Packet Sent:#30#Round Trip Time#1012891#Encryption Time Sender#3766#Decryption Time Sender#3776#Message:#⸮⸮c⸮坐⸮⸮	⸮⸮2>#97.44#3780#49560#49560#49560
+Packet Sent:#31#Round Trip Time#1013004#Encryption Time Sender#3766#Decryption Time Sender#3776#Message:#⸮:⸮7ׄo⸮⸮m⸮⸮Y7{#95.96#3776#49560#49560#49560
+Packet Sent:#32#Round Trip Time#1013889#Encryption Time Sender#3767#Decryption Time Sender#3772#Message:#ђ⸮⸮⸮⸮L/⸮⸮m⸮⸮Y7{#95.49#3776#49560#49448#49448
+Packet Sent:#33#Round Trip Time#1012901#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#ą⸮⸮⸮⸮⸮m⸮⸮Y7{#95.34#3776#49560#49560#49560
+Packet Sent:#34#Round Trip Time#1011170#Encryption Time Sender#3778#Decryption Time Sender#3760#Message:#!⸮=gy⸮⸮'⸮q⸮⸮⸮E&#97.90#3781#49560#49560#49560
+Packet Sent:#35#Round Trip Time#1012706#Encryption Time Sender#3763#Decryption Time Sender#3779#Message:#⸮ʀu⸮]⸮⸮⸮⸮m⸮⸮Y7{#95.95#3776#49560#49560#49560
+Packet Sent:#36#Round Trip Time#1012916#Encryption Time Sender#3764#Decryption Time Sender#3775#Message:#zy<⸮⸮⸮⸮⸮⸮m⸮⸮Y7{#95.86#3776#49560#49560#49560
+Packet Sent:#37#Round Trip Time#1012691#Encryption Time Sender#3767#Decryption Time Sender#3775#Message:#B⸮t,\Gl⸮⸮m⸮⸮Y7{#97.28#3776#49560#49560#49560
+Packet Sent:#38#Round Trip Time#1012913#Encryption Time Sender#3763#Decryption Time Sender#3775#Message:#⸮{⸮⸮⸮⸮⸮⸮⸮⸮m⸮⸮Y7{#96.11#3776#49560#49560#49560
+Packet Sent:#39#Round Trip Time#1013105#Encryption Time Sender#3763#Decryption Time Sender#3775#Message:#⸮⸮(H⸮u⸮⸮m⸮⸮Y7{#97.77#3776#49560#49560#49560
+Packet Sent:#40#Round Trip Time#1012759#Encryption Time Sender#3767#Decryption Time Sender#3776#Message:#⸮Zi⸮⸮⸮⸮⸮m⸮⸮Y7{#98.40#3776#49560#49560#49560
+Packet Sent:#41#Round Trip Time#1009235#Encryption Time Sender#3703#Decryption Time Sender#3764#Message:#L⸮⸮N⸮⸮⸮⸮^\⸮⸮⸮"$^#98.06#3787#49560#49560#49560
+Packet Sent:#42#Round Trip Time#1013940#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#⸮;⸮l[⸮Oo⸮⸮m⸮⸮Y7{#76.86#3776#49560#49560#49560
+Packet Sent:#43#Round Trip Time#1013300#Encryption Time Sender#3767#Decryption Time Sender#3779#Message:#⸮A]gj⸮⸮⸮	⸮⸮2>#98.08#3780#49560#49560#49560
+Packet Sent:#44#Round Trip Time#1011183#Encryption Time Sender#3778#Decryption Time Sender#3768#Message:#⸮⸮⸮!tBH8Ns⸮⸮Z?⸮l#94.88#3779#49560#49560#49560
+Packet Sent:#45#Round Trip Time#1012920#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#V⸮⸮uQ(Ns⸮⸮Z?⸮l#96.90#3779#49560#49560#49560
+Packet Sent:#46#Round Trip Time#1012753#Encryption Time Sender#3764#Decryption Time Sender#3776#Message:#}⸮⸮b8⸮@⸮⸮m⸮⸮Y7{#98.15#3776#49560#49560#49560
+Packet Sent:#47#Round Trip Time#1012669#Encryption Time Sender#3763#Decryption Time Sender#3772#Message:#⸮r⸮\⸮A⸮⸮m⸮⸮Y7{#96.16#3776#49560#49560#49560
+Packet Sent:#48#Round Trip Time#1013599#Encryption Time Sender#3763#Decryption Time Sender#3772#Message:#IL*⸮~⸮⸮|⸮⸮m⸮⸮Y7{#92.13#3776#49560#49448#49448
+Packet Sent:#49#Round Trip Time#1012988#Encryption Time Sender#3767#Decryption Time Sender#3776#Message:#Sw⸮⸮	X⸮⸮⸮m⸮⸮Y7{#94.12#3776#49560#49560#49560
+Packet Sent:#50#Round Trip Time#1012839#Encryption Time Sender#3763#Decryption Time Sender#3772#Message:##⸮;u⸮⸮+⸮⸮m⸮⸮Y7{#95.99#3776#49560#49560#49560
+Packet Sent:#51#Round Trip Time#1012898#Encryption Time Sender#3767#Decryption Time Sender#3775#Message:#Xt⸮⸮⸮]⸮⸮⸮m⸮⸮Y7{#97.18#3776#49560#49560#49560
+Packet Sent:#52#Round Trip Time#1012790#Encryption Time Sender#3767#Decryption Time Sender#3776#Message:#⸮%⸮%CV=3⸮A ⸮⸮ӆ#96.96#3775#49560#49560#49560
+Packet Sent:#53#Round Trip Time#1013107#Encryption Time Sender#3766#Decryption Time Sender#3786#Message:#j⸮⸮v⸮⸮-⸮⸮6O⸮F⸮#99.86#3821#49560#49560#49560
+Packet Sent:#54#Round Trip Time#1012689#Encryption Time Sender#3764#Decryption Time Sender#3779#Message:#f⸮⸮U⸮⸮G⸮3⸮A ⸮⸮ӆ#99.89#3775#49560#49560#49560
+Packet Sent:#55#Round Trip Time#1012769#Encryption Time Sender#3767#Decryption Time Sender#3776#Message:#Gp⸮I⸮s⸮⸮m⸮⸮Y7{#99.66#3776#49560#49560#49560
+Packet Sent:#56#Round Trip Time#1012833#Encryption Time Sender#3764#Decryption Time Sender#3775#Message:#⸮f⸮⸮⸮4⸮3⸮A ⸮⸮ӆ#98.32#3775#49560#49560#49560
+Packet Sent:#57#Round Trip Time#1012908#Encryption Time Sender#3763#Decryption Time Sender#3775#Message:#6.⸮z⸮g4⸮⸮m⸮⸮Y7{#99.85#3776#49560#49560#49560
+Packet Sent:#58#Round Trip Time#1013001#Encryption Time Sender#3767#Decryption Time Sender#3780#Message:#+⸮o:⸮6⸮⸮m⸮⸮Y7{#97.15#3776#49560#49560#49560
+Packet Sent:#59#Round Trip Time#1012699#Encryption Time Sender#3763#Decryption Time Sender#3775#Message:#⸮A]gj⸮⸮m⸮⸮Y7{#98.08#3776#49560#49560#49560
+Packet Sent:#60#Round Trip Time#1012868#Encryption Time Sender#3763#Decryption Time Sender#3772#Message:#%⸮⸮Y⸮⸮l⸮⸮m⸮⸮Y7{#97.35#3776#49560#49560#49560
+Packet Sent:#61#Round Trip Time#1012891#Encryption Time Sender#3766#Decryption Time Sender#3772#Message:#⸮⸮} ⸮أ⸮⸮m⸮⸮Y7{#99.08#3776#49560#49560#49560
+Packet Sent:#62#Round Trip Time#1012959#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#⸮C⸮f⸮⸮⸮m⸮⸮Y7{#98.52#3776#49560#49560#49560
+Packet Sent:#63#Round Trip Time#1013741#Encryption Time Sender#3763#Decryption Time Sender#3790#Message:#Bg⸮U⸮⸮&⸮⸮m⸮⸮Y7{#97.06#3776#49560#49448#49448
+Packet Sent:#64#Round Trip Time#1013040#Encryption Time Sender#3766#Decryption Time Sender#3779#Message:#G⸮5⸮⸮⸮Ns⸮⸮Z?⸮l#96.72#3779#49560#49560#49560
+Packet Sent:#65#Round Trip Time#1011199#Encryption Time Sender#3763#Decryption Time Sender#3768#Message:#i4eX⸮⸮⸮m⸮⸮Y7{#96.87#3776#49560#49560#49560
+Packet Sent:#66#Round Trip Time#1012916#Encryption Time Sender#3766#Decryption Time Sender#3775#Message:#⸮іo⸮⸮k⸮⸮m⸮⸮Y7{#95.61#3776#49560#49560#49560
+Packet Sent:#67#Round Trip Time#1012881#Encryption Time Sender#3764#Decryption Time Sender#3779#Message:#⸮l̪/Ɯ⸮⸮m⸮⸮Y7{#97.05#3776#49560#49560#49560
+Packet Sent:#68#Round Trip Time#1012744#Encryption Time Sender#3766#Decryption Time Sender#3776#Message:#⸮⸮4⸮k~р⸮m⸮⸮Y7{#96.65#3776#49560#49560#49560
+Packet Sent:#69#Round Trip Time#1012611#Encryption Time Sender#3763#Decryption Time Sender#3772#Message:#⸮⸮uy`⸮3⸮A ⸮⸮ӆ#97.43#3775#49560#49560#49560
+Packet Sent:#70#Round Trip Time#1012692#Encryption Time Sender#3767#Decryption Time Sender#3779#Message:#g⸮⸮HJ⸮2⸮⸮m⸮⸮Y7{#96.54#3776#49560#49560#49560
+Packet Sent:#71#Round Trip Time#1012706#Encryption Time Sender#3763#Decryption Time Sender#3780#Message:#⸮\⸮\⸮⸮⸮⸮Ns⸮⸮Z?⸮l#98.25#3779#49560#49560#49560
+Packet Sent:#72#Round Trip Time#1012586#Encryption Time Sender#3764#Decryption Time Sender#3772#Message:#⸮C⸮&⸮MUf⸮⸮m⸮⸮Y7{#96.10#3776#49560#49560#49560
+Packet Sent:#73#Round Trip Time#1013116#Encryption Time Sender#3763#Decryption Time Sender#3779#Message:#⸮T⸮A@⸮^Ns⸮⸮Z?⸮l#96.14#3779#49560#49560#49560
+Packet Sent:#74#Round Trip Time#1012648#Encryption Time Sender#3763#Decryption Time Sender#3779#Message:#⸮⸮=⸮;9⸮À⸮m⸮⸮Y7{#97.69#3776#49560#49560#49560
+Packet Sent:#75#Round Trip Time#1011192#Encryption Time Sender#3779#Decryption Time Sender#3771#Message:#sѠ⸮⸮ŧ*⸮⸮m⸮⸮Y7{#96.51#3776#49560#49560#49560
+Packet Sent:#76#Round Trip Time#1012652#Encryption Time Sender#3763#Decryption Time Sender#3779#Message:#⸮⸮"A⸮⸮⸮ۀ⸮m⸮⸮Y7{#97.36#3776#49560#49560#49560
+Packet Sent:#77#Round Trip Time#1012696#Encryption Time Sender#3763#Decryption Time Sender#3779#Message:#⸮LY⸮⸮$Ns⸮⸮Z?⸮l#96.32#3779#49560#49560#49560
+Packet Sent:#78#Round Trip Time#1012696#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#-Z⸮J⸮⸮5P3⸮A ⸮⸮ӆ#97.27#3775#49560#49560#49560
+Packet Sent:#79#Round Trip Time#1013479#Encryption Time Sender#3763#Decryption Time Sender#3775#Message:#⸮⸮⸮⸮⸮⸮K`3⸮A ⸮⸮ӆ#96.27#3775#49560#49448#49560
+Packet Sent:#80#Round Trip Time#1008960#Encryption Time Sender#3712#Decryption Time Sender#3760#Message:#v⸮l⸮٫⸮⸮⸮m⸮⸮Y7{#96.45#3776#49560#49560#49560
+Packet Sent:#81#Round Trip Time#1012613#Encryption Time Sender#3763#Decryption Time Sender#3775#Message:#⸮⸮^⸮⸮_↟~~1⸮S#95.10#3817#49560#49560#49560
+Packet Sent:#82#Round Trip Time#1012882#Encryption Time Sender#3764#Decryption Time Sender#3779#Message:#E5⸮⸮⸮#43⸮⸮m⸮⸮Y7{#96.30#3776#49560#49560#49560
+Packet Sent:#83#Round Trip Time#1012934#Encryption Time Sender#3763#Decryption Time Sender#3790#Message:#j⸮⸮v?⸮vp3⸮A ⸮⸮ӆ#95.79#3775#49560#49560#49560
+Packet Sent:#84#Round Trip Time#1012694#Encryption Time Sender#3763#Decryption Time Sender#3780#Message:#<⸮iD⸮⸮u⸮⸮m⸮⸮Y7{#94.57#3776#49560#49560#49560
+Packet Sent:#85#Round Trip Time#1011239#Encryption Time Sender#3764#Decryption Time Sender#3763#Message:#⸮⸮к⸮Pa⸮⸮m⸮⸮Y7{#95.55#3776#49560#49560#49560
+Packet Sent:#86#Round Trip Time#1012683#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#xe⸮p@=Ns⸮⸮Z?⸮l#95.20#3779#49560#49560#49560
+Packet Sent:#87#Round Trip Time#1013230#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#wO⸮zx⸮⸮m⸮⸮Y7{#92.17#3776#49560#49560#49560
+Packet Sent:#88#Round Trip Time#1012787#Encryption Time Sender#3763#Decryption Time Sender#3771#Message:#⸮⸮⸮⸮)⸮⸮⸮m⸮⸮Y7{#94.99#3776#49560#49560#49560
+Packet Sent:#89#Round Trip Time#1013143#Encryption Time Sender#3764#Decryption Time Sender#3775#Message:#⸮⸮#⸮⸮⸮⸮m⸮⸮Y7{#94.70#3776#49560#49560#49560
+Packet Sent:#90#Round Trip Time#1012911#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#{h3SET	⸮⸮⸮⸮	⸮⸮2>#95.28#3780#49560#49560#49560
+Packet Sent:#91#Round Trip Time#1012611#Encryption Time Sender#3767#Decryption Time Sender#3772#Message:#⸮⸮⸮⸮⸮⸮Ns⸮⸮Z?⸮l#95.08#3779#49560#49560#49560
+Packet Sent:#92#Round Trip Time#1012940#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#b⸮!⸮⸮⸮5⸮Ns⸮⸮Z?⸮l#94.72#3779#49560#49560#49560
+Packet Sent:#93#Round Trip Time#1012923#Encryption Time Sender#3767#Decryption Time Sender#3776#Message:#⸮[F⸮+⸮Ns⸮⸮Z?⸮l#96.83#3779#49560#49560#49560
+Packet Sent:#94#Round Trip Time#1012580#Encryption Time Sender#3764#Decryption Time Sender#3772#Message:#⸮L1iĪ`⸮⸮m⸮⸮Y7{#96.46#3776#49560#49560#49560
+Packet Sent:#95#Round Trip Time#1010099#Encryption Time Sender#3723#Decryption Time Sender#3760#Message:#xLy⸮M⸮⸮⸮m⸮⸮Y7{#98.63#3776#49560#49448#49560
+Packet Sent:#96#Round Trip Time#1008822#Encryption Time Sender#3708#Decryption Time Sender#3752#Message:#+⸮'⸮:F⸮⸮⸮⸮	⸮⸮2>#96.93#3780#49560#49560#49560
+Packet Sent:#97#Round Trip Time#1012802#Encryption Time Sender#3763#Decryption Time Sender#3772#Message:#⸮[F⸮+⸮⸮⸮m⸮⸮Y7{#96.83#3776#49560#49560#49560
+Packet Sent:#98#Round Trip Time#1012917#Encryption Time Sender#3763#Decryption Time Sender#3775#Message:#?⸮⸮⸮⸮4c⸮⸮⸮m⸮⸮Y7{#97.23#3776#49560#49560#49560
+Packet Sent:#99#Round Trip Time#1013055#Encryption Time Sender#3767#Decryption Time Sender#3776#Message:#⸮%⸮u[M⸮⸮⸮m⸮⸮Y7{#97.39#3776#49560#49560#49560
+Packet Sent:#100#Round Trip Time#1012790#Encryption Time Sender#3764#Decryption Time Sender#3772#Message:#⸮⸮~⸮⸮⸮⸮m⸮⸮Y7{#95.35#3776#49560#49560#49560
+Packet Sent:#101#Round Trip Time#1012926#Encryption Time Sender#3767#Decryption Time Sender#3776#Message:#}⸮a⸮΀⸮m⸮⸮Y7{#95.82#3776#49560#49560#49560
+Packet Sent:#102#Round Trip Time#1012912#Encryption Time Sender#3763#Decryption Time Sender#3780#Message:#⸮C⸮&⸮MUf⸮⸮m⸮⸮Y7{#96.10#3776#49560#49560#49560
+Packet Sent:#103#Round Trip Time#1012665#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#⸮⸮j⸮⸮Ɉ[⸮⸮m⸮⸮Y7{#96.57#3776#49560#49560#49560
+Packet Sent:#104#Round Trip Time#1012905#Encryption Time Sender#3763#Decryption Time Sender#3772#Message:#&⸮`⸮ ⸮⸮⸮k⸮?#97.02#3791#49560#49560#49560
+Packet Sent:#105#Round Trip Time#1009868#Encryption Time Sender#3763#Decryption Time Sender#3768#Message:#⸮іo⸮⸮k⸮⸮m⸮⸮Y7{#95.61#3776#49560#49560#49560
+Packet Sent:#106#Round Trip Time#1012840#Encryption Time Sender#3766#Decryption Time Sender#3779#Message:#d:⸮⸮Q⸮⸮3⸮A ⸮⸮ӆ#96.42#3775#49560#49560#49560
+Packet Sent:#107#Round Trip Time#1012911#Encryption Time Sender#3763#Decryption Time Sender#3775#Message:#⸮⸮k⸮9f⸮yNs⸮⸮Z?⸮l#95.71#3779#49560#49560#49560
+Packet Sent:#108#Round Trip Time#1012840#Encryption Time Sender#3767#Decryption Time Sender#3775#Message:#⸮⸮#⸮⸮⸮⸮m⸮⸮Y7{#94.70#3776#49560#49560#49560
+Packet Sent:#109#Round Trip Time#1012565#Encryption Time Sender#3763#Decryption Time Sender#3775#Message:#.⸮⸮⸮5Ns⸮⸮Z?⸮l#95.04#3779#49560#49560#49560
+Packet Sent:#110#Round Trip Time#1012936#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#D⸮G⺀⸮⸮⸮⸮m⸮⸮Y7{#94.15#3776#49560#49560#49560
+Packet Sent:#111#Round Trip Time#1013823#Encryption Time Sender#3763#Decryption Time Sender#3772#Message:#⸮b⸮[⸮4Ns⸮⸮Z?⸮l#95.37#3779#49560#49448#49448
+Packet Sent:#112#Round Trip Time#1012905#Encryption Time Sender#3763#Decryption Time Sender#3779#Message:#}⸮W⸮ (⸮⸮⸮⸮⸮⸮k⸮?#96.15#3791#49560#49560#49560
+Packet Sent:#113#Round Trip Time#1012824#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#E5⸮⸮⸮#43⸮⸮m⸮⸮Y7{#96.30#3776#49560#49560#49560
+Packet Sent:#114#Round Trip Time#1012681#Encryption Time Sender#3764#Decryption Time Sender#3776#Message:#⸮⸮S8[⸮	⸮⸮m⸮⸮Y7{#95.78#3776#49560#49560#49560
+Packet Sent:#115#Round Trip Time#1013109#Encryption Time Sender#3767#Decryption Time Sender#3787#Message:#⸮՟⸮⸮⸮}⸮⸮⸮m⸮⸮Y7{#95.84#3776#49560#49560#49560
+Packet Sent:#116#Round Trip Time#1012612#Encryption Time Sender#3763#Decryption Time Sender#3775#Message:#⸮⸮⸮9,⸮ʷ⸮1⸮⸮⸮#96.25#3768#49560#49560#49560
+Packet Sent:#117#Round Trip Time#1011325#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#B⸮⸮r⸮⸮⸮m⸮⸮Y7{#96.84#3776#49560#49560#49560
+Packet Sent:#118#Round Trip Time#1012828#Encryption Time Sender#3763#Decryption Time Sender#3779#Message:#⸮:⸮7ׄo⸮⸮m⸮⸮Y7{#95.96#3776#49560#49560#49560
+Packet Sent:#119#Round Trip Time#1012819#Encryption Time Sender#3763#Decryption Time Sender#3772#Message:#⸮՟⸮⸮⸮}⸮3⸮A ⸮⸮ӆ#95.84#3775#49560#49560#49560
+Packet Sent:#120#Round Trip Time#1012990#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#⸮⸮⸮⸮u-⸮⸮⸮m⸮⸮Y7{#96.21#3776#49560#49560#49560
+Packet Sent:#121#Round Trip Time#1013075#Encryption Time Sender#3763#Decryption Time Sender#3775#Message:#r⸮CY⸮⸮$⸮⸮⸮⸮	⸮⸮2>#95.40#3780#49560#49560#49560
+Packet Sent:#122#Round Trip Time#1012906#Encryption Time Sender#3766#Decryption Time Sender#3775#Message:#⸮{⸮⸮⸮⸮⸮⸮⸮1⸮⸮⸮#96.11#3768#49560#49560#49560
+Packet Sent:#123#Round Trip Time#1012809#Encryption Time Sender#3763#Decryption Time Sender#3775#Message:#⸮⸮к⸮Pa⸮⸮m⸮⸮Y7{#95.55#3776#49560#49560#49560
+Packet Sent:#124#Round Trip Time#1012883#Encryption Time Sender#3767#Decryption Time Sender#3772#Message:#=⸮⸮g⸮g⸮⸮m⸮⸮Y7{#95.01#3776#49560#49560#49560
+Packet Sent:#125#Round Trip Time#1012698#Encryption Time Sender#3763#Decryption Time Sender#3779#Message:#o:\p⸮U@Ҁ⸮m⸮⸮Y7{#95.60#3776#49560#49560#49560
+Packet Sent:#126#Round Trip Time#1013623#Encryption Time Sender#3763#Decryption Time Sender#3771#Message:#⸮⸮n⸮m⸮c⸮⸮m⸮⸮Y7{#95.39#3776#49560#49448#49448
+Packet Sent:#127#Round Trip Time#1014470#Encryption Time Sender#3763#Decryption Time Sender#3790#Message:#jD}⸮U⸮9`⸮⸮⸮	⸮⸮2>#95.13#3780#49560#49560#49560
+Packet Sent:#128#Round Trip Time#1012819#Encryption Time Sender#3763#Decryption Time Sender#3772#Message:#(y⸮⸮⸮⸮K⸮⸮m⸮⸮Y7{#95.22#3776#49560#49560#49560
+Packet Sent:#129#Round Trip Time#1012113#Encryption Time Sender#3714#Decryption Time Sender#3772#Message:#Ѐ⸮⸮IJ⸮⸮⸮⸮m⸮⸮Y7{#96.07#3776#49560#49560#49560
+Packet Sent:#130#Round Trip Time#1012700#Encryption Time Sender#3763#Decryption Time Sender#3779#Message:#E5⸮⸮⸮#43⸮⸮⸮	⸮⸮2>#96.30#3780#49560#49560#49560
+Packet Sent:#131#Round Trip Time#1012908#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#JM⸮⸮U⸮Ns⸮⸮Z?⸮l#96.08#3779#49560#49560#49560
+Packet Sent:#132#Round Trip Time#1012851#Encryption Time Sender#3763#Decryption Time Sender#3772#Message:#r⸮CY⸮⸮$⸮⸮⸮m⸮⸮Y7{#95.40#3776#49560#49560#49560
+Packet Sent:#133#Round Trip Time#1013065#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#⸮7G%H⸮(⸮⸮m⸮⸮Y7{#95.74#3776#49560#49560#49560
+Packet Sent:#134#Round Trip Time#1012888#Encryption Time Sender#3766#Decryption Time Sender#3776#Message:#⸮N⸮⸮⸮K⸮Y⸮⸮m⸮⸮Y7{#96.44#3776#49560#49560#49560
+Packet Sent:#135#Round Trip Time#1013480#Encryption Time Sender#3763#Decryption Time Sender#3772#Message:#g⸮⸮HJ⸮2⸮⸮m⸮⸮Y7{#96.54#3776#49560#49560#49560
+Packet Sent:#136#Round Trip Time#1012922#Encryption Time Sender#3764#Decryption Time Sender#3776#Message:#⸮⸮ɩX⸮8(⸮⸮⸮	⸮⸮2>#95.72#3780#49560#49560#49560
+Packet Sent:#137#Round Trip Time#1012912#Encryption Time Sender#3763#Decryption Time Sender#3780#Message:#⸮N⸮⸮k⸮⸮⸮m⸮⸮Y7{#95.48#3776#49560#49560#49560
+Packet Sent:#138#Round Trip Time#1012695#Encryption Time Sender#3767#Decryption Time Sender#3772#Message:#⸮⸮~⸮⸮⸮⸮m⸮⸮Y7{#95.35#3776#49560#49560#49560
+Packet Sent:#139#Round Trip Time#1012653#Encryption Time Sender#3763#Decryption Time Sender#3772#Message:#⸮{⸮Գ⸮⸮Ns⸮⸮Z?⸮l#94.23#3779#49560#49560#49560
+Packet Sent:#140#Round Trip Time#1011343#Encryption Time Sender#3778#Decryption Time Sender#3776#Message:#⸮Bfj⸮⸮⸮m⸮⸮Y7{#94.66#3776#49560#49560#49560
+Packet Sent:#141#Round Trip Time#1013052#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#⸮`⸮⸮r⸮BNs⸮⸮Z?⸮l#94.45#3779#49560#49560#49560
+Packet Sent:#142#Round Trip Time#1013277#Encryption Time Sender#3763#Decryption Time Sender#3772#Message:#⸮,_⸮:⸮D⸮⸮m⸮⸮Y7{#94.86#3776#49560#49448#49560
+Packet Sent:#143#Round Trip Time#1008952#Encryption Time Sender#3711#Decryption Time Sender#3752#Message:#⸮⸮?+p^'⸮⸮⸮m⸮⸮Y7{#94.82#3776#49560#49560#49560
+Packet Sent:#144#Round Trip Time#1012907#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#⸮⸮n⸮m⸮c⸮⸮m⸮⸮Y7{#95.39#3776#49560#49560#49560
+Packet Sent:#145#Round Trip Time#1012915#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#⸮,_⸮:⸮D⸮⸮m⸮⸮Y7{#94.86#3776#49560#49560#49560
+Packet Sent:#146#Round Trip Time#1012901#Encryption Time Sender#3763#Decryption Time Sender#3780#Message:#⸮⸮⸮>*⸮큀⸮m⸮⸮Y7{#95.54#3776#49560#49560#49560
+Packet Sent:#147#Round Trip Time#1012938#Encryption Time Sender#3763#Decryption Time Sender#3790#Message:#⸮⸮⸮c⸮4]⸮⸮'BD⸮(#95.58#3790#49560#49560#49560
+Packet Sent:#148#Round Trip Time#1012884#Encryption Time Sender#3764#Decryption Time Sender#3772#Message:#I⸮⸮⸮0⸮⸮m⸮⸮Y7{#95.94#3776#49560#49560#49560
+Packet Sent:#149#Round Trip Time#1012224#Encryption Time Sender#3715#Decryption Time Sender#3771#Message:#zy<⸮⸮⸮⸮㐟⸮	⸮⸮2>#95.86#3780#49560#49560#49560
+Packet Sent:#150#Round Trip Time#1012896#Encryption Time Sender#3767#Decryption Time Sender#3779#Message:#r⸮CY⸮⸮$⸮⸮⸮m⸮⸮Y7{#95.40#3776#49560#49560#49560
+Packet Sent:#151#Round Trip Time#1011343#Encryption Time Sender#3778#Decryption Time Sender#3776#Message:#V⸮⸮uQ(Ns⸮⸮Z?⸮l#96.90#3779#49560#49560#49560
+Packet Sent:#152#Round Trip Time#1013256#Encryption Time Sender#3766#Decryption Time Sender#3776#Message:#⸮⸮⸮⸮⸮⸮*⸮⸮m⸮⸮Y7{#95.69#3776#49560#49560#49560
+Packet Sent:#153#Round Trip Time#1012826#Encryption Time Sender#3764#Decryption Time Sender#3776#Message:#⸮7G%H⸮(⸮⸮m⸮⸮Y7{#95.74#3776#49560#49560#49560
+Packet Sent:#154#Round Trip Time#1012680#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#<⸮iD⸮⸮uNs⸮⸮Z?⸮l#94.57#3779#49560#49560#49560
+Packet Sent:#155#Round Trip Time#1013223#Encryption Time Sender#3767#Decryption Time Sender#3776#Message:#⸮⸮#⸮⸮⸮⸮m⸮⸮Y7{#94.70#3776#49560#49560#49560
+Packet Sent:#156#Round Trip Time#1012729#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#⸮u(˝⸮.Ns⸮⸮Z?⸮l#93.93#3779#49560#49560#49560
+Packet Sent:#157#Round Trip Time#1012605#Encryption Time Sender#3763#Decryption Time Sender#3772#Message:#⸮,_⸮:⸮D⸮⸮m⸮⸮Y7{#94.86#3776#49560#49560#49560
+Packet Sent:#158#Round Trip Time#1013749#Encryption Time Sender#3767#Decryption Time Sender#3772#Message:#⸮Bfj⸮⸮⸮m⸮⸮Y7{#94.66#3776#49560#49448#49448
+Packet Sent:#159#Round Trip Time#1012971#Encryption Time Sender#3767#Decryption Time Sender#3775#Message:#B⸮⸮⸮⸮⸮Z⸮⸮m⸮⸮Y7{#95.02#3776#49560#49560#49560
+Packet Sent:#160#Round Trip Time#1012597#Encryption Time Sender#3763#Decryption Time Sender#3775#Message:#=<⸮2⸮⸮⸮ƀ⸮m⸮⸮Y7{#95.15#3776#49560#49560#49560
+Packet Sent:#161#Round Trip Time#1012848#Encryption Time Sender#3763#Decryption Time Sender#3790#Message:#⸮⸮챡⸮⸮C⸮⸮m⸮⸮Y7{#95.05#3776#49560#49560#49560
+Packet Sent:#162#Round Trip Time#1013222#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#⸮⸮챡⸮⸮CNs⸮⸮Z?⸮l#95.05#3779#49560#49560#49560
+Packet Sent:#163#Round Trip Time#1011194#Encryption Time Sender#3763#Decryption Time Sender#3767#Message:#[⸮&c[,⸮~W⸮>2#95.19#3856#49560#49560#49560
+Packet Sent:#164#Round Trip Time#1012987#Encryption Time Sender#3767#Decryption Time Sender#3776#Message:#⸮⸮a⸮⸮⸮m⸮⸮Y7{#94.95#3776#49560#49560#49560
+Packet Sent:#165#Round Trip Time#1012697#Encryption Time Sender#3763#Decryption Time Sender#3775#Message:#ѥ⸮A@ ⸮Ns⸮⸮Z?⸮l#95.70#3779#49560#49560#49560
+Packet Sent:#166#Round Trip Time#1012596#Encryption Time Sender#3766#Decryption Time Sender#3772#Message:#⸮:⸮7ׄo⸮⸮m⸮⸮Y7{#95.96#3776#49560#49560#49560
+Packet Sent:#167#Round Trip Time#1012764#Encryption Time Sender#3764#Decryption Time Sender#3780#Message:#⸮s⸮⸮8 ⸮⸮m⸮⸮Y7{#94.84#3776#49560#49560#49560
+Packet Sent:#168#Round Trip Time#1012917#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#<YL⸮⸮O⸮⸮⸮m⸮⸮Y7{#95.44#3776#49560#49560#49560
+Packet Sent:#169#Round Trip Time#1013221#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#˽⸮ge⸮'F⸮⸮⸮	⸮⸮2>#96.56#3780#49560#49560#49560
+Packet Sent:#170#Round Trip Time#1013017#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#Zo⸮Ϸ⸮⸮⸮⸮m⸮⸮Y7{#96.40#3776#49560#49560#49560
+Packet Sent:#171#Round Trip Time#1012955#Encryption Time Sender#3766#Decryption Time Sender#3776#Message:#⸮⸮=⸮;9⸮À⸮m⸮⸮Y7{#97.69#3776#49560#49560#49560
+Packet Sent:#172#Round Trip Time#1012554#Encryption Time Sender#3763#Decryption Time Sender#3772#Message:#˽⸮ge⸮'F⸮⸮⸮	⸮⸮2>#96.56#3780#49560#49560#49560
+Packet Sent:#173#Round Trip Time#1012695#Encryption Time Sender#3763#Decryption Time Sender#3779#Message:#E5⸮⸮⸮#43⸮⸮m⸮⸮Y7{#96.30#3776#49560#49560#49560
+Packet Sent:#174#Round Trip Time#1012277#Encryption Time Sender#3779#Decryption Time Sender#3775#Message:#⸮⸮⸮"⸮}8⸮⸮m⸮⸮Y7{#96.95#3776#49560#49448#49448
+Packet Sent:#175#Round Trip Time#1012726#Encryption Time Sender#3767#Decryption Time Sender#3775#Message:#⸮T⸮T⸮⸮⸮⸮m⸮⸮Y7{#97.29#3776#49560#49560#49560
+Packet Sent:#176#Round Trip Time#1009462#Encryption Time Sender#3763#Decryption Time Sender#3763#Message:#䢊⸮`H⸮⸮m⸮⸮Y7{#97.31#3776#49560#49560#49560
+Packet Sent:#177#Round Trip Time#1012894#Encryption Time Sender#3764#Decryption Time Sender#3776#Message:#⸮w⸮⸮⸮⸮⸮⸮	⸮⸮2>#96.23#3780#49560#49560#49560
+Packet Sent:#178#Round Trip Time#1012967#Encryption Time Sender#3763#Decryption Time Sender#3775#Message:#?⸮⸮⸮⸮o⸮籰G⸮	&m⸮#93.24#3811#49560#49560#49560
+Packet Sent:#179#Round Trip Time#1012783#Encryption Time Sender#3764#Decryption Time Sender#3771#Message:#⸮⸮⸮⸮⸮⸮*⸮⸮m⸮⸮Y7{#95.69#3776#49560#49560#49560
+Packet Sent:#180#Round Trip Time#1012721#Encryption Time Sender#3767#Decryption Time Sender#3775#Message:#ђ⸮⸮⸮⸮L/⸮⸮m⸮⸮Y7{#95.49#3776#49560#49560#49560
+Packet Sent:#181#Round Trip Time#1012654#Encryption Time Sender#3764#Decryption Time Sender#3775#Message:#s⸮⸮⸮⸮8⸮⸮⸮⸮⸮	⸮⸮2>#95.24#3780#49560#49560#49560
+Packet Sent:#182#Round Trip Time#1012715#Encryption Time Sender#3766#Decryption Time Sender#3772#Message:#ewK⸮⸮⸮ǀ⸮m⸮⸮Y7{#95.23#3776#49560#49560#49560
+Packet Sent:#183#Round Trip Time#1013130#Encryption Time Sender#3763#Decryption Time Sender#3779#Message:#⸮⸮MgN⸮⸮3⸮A ⸮⸮ӆ#95.51#3775#49560#49560#49560
+Packet Sent:#184#Round Trip Time#1012901#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#⸮⸮⸮R⸮i⸮z3⸮A ⸮⸮ӆ#94.93#3775#49560#49560#49560
+Packet Sent:#185#Round Trip Time#1009447#Encryption Time Sender#3759#Decryption Time Sender#3772#Message:#⸮N⸮⸮⸮K⸮Y⸮⸮m⸮⸮Y7{#96.44#3776#49560#49560#49560
+Packet Sent:#186#Round Trip Time#1012914#Encryption Time Sender#3763#Decryption Time Sender#3775#Message:#⸮⸮⸮⸮⸮⸮⸮w⸮⸮m⸮⸮Y7{#96.47#3776#49560#49560#49560
+Packet Sent:#187#Round Trip Time#1013436#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#⸮⸮⸮d⸮ꓦ⸮⸮⸮⸮k⸮?#95.98#3791#49560#49560#49560
+Packet Sent:#188#Round Trip Time#1013390#Encryption Time Sender#3763#Decryption Time Sender#3772#Message:#⸮&⸮⸮&⸮⸮⸮m⸮⸮Y7{#90.33#3776#49560#49560#49560
+Packet Sent:#189#Round Trip Time#1013883#Encryption Time Sender#3767#Decryption Time Sender#3772#Message:#g⸮⸮B⸮2⸮⸮⸮m⸮⸮Y7{#95.59#3776#49560#49448#49448
+Packet Sent:#190#Round Trip Time#1012690#Encryption Time Sender#3763#Decryption Time Sender#3779#Message:#=<⸮2⸮⸮⸮ƀ⸮m⸮⸮Y7{#95.15#3776#49560#49560#49560
+Packet Sent:#191#Round Trip Time#1012974#Encryption Time Sender#3767#Decryption Time Sender#3776#Message:#Ӷat?⸮ˀ⸮m⸮⸮Y7{#96.06#3776#49560#49560#49560
+Packet Sent:#192#Round Trip Time#1013000#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#⸮u97<q⸮⸮m⸮⸮Y7{#99.34#3776#49560#49560#49560
+Packet Sent:#193#Round Trip Time#1012875#Encryption Time Sender#3764#Decryption Time Sender#3776#Message:#<⸮⸮⸮}pϨ⸮'BD⸮(#98.10#3790#49560#49560#49560
+Packet Sent:#194#Round Trip Time#1012715#Encryption Time Sender#3767#Decryption Time Sender#3772#Message:#[⸮⸮⸮⸮⸮⸮⸮m⸮⸮Y7{#100.2#3776#49560#49560#49560
+Packet Sent:#195#Round Trip Time#1012726#Encryption Time Sender#3763#Decryption Time Sender#3791#Message:#⸮⸮⸮D7g߀⸮m⸮⸮Y7{#99.38#3776#49560#49560#49560
+Packet Sent:#196#Round Trip Time#1012944#Encryption Time Sender#3766#Decryption Time Sender#3776#Message:#m⸮ay⸮z\⸮⸮m⸮⸮Y7{#96.70#3776#49560#49560#49560
+Packet Sent:#197#Round Trip Time#1010036#Encryption Time Sender#3763#Decryption Time Sender#3776#Message:#⸮*9⸮%⸮⸮⸮⸮⸮	⸮⸮2>#96.09#3780#49560#49560#49560
+Packet Sent:#198#Round Trip Time#1009455#Encryption Time Sender#3759#Decryption Time Sender#3760#Message:#⸮ ⸮⸮⸮ƛ⸮3⸮A ⸮⸮ӆ#99.99#3775#49560#49560#49560
+Packet Sent:#199#Round Trip Time#1012777#Encryption Time Sender#3763#Decryption Time Sender#3772#Message:#G⸮x'⸮8⸮⸮m⸮⸮Y7{#99.70#3776#49560#49560#49560
+Packet Sent:#200#Round Trip Time#1012930#Encryption Time Sender#3763#Decryption Time Sender#3775#Message:#⸮⸮⸮⸮8⸮⸮⸮m⸮⸮Y7{#97.32#3776#49560#49560#49560

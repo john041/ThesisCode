@@ -96,7 +96,7 @@ void recieve(char* topic, byte* message, unsigned int length) {
   Serial.print("#Tag#");
   if(tag == 0){ Serial.print("True"); } else { Serial.print("False"); }
   Serial.print("#Message:#");
-  printByte(decryptedData, sizeof(decryptedData));              //Print decrypted message and memory messurments
+  printByte(decryptedData, 12);              //Print decrypted message and memory messurments
   Serial.print("#");
   printByte(message, length);
   Serial.println("");

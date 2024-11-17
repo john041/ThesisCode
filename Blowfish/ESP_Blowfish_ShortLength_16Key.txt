@@ -1,0 +1,200 @@
+Packet Sent:#1#Round Trip Time#128255#Encryption Time Sender#64#Encryption Time Sender#119#Message:#⸮lѾ⸮⸮⸮⸮⸮⸮0⸮#12.10# 142#41824#41824#41824
+Packet Sent:#2#Round Trip Time#162150#Encryption Time Sender#72#Encryption Time Sender#29#Message:#⸮́ 6⸮⸮⸮Ҏ⸮]Q⸮##11.99#  40#41824#41824#41824
+Packet Sent:#3#Round Trip Time#148727#Encryption Time Sender#76#Encryption Time Sender#36#Message:#* ⸮U⸮⸮⸮⸮0⸮#11.97# 142#41824#41824#41824
+Packet Sent:#4#Round Trip Time#164739#Encryption Time Sender#72#Encryption Time Sender#28#Message:#⸮t+⸮⸮⸮P⸮⸮⸮⸮⸮0⸮#11.90# 142#41824#41824#41712
+Packet Sent:#5#Round Trip Time#156213#Encryption Time Sender#88#Encryption Time Sender#52#Message:#⸮⸮.o⸮⸮⸮⸮´⸮B⸮#11.99# 143#41712#41824#41824
+Packet Sent:#6#Round Trip Time#158312#Encryption Time Sender#80#Encryption Time Sender#32#Message:#⸮]K⸮B⸮⸮⸮⸮0⸮#11.91# 142#41824#41824#41824
+Packet Sent:#7#Round Trip Time#157082#Encryption Time Sender#76#Encryption Time Sender#36#Message:#⸮⸮.o⸮⸮⸮⸮⸮⸮0⸮#11.99# 142#41824#41824#41712
+Packet Sent:#8#Round Trip Time#156246#Encryption Time Sender#80#Encryption Time Sender#36#Message:#Up0d⸮⸮I⸮⸮⸮⸮0⸮#11.66# 142#41712#41824#41824
+Packet Sent:#9#Round Trip Time#157886#Encryption Time Sender#76#Encryption Time Sender#36#Message:#⸮R⸮DHnq⸮⸮⸮⸮⸮0⸮#11.62# 142#41824#41824#41824
+Packet Sent:#10#Round Trip Time#150931#Encryption Time Sender#79#Encryption Time Sender#32#Message:#⸮⸮⸮@Bt⸮_⸮⸮⸮⸮rM⸮#11.64#  48#41824#41824#41712
+Packet Sent:#11#Round Trip Time#163269#Encryption Time Sender#88#Encryption Time Sender#44#Message:#qK⸮⸮⸮<g⸮⸮⸮´⸮B⸮#11.51# 143#41712#41320#41320
+Packet Sent:#12#Round Trip Time#149908#Encryption Time Sender#88#Encryption Time Sender#32#Message:#U⸮a)⸮Y⸮⸮⸮⸮⸮0⸮#11.93# 142#41320#41320#41320
+Packet Sent:#13#Round Trip Time#156383#Encryption Time Sender#75#Encryption Time Sender#36#Message:#'nFW⸮^⸮⸮⸮⸮⸮rM⸮#11.45#  48#41320#41320#41208
+Packet Sent:#14#Round Trip Time#152553#Encryption Time Sender#84#Encryption Time Sender#36#Message:#⸮⸮⸮⸮Bs1⸮⸮´⸮B⸮#11.63# 143#41208#41320#41320
+Packet Sent:#15#Round Trip Time#152694#Encryption Time Sender#76#Encryption Time Sender#32#Message:#7=⸮⸮⸮X⸮⸮⸮⸮⸮0⸮#11.84# 142#41320#41320#41320
+Packet Sent:#16#Round Trip Time#166115#Encryption Time Sender#88#Encryption Time Sender#36#Message:#Pa⸮v5+ ⸮⸮yP⸮⸮:K#12.07#  44#41320#41208#41208
+Packet Sent:#17#Round Trip Time#147441#Encryption Time Sender#84#Encryption Time Sender#32#Message:#⸮/⸮⸮⸮V⸮⸮´⸮B⸮#11.81# 143#41320#41320#41320
+Packet Sent:#18#Round Trip Time#154502#Encryption Time Sender#76#Encryption Time Sender#36#Message:#⸮⸮⸮@E⸮⸮⸮yP⸮⸮:K#11.79# 144#41320#41320#41320
+Packet Sent:#19#Round Trip Time#154125#Encryption Time Sender#76#Encryption Time Sender#33#Message:#]⸮#⸮k:5⸮⸮´⸮B⸮#11.77# 143#41320#41320#41320
+Packet Sent:#20#Round Trip Time#160013#Encryption Time Sender#80#Encryption Time Sender#36#Message:#⸮⸮XR!d⸮⸮⸮e⸮V8#11.57#  52#41320#41320#41320
+Packet Sent:#21#Round Trip Time#151597#Encryption Time Sender#76#Encryption Time Sender#32#Message:#.⸮L⸮⸮|⸮Q⸮⸮⸮⸮0⸮#11.64# 142#41320#41320#41320
+Packet Sent:#22#Round Trip Time#158097#Encryption Time Sender#87#Encryption Time Sender#36#Message:#⸮⸮$)⸮A⸮⸮⸮⸮⸮0⸮#11.60# 142#41320#41320#41208
+Packet Sent:#23#Round Trip Time#156412#Encryption Time Sender#84#Encryption Time Sender#40#Message:#⸮⸮$)⸮A⸮⸮⸮´⸮B⸮#11.60# 143#41208#41320#41320
+Packet Sent:#24#Round Trip Time#150828#Encryption Time Sender#88#Encryption Time Sender#36#Message:#.⸮L⸮⸮|⸮Q⸮⸮⸮⸮0⸮#11.64# 142#41320#41320#41320
+Packet Sent:#25#Round Trip Time#160561#Encryption Time Sender#68#Encryption Time Sender#32#Message:#A⸮H⸮⸮⸮⸮⸮0⸮#11.56# 142#41320#41320#41320
+Packet Sent:#26#Round Trip Time#152989#Encryption Time Sender#87#Encryption Time Sender#36#Message:#xJ⸮⸮Q(=M⸮⸮´⸮B⸮#11.52# 143#41320#41320#41320
+Packet Sent:#27#Round Trip Time#161033#Encryption Time Sender#68#Encryption Time Sender#33#Message:#⸮{⸮;_yƂ⸮⸮´⸮B⸮#11.54# 143#41320#41320#41320
+Packet Sent:#28#Round Trip Time#151830#Encryption Time Sender#96#Encryption Time Sender#36#Message:#⸮{⸮;_yƂ⸮⸮⸮⸮0⸮#11.54# 142#41320#41320#41320
+Packet Sent:#29#Round Trip Time#155491#Encryption Time Sender#72#Encryption Time Sender#32#Message:#⸮R⸮DHnq⸮⸮⸮⸮⸮0⸮#11.62# 142#41320#41320#41320
+Packet Sent:#30#Round Trip Time#167662#Encryption Time Sender#84#Encryption Time Sender#36#Message:#Up0d⸮⸮I⸮⸮⸮⸮0⸮#11.66# 142#41320#41320#41320
+Packet Sent:#31#Round Trip Time#143662#Encryption Time Sender#72#Encryption Time Sender#32#Message:#⸮vRԗuq⸮⸮⸮⸮⸮rM⸮#11.66#  48#41320#41320#41320
+Packet Sent:#32#Round Trip Time#153942#Encryption Time Sender#83#Encryption Time Sender#36#Message:#⸮`⸮H⸮⸮۬⸮´⸮B⸮#11.59# 143#41320#41208#41208
+Packet Sent:#33#Round Trip Time#153236#Encryption Time Sender#84#Encryption Time Sender#36#Message:#⸮N⸮%⸮[B⸮⸮⸮⸮⸮0⸮#11.86# 142#41320#41320#41320
+Packet Sent:#34#Round Trip Time#165667#Encryption Time Sender#91#Encryption Time Sender#36#Message:#⸮⸮⸮⸮j'⸮⸮⸮⸮⸮rM⸮#11.62#  48#41320#41320#41320
+Packet Sent:#35#Round Trip Time#147507#Encryption Time Sender#68#Encryption Time Sender#32#Message:#⸮⸮^⸮3`⸮⸮⸮⸮⸮⸮0⸮#11.87# 142#41320#41320#41320
+Packet Sent:#36#Round Trip Time#155832#Encryption Time Sender#84#Encryption Time Sender#37#Message:#⸮п@I⸮|⸮⸮⸮´⸮B⸮#11.76# 143#41320#41320#41320
+Packet Sent:#37#Round Trip Time#158405#Encryption Time Sender#76#Encryption Time Sender#32#Message:#⸮⸮⸮@Bt⸮_⸮⸮⸮⸮rM⸮#11.64#  48#41320#41320#41320
+Packet Sent:#38#Round Trip Time#153097#Encryption Time Sender#84#Encryption Time Sender#36#Message:#⸮R⸮DHnq⸮⸮⸮⸮⸮0⸮#11.62# 142#41320#41320#41320
+Packet Sent:#39#Round Trip Time#151857#Encryption Time Sender#79#Encryption Time Sender#32#Message:#⸮)*դ⸮⸮(p0X⸮#11.72# 145#41320#41320#41320
+Packet Sent:#40#Round Trip Time#160442#Encryption Time Sender#87#Encryption Time Sender#36#Message:#⸮c#r⸮(⸮⸮´⸮B⸮#11.89# 143#41320#41320#41320
+Packet Sent:#41#Round Trip Time#168988#Encryption Time Sender#68#Encryption Time Sender#36#Message:#⸮⸮^np9W⸮⸮⸮⸮⸮#11.83#  64#41320#41320#41320
+Packet Sent:#42#Round Trip Time#137317#Encryption Time Sender#88#Encryption Time Sender#36#Message:#⸮⸮⸮@E⸮⸮⸮⸮⸮⸮0⸮#11.79# 142#41320#41320#41320
+Packet Sent:#43#Round Trip Time#160089#Encryption Time Sender#72#Encryption Time Sender#33#Message:#wo⸮⸮gP⸮⸮⸮⸮´⸮B⸮#11.94# 143#41320#41320#41320
+Packet Sent:#44#Round Trip Time#156675#Encryption Time Sender#84#Encryption Time Sender#37#Message:#⸮⸮⸮49⸮⸮⸮´⸮B⸮#12.02# 143#41320#41320#41320
+Packet Sent:#45#Round Trip Time#152981#Encryption Time Sender#96#Encryption Time Sender#36#Message:#U⸮a)⸮Y⸮⸮⸮´⸮B⸮#11.93# 143#41320#41320#41320
+Packet Sent:#46#Round Trip Time#163482#Encryption Time Sender#72#Encryption Time Sender#32#Message:#7=⸮⸮⸮X⸮⸮⸮´⸮B⸮#11.84# 143#41320#41320#41320
+Packet Sent:#47#Round Trip Time#153833#Encryption Time Sender#84#Encryption Time Sender#36#Message:#A⸮H⸮⸮⸮⸮⸮0⸮#11.56# 142#41320#41320#41320
+Packet Sent:#48#Round Trip Time#155383#Encryption Time Sender#68#Encryption Time Sender#36#Message:#⸮)*դ⸮⸮⸮⸮´⸮B⸮#11.72# 143#41320#41208#41208
+Packet Sent:#49#Round Trip Time#158815#Encryption Time Sender#92#Encryption Time Sender#40#Message:#⸮؟⸮1⸮z⸮⸮´⸮B⸮#11.95# 143#41320#41320#41320
+Packet Sent:#50#Round Trip Time#158682#Encryption Time Sender#76#Encryption Time Sender#32#Message:#⸮uF⸮gSX⸮⸮⸮⸮0⸮#11.96# 142#41320#41320#41320
+Packet Sent:#51#Round Trip Time#155846#Encryption Time Sender#88#Encryption Time Sender#40#Message:#⸮/⸮⸮⸮V⸮⸮´⸮B⸮#11.81# 143#41320#41320#41320
+Packet Sent:#52#Round Trip Time#167634#Encryption Time Sender#72#Encryption Time Sender#32#Message:#m⸮⸮⸮⸮Ľ⸮⸮⸮⸮rM⸮#12.08#  48#41320#41320#41320
+Packet Sent:#53#Round Trip Time#141952#Encryption Time Sender#84#Encryption Time Sender#37#Message:#-{⸮X⸮'⸮⸮´⸮B⸮#12.01# 143#41320#41320#41320
+Packet Sent:#54#Round Trip Time#152871#Encryption Time Sender#72#Encryption Time Sender#32#Message:#⸮؟⸮1⸮z⸮⸮⸮⸮⸮0⸮#11.95# 142#41320#41320#41320
+Packet Sent:#55#Round Trip Time#157712#Encryption Time Sender#83#Encryption Time Sender#36#Message:#W⸮\j⸮⸮x⸮⸮⸮⸮rM⸮#11.85#  48#41320#41320#41320
+Packet Sent:#56#Round Trip Time#155066#Encryption Time Sender#80#Encryption Time Sender#32#Message:#⸮c#r⸮(⸮⸮⸮⸮0⸮#11.89# 142#41320#41320#41320
+Packet Sent:#57#Round Trip Time#152643#Encryption Time Sender#88#Encryption Time Sender#37#Message:#ti\:⸮[%⸮⸮⸮´⸮B⸮#11.83# 143#41320#41320#41320
+Packet Sent:#58#Round Trip Time#159958#Encryption Time Sender#68#Encryption Time Sender#32#Message:#* ⸮U⸮⸮⸮⸮0⸮#11.97# 142#41320#41320#41320
+Packet Sent:#59#Round Trip Time#177232#Encryption Time Sender#84#Encryption Time Sender#36#Message:#⸮f⸮VUR#⸮⸮⸮⸮⸮⸮#11.91#  64#41320#41320#41208
+Packet Sent:#60#Round Trip Time#131854#Encryption Time Sender#91#Encryption Time Sender#36#Message:#⸮⸮b1y,⸮%⸮⸮⸮⸮0⸮#11.88# 142#41208#41320#41320
+Packet Sent:#61#Round Trip Time#160306#Encryption Time Sender#68#Encryption Time Sender#32#Message:#ҫ^⸮}⸮⸮⸮⸮´⸮B⸮#11.92# 143#41320#41320#41320
+Packet Sent:#62#Round Trip Time#153571#Encryption Time Sender#95#Encryption Time Sender#36#Message:#wo⸮⸮gP⸮⸮⸮⸮´⸮B⸮#11.94# 143#41320#41320#41320
+Packet Sent:#63#Round Trip Time#156385#Encryption Time Sender#88#Encryption Time Sender#36#Message:#⸮N⸮%⸮[B⸮⸮⸮´⸮B⸮#11.86# 143#41320#41208#41208
+Packet Sent:#64#Round Trip Time#154777#Encryption Time Sender#76#Encryption Time Sender#37#Message:#⸮⸮^⸮3`⸮⸮⸮´⸮B⸮#11.87# 143#41320#41320#41320
+Packet Sent:#65#Round Trip Time#174133#Encryption Time Sender#84#Encryption Time Sender#36#Message:#U⸮a)⸮Y⸮⸮⸮´⸮B⸮#11.93# 143#41320#41320#41320
+Packet Sent:#66#Round Trip Time#142654#Encryption Time Sender#72#Encryption Time Sender#32#Message:#$⸮⸮⸮L⸮⸮⸮⸮⸮⸮rM⸮#11.92#  48#41320#41320#41320
+Packet Sent:#67#Round Trip Time#150063#Encryption Time Sender#84#Encryption Time Sender#36#Message:#wo⸮⸮gP⸮⸮⸮⸮´⸮B⸮#11.94# 143#41320#41320#41320
+Packet Sent:#68#Round Trip Time#157470#Encryption Time Sender#80#Encryption Time Sender#32#Message:#⸮⸮⸮⸮놬⸮´⸮B⸮#11.85# 143#41320#41320#41320
+Packet Sent:#69#Round Trip Time#155351#Encryption Time Sender#84#Encryption Time Sender#36#Message:#⸮8⸮m⸮⸮۬⸮´⸮B⸮#11.74# 143#41320#41320#41320
+Packet Sent:#70#Round Trip Time#151662#Encryption Time Sender#83#Encryption Time Sender#36#Message:#7=⸮⸮⸮X⸮⸮⸮´⸮B⸮#11.84# 143#41320#41320#41320
+Packet Sent:#71#Round Trip Time#154910#Encryption Time Sender#72#Encryption Time Sender#36#Message:#⸮⸮Rܵw⸮⸮⸮⸮⸮0⸮#11.61# 142#41320#41320#41320
+Packet Sent:#72#Round Trip Time#158647#Encryption Time Sender#88#Encryption Time Sender#37#Message:#]⸮#⸮k:5⸮⸮´⸮B⸮#11.77# 143#41320#41320#41320
+Packet Sent:#73#Round Trip Time#182799#Encryption Time Sender#80#Encryption Time Sender#33#Message:#Y^⸮w㈉⸮⸮⸮e⸮V8#11.75#  52#41320#41320#41320
+Packet Sent:#74#Round Trip Time#131108#Encryption Time Sender#88#Encryption Time Sender#37#Message:#⸮uF⸮gSX⸮⸮´⸮B⸮#11.96# 143#41320#41320#41320
+Packet Sent:#75#Round Trip Time#146096#Encryption Time Sender#68#Encryption Time Sender#36#Message:#⸮⸮.o⸮⸮⸮⸮⸮⸮0⸮#11.99# 142#41320#41320#41320
+Packet Sent:#76#Round Trip Time#157695#Encryption Time Sender#84#Encryption Time Sender#32#Message:#E⸮⸮q⸮⸮⸮⸮⸮⸮⸮rM⸮#11.94#  48#41320#41320#41320
+Packet Sent:#77#Round Trip Time#156817#Encryption Time Sender#72#Encryption Time Sender#41#Message:#⸮N⸮%⸮[B⸮⸮⸮⸮⸮0⸮#11.86# 142#41320#41320#41320
+Packet Sent:#78#Round Trip Time#150502#Encryption Time Sender#88#Encryption Time Sender#32#Message:#Up0d⸮⸮I⸮⸮´⸮B⸮#11.66# 143#41320#41320#41320
+Packet Sent:#79#Round Trip Time#162730#Encryption Time Sender#80#Encryption Time Sender#36#Message:#pVq⸮⸮⸮j⸮⸮⸮⸮rM⸮#11.80#  48#41320#41208#41320
+Packet Sent:#80#Round Trip Time#152313#Encryption Time Sender#92#Encryption Time Sender#32#Message:#⸮R⸮DHnq⸮⸮⸮⸮⸮0⸮#11.62# 142#41320#41320#41320
+Packet Sent:#81#Round Trip Time#165365#Encryption Time Sender#68#Encryption Time Sender#40#Message:#A⸮H⸮⸮⸮⸮⸮0⸮#11.56# 142#41320#41320#41208
+Packet Sent:#82#Round Trip Time#145317#Encryption Time Sender#92#Encryption Time Sender#36#Message:#⸮⸮$)⸮A⸮⸮⸮´⸮B⸮#11.60# 143#41208#41320#41320
+Packet Sent:#83#Round Trip Time#153805#Encryption Time Sender#72#Encryption Time Sender#33#Message:#⸮X⸮⸮(⸮⸮´⸮B⸮#11.68# 143#41320#41320#41320
+Packet Sent:#84#Round Trip Time#151154#Encryption Time Sender#84#Encryption Time Sender#36#Message:#⸮u⸮&7V⸮⸮⸮⸮⸮⸮0⸮#11.67# 142#41320#41320#41320
+Packet Sent:#85#Round Trip Time#157605#Encryption Time Sender#80#Encryption Time Sender#32#Message:#⸮`⸮H⸮⸮⸮⸮⸮⸮⸮0⸮#11.59# 142#41320#41320#41320
+Packet Sent:#86#Round Trip Time#155969#Encryption Time Sender#87#Encryption Time Sender#37#Message:#⸮q⸮⸮⸮⸮⸮⸮⸮0⸮#11.70# 142#41320#41320#41320
+Packet Sent:#87#Round Trip Time#152034#Encryption Time Sender#84#Encryption Time Sender#52#Message:#ti\:⸮[%⸮⸮⸮´⸮B⸮#11.83# 143#41320#41320#41320
+Packet Sent:#88#Round Trip Time#165901#Encryption Time Sender#76#Encryption Time Sender#32#Message:#⸮u⸮&7V⸮⸮⸮⸮´⸮B⸮#11.67# 143#41320#41320#41320
+Packet Sent:#89#Round Trip Time#146159#Encryption Time Sender#84#Encryption Time Sender#36#Message:#⸮R⸮DHnqެ⸮´⸮B⸮#11.62# 143#41320#41320#41320
+Packet Sent:#90#Round Trip Time#159346#Encryption Time Sender#79#Encryption Time Sender#32#Message:#Y^⸮w㈨&⸮⸮⸮⸮⸮#11.75#  51#41320#41320#41320
+Packet Sent:#91#Round Trip Time#154339#Encryption Time Sender#88#Encryption Time Sender#36#Message:#⸮؟⸮1⸮z⸮⸮´⸮B⸮#11.95# 143#41320#41320#41320
+Packet Sent:#92#Round Trip Time#154906#Encryption Time Sender#68#Encryption Time Sender#32#Message:#⸮⸮⸮49⸮⸮⸮⸮⸮0⸮#12.02# 142#41320#41320#41320
+Packet Sent:#93#Round Trip Time#162472#Encryption Time Sender#84#Encryption Time Sender#36#Message:#wo⸮⸮gP⸮⸮⸮⸮´⸮B⸮#11.94# 143#41320#41320#41208
+Packet Sent:#94#Round Trip Time#147914#Encryption Time Sender#76#Encryption Time Sender#36#Message:#wo⸮⸮gP⸮⸮⸮⸮⸮⸮0⸮#11.94# 142#41208#41320#41320
+Packet Sent:#95#Round Trip Time#153250#Encryption Time Sender#84#Encryption Time Sender#36#Message:#⸮⸮⸮49⸮⸮⸮⸮⸮0⸮#12.02# 142#41320#41208#41208
+Packet Sent:#96#Round Trip Time#156937#Encryption Time Sender#84#Encryption Time Sender#32#Message:#7=⸮⸮⸮X⸮⸮⸮´⸮B⸮#11.84# 143#41320#41320#41320
+Packet Sent:#97#Round Trip Time#160261#Encryption Time Sender#87#Encryption Time Sender#36#Message:#⸮⸮⸮⸮⸮&뉒⸮⸮e⸮V8#11.67#  52#41320#41320#41320
+Packet Sent:#98#Round Trip Time#148785#Encryption Time Sender#69#Encryption Time Sender#33#Message:#⸮)*դ⸮⸮⸮⸮´⸮B⸮#11.72# 143#41320#41320#41320
+Packet Sent:#99#Round Trip Time#161628#Encryption Time Sender#84#Encryption Time Sender#36#Message:#Up0d⸮⸮I⸮⸮´⸮B⸮#11.66# 143#41320#41320#41208
+Packet Sent:#100#Round Trip Time#152639#Encryption Time Sender#76#Encryption Time Sender#36#Message:#⸮{⸮;_yƂ⸮⸮⸮⸮0⸮#11.54# 142#41208#41320#41320
+Packet Sent:#101#Round Trip Time#151584#Encryption Time Sender#84#Encryption Time Sender#36#Message:#⸮u⸮&7V⸮⸮⸮⸮´⸮B⸮#11.67# 143#41320#41320#41320
+Packet Sent:#102#Round Trip Time#157102#Encryption Time Sender#80#Encryption Time Sender#32#Message:#⸮⸮⸮@E⸮⸮⸮⸮⸮⸮0⸮#11.79# 142#41320#41320#41208
+Packet Sent:#103#Round Trip Time#153312#Encryption Time Sender#88#Encryption Time Sender#36#Message:#⸮c#r⸮(⸮⸮⸮⸮0⸮#11.89# 142#41208#41320#41320
+Packet Sent:#104#Round Trip Time#159680#Encryption Time Sender#68#Encryption Time Sender#32#Message:#⸮=a⸮˶^⸮⸮Zv⸮u#11.97#  60#41320#41320#41320
+Packet Sent:#105#Round Trip Time#151913#Encryption Time Sender#83#Encryption Time Sender#37#Message:#⸮⸮⸮⸮⸮⸮⸮⸮⸮0⸮#11.85# 142#41320#41320#41208
+Packet Sent:#106#Round Trip Time#158066#Encryption Time Sender#76#Encryption Time Sender#36#Message:#⸮؟⸮1⸮z⸮⸮⸮⸮⸮0⸮#11.95# 142#41208#41320#41320
+Packet Sent:#107#Round Trip Time#156171#Encryption Time Sender#92#Encryption Time Sender#32#Message:#⸮⸮$)⸮A⸮⸮⸮⸮⸮0⸮#11.60# 142#41320#41320#41320
+Packet Sent:#108#Round Trip Time#151639#Encryption Time Sender#72#Encryption Time Sender#36#Message:#⸮=a⸮⸮⸮⸮⸮⸮rM⸮#11.97#  48#41320#41320#41208
+Packet Sent:#109#Round Trip Time#158134#Encryption Time Sender#88#Encryption Time Sender#40#Message:#⸮⸮⸮49⸮⸮⸮´⸮B⸮#12.02# 143#41208#41320#41320
+Packet Sent:#110#Round Trip Time#149237#Encryption Time Sender#72#Encryption Time Sender#32#Message:#⸮]K⸮B⸮⸮⸮⸮0⸮#11.91# 142#41320#41320#41320
+Packet Sent:#111#Round Trip Time#158516#Encryption Time Sender#88#Encryption Time Sender#36#Message:#⸮⸮^np9W⸮yP⸮⸮:K#11.83#  44#41320#41208#41208
+Packet Sent:#112#Round Trip Time#151932#Encryption Time Sender#88#Encryption Time Sender#36#Message:#⸮⸮.o⸮⸮⸮⸮´⸮B⸮#11.99# 143#41320#41320#41320
+Packet Sent:#113#Round Trip Time#152368#Encryption Time Sender#80#Encryption Time Sender#36#Message:#* ⸮U⸮⸮´⸮B⸮#11.97# 143#41320#41320#41320
+Packet Sent:#114#Round Trip Time#156212#Encryption Time Sender#92#Encryption Time Sender#40#Message:#5!D⸮⸮⸮H⸮⸮Ҏ⸮]Q⸮##11.34#  40#41320#41320#41320
+Packet Sent:#115#Round Trip Time#150425#Encryption Time Sender#84#Encryption Time Sender#36#Message:#pq1198⸮&⸮^⸮⸮Zv⸮u# 9.90#  60#41320#41320#41320
+Packet Sent:#116#Round Trip Time#149550#Encryption Time Sender#68#Encryption Time Sender#32#Message:#⸮⸮⸮7⸮⸮⸮´⸮B⸮#11.06# 143#41320#41320#41320
+Packet Sent:#117#Round Trip Time#159054#Encryption Time Sender#87#Encryption Time Sender#36#Message:#I\wq⸮T⸮⸮⸮´⸮B⸮#12.14# 143#41320#41320#41320
+Packet Sent:#118#Round Trip Time#159952#Encryption Time Sender#68#Encryption Time Sender#32#Message:#⸮ʭ⸮Y⸮⸮⸮⸮⸮#11.87#  64#41320#41320#41320
+Packet Sent:#119#Round Trip Time#159923#Encryption Time Sender#110#Encryption Time Sender#36#Message:#S⸮⸮⸮4⸮*'⸮⸮´⸮B⸮#20.84# 143#41208#41320#41320
+Packet Sent:#120#Round Trip Time#150740#Encryption Time Sender#76#Encryption Time Sender#32#Message:#⸮⸮lQ⸮U⸮0⸮⸮⸮⸮0⸮# 8.51# 142#41320#41320#41320
+Packet Sent:#121#Round Trip Time#149982#Encryption Time Sender#83#Encryption Time Sender#36#Message:#EE⸮⸮ǟ=⸮⸮⸮⸮0⸮# 7.03# 142#41320#41320#41320
+Packet Sent:#122#Round Trip Time#147092#Encryption Time Sender#84#Encryption Time Sender#37#Message:#p⸮⸮'⸮3⸮⸮⸮⸮⸮⸮0⸮# 8.17# 142#41320#41320#41320
+Packet Sent:#123#Round Trip Time#149733#Encryption Time Sender#72#Encryption Time Sender#32#Message:#⸮⸮Y⸮⸮⸮⸮´⸮B⸮# 8.36# 143#41320#41320#41320
+Packet Sent:#124#Round Trip Time#150033#Encryption Time Sender#83#Encryption Time Sender#36#Message:#(w⸮⸮⸮⸮3:⸮⸮⸮⸮0⸮# 8.01# 142#41320#41320#41320
+Packet Sent:#125#Round Trip Time#150301#Encryption Time Sender#96#Encryption Time Sender#40#Message:#Y⸮⸮iA⸮⸮⸮⸮⸮0⸮# 8.76# 142#41320#41320#41320
+Packet Sent:#126#Round Trip Time#147880#Encryption Time Sender#72#Encryption Time Sender#36#Message:#⸮⸮Ƽ⸮Mi⸮⸮⸮⸮0⸮# 8.53# 142#41320#41208#41208
+Packet Sent:#127#Round Trip Time#146498#Encryption Time Sender#88#Encryption Time Sender#32#Message:#&yv⸮⸮⸮⸮⸮´⸮B⸮# 8.89# 143#41320#41320#41320
+Packet Sent:#128#Round Trip Time#154710#Encryption Time Sender#84#Encryption Time Sender#36#Message:#⸮p`⸮A⸮+⸮⸮⸮⸮⸮0⸮# 8.90# 142#41320#41320#41320
+Packet Sent:#129#Round Trip Time#150581#Encryption Time Sender#72#Encryption Time Sender#32#Message:#⸮l⸮=⸮⸮⸮⸮0⸮# 8.81# 142#41320#41320#41320
+Packet Sent:#130#Round Trip Time#154755#Encryption Time Sender#88#Encryption Time Sender#36#Message:#⸮&⸮p6⸮⸮*⸮⸮´⸮B⸮# 8.84# 143#41320#41320#41208
+Packet Sent:#131#Round Trip Time#145655#Encryption Time Sender#80#Encryption Time Sender#40#Message:#⸮&⸮p6⸮⸮*⸮⸮´⸮B⸮# 8.84# 143#41208#41320#41320
+Packet Sent:#132#Round Trip Time#153280#Encryption Time Sender#87#Encryption Time Sender#32#Message:#p⸮⸮)N⸮⸮⸮⸮⸮⸮0⸮# 8.71# 142#41320#41320#41320
+Packet Sent:#133#Round Trip Time#150834#Encryption Time Sender#68#Encryption Time Sender#37#Message:#i⸮⸮⸮⸮⸮⸮´⸮B⸮# 8.77# 143#41320#41320#41320
+Packet Sent:#134#Round Trip Time#144696#Encryption Time Sender#93#Encryption Time Sender#36#Message:#⸮⸮IcJ⸮⸮´⸮B⸮# 8.40# 143#41208#41320#41320
+Packet Sent:#135#Round Trip Time#152190#Encryption Time Sender#72#Encryption Time Sender#32#Message:#⸮⸮쎙⸮⸮u⸮⸮⸮⸮0⸮# 8.57# 142#41320#41320#41320
+Packet Sent:#136#Round Trip Time#153021#Encryption Time Sender#95#Encryption Time Sender#41#Message:#p⸮⸮)N⸮⸮⸮⸮´⸮B⸮# 8.71# 143#41320#41320#41320
+Packet Sent:#137#Round Trip Time#144355#Encryption Time Sender#76#Encryption Time Sender#32#Message:#⸮/⸮⸮⸮⸮⸮⸮⸮´⸮B⸮# 8.42# 143#41320#41320#41320
+Packet Sent:#138#Round Trip Time#152024#Encryption Time Sender#84#Encryption Time Sender#37#Message:#p⸮⸮'⸮3⸮⸮⸮⸮´⸮B⸮# 8.17# 143#41320#41320#41320
+Packet Sent:#139#Round Trip Time#150865#Encryption Time Sender#68#Encryption Time Sender#32#Message:#⸮⸮⸮⸮n⸮⸮⸮⸮⸮´⸮B⸮# 8.19# 143#41320#41320#41320
+Packet Sent:#140#Round Trip Time#146325#Encryption Time Sender#99#Encryption Time Sender#36#Message:#"⸮⸮⸮v⸮ͬ⸮´⸮B⸮# 8.60# 143#41208#41320#41320
+Packet Sent:#141#Round Trip Time#148242#Encryption Time Sender#72#Encryption Time Sender#36#Message:#⸮ٖ⸮⸮⸮m⸮⸮´⸮B⸮# 7.66# 143#41320#41320#41320
+Packet Sent:#142#Round Trip Time#154436#Encryption Time Sender#96#Encryption Time Sender#36#Message:#⸮⸮⸮⸮Z\⸮⸮⸮⸮0⸮# 8.05# 142#41320#41208#41208
+Packet Sent:#143#Round Trip Time#142163#Encryption Time Sender#75#Encryption Time Sender#32#Message:#hW⸮⸮⸮⸮⸮⸮⸮⸮rM⸮# 8.54#  48#41320#41320#41320
+Packet Sent:#144#Round Trip Time#149609#Encryption Time Sender#84#Encryption Time Sender#36#Message:#+R⸮⸮⸮⸮⸮⸮´⸮B⸮# 7.58# 143#41320#41320#41320
+Packet Sent:#145#Round Trip Time#145260#Encryption Time Sender#68#Encryption Time Sender#32#Message:#⸮ߗ>݋⸮'⸮⸮⸮⸮0⸮# 8.16# 142#41320#41320#41320
+Packet Sent:#146#Round Trip Time#155038#Encryption Time Sender#88#Encryption Time Sender#36#Message:#ck⸮qzEL,⸮⸮⸮⸮rM⸮# 7.88#  48#41320#41320#41320
+Packet Sent:#147#Round Trip Time#144812#Encryption Time Sender#68#Encryption Time Sender#32#Message:#⸮z⸮⸮X⸮Q⸮⸮⸮⸮⸮0⸮# 7.19# 142#41320#41320#41320
+Packet Sent:#148#Round Trip Time#145066#Encryption Time Sender#95#Encryption Time Sender#36#Message:#!⸮\⸮1⸮⸮⸮⸮⸮⸮0⸮# 7.93# 142#41320#41320#41320
+Packet Sent:#149#Round Trip Time#151957#Encryption Time Sender#88#Encryption Time Sender#36#Message:#w]A졬⸮⸮⸮⸮⸮0⸮# 8.34# 142#41320#41320#41320
+Packet Sent:#150#Round Trip Time#145617#Encryption Time Sender#68#Encryption Time Sender#36#Message:#(w⸮⸮⸮⸮3:⸮⸮⸮⸮0⸮# 8.01# 142#41320#41320#41320
+Packet Sent:#151#Round Trip Time#151904#Encryption Time Sender#88#Encryption Time Sender#36#Message:#U?؋#⸮⸮yP⸮⸮:K# 7.66#  44#41320#41320#41208
+Packet Sent:#152#Round Trip Time#148763#Encryption Time Sender#76#Encryption Time Sender#36#Message:#-⸮o⸮Z⸮⸮⸮⸮⸮´⸮B⸮# 8.14# 143#41208#41320#41320
+Packet Sent:#153#Round Trip Time#146902#Encryption Time Sender#84#Encryption Time Sender#32#Message:#槺⸮2j⸮⸮⸮⸮0⸮# 8.13# 142#41320#41320#41320
+Packet Sent:#154#Round Trip Time#151798#Encryption Time Sender#79#Encryption Time Sender#37#Message:#⸮WSr⸮⸮Q⸮yP⸮⸮:K# 7.50#  44#41320#41320#41320
+Packet Sent:#155#Round Trip Time#144060#Encryption Time Sender#88#Encryption Time Sender#37#Message:#r⸮I⸮gi⸮⸮⸮´⸮B⸮# 6.84# 143#41320#41320#41320
+Packet Sent:#156#Round Trip Time#142836#Encryption Time Sender#68#Encryption Time Sender#32#Message:#U⸮q&ɥo⸮⸮⸮⸮0⸮# 7.11# 142#41320#41320#41320
+Packet Sent:#157#Round Trip Time#150891#Encryption Time Sender#84#Encryption Time Sender#37#Message:#~kyƂ⸮⸮⸮⸮⸮⸮rM⸮# 7.77#  48#41320#41320#41320
+Packet Sent:#158#Round Trip Time#144410#Encryption Time Sender#72#Encryption Time Sender#36#Message:#⸮⸮⸮C⸮⸮⸮⸮´⸮B⸮# 7.49# 143#41320#41208#41208
+Packet Sent:#159#Round Trip Time#151724#Encryption Time Sender#88#Encryption Time Sender#32#Message:#%wu?fȁ⸮⸮⸮⸮⸮0⸮# 7.05# 142#41320#41320#41320
+Packet Sent:#160#Round Trip Time#148074#Encryption Time Sender#80#Encryption Time Sender#40#Message:#⸮H⸮%⸮⸮⸮⸮⸮⸮⸮e⸮V8# 7.37#  52#41320#41320#41320
+Packet Sent:#161#Round Trip Time#147084#Encryption Time Sender#94#Encryption Time Sender#36#Message:#I⸮⸮y9⸮⸮⸮⸮´⸮B⸮# 7.24# 143#41208#41320#41320
+Packet Sent:#162#Round Trip Time#150225#Encryption Time Sender#72#Encryption Time Sender#33#Message:#⸮)s!nӾ⸮⸮⸮⸮0⸮# 6.93# 142#41320#41320#41320
+Packet Sent:#163#Round Trip Time#144106#Encryption Time Sender#84#Encryption Time Sender#37#Message:#Zb*⸮Ɍ⸮⸮´⸮B⸮# 6.95# 143#41320#41320#41320
+Packet Sent:#164#Round Trip Time#144653#Encryption Time Sender#72#Encryption Time Sender#32#Message:#U⸮q&ɥo⸮⸮´⸮B⸮# 7.11# 143#41320#41320#41320
+Packet Sent:#165#Round Trip Time#153435#Encryption Time Sender#83#Encryption Time Sender#36#Message:#⸮n⸮⸮⸮K⸮yP⸮⸮:K# 7.11#  44#41320#41320#41320
+Packet Sent:#166#Round Trip Time#143097#Encryption Time Sender#96#Encryption Time Sender#36#Message:#EE⸮⸮ǟ=⸮⸮⸮⸮0⸮# 7.03# 142#41320#41320#41320
+Packet Sent:#167#Round Trip Time#145083#Encryption Time Sender#72#Encryption Time Sender#36#Message:#EE⸮⸮ǟ=⸮⸮⸮⸮0⸮# 7.03# 142#41320#41320#41320
+Packet Sent:#168#Round Trip Time#151736#Encryption Time Sender#88#Encryption Time Sender#36#Message:#_,⸮⸮⸮⸮⸮rM⸮# 7.04#  48#41320#41320#41320
+Packet Sent:#169#Round Trip Time#145777#Encryption Time Sender#84#Encryption Time Sender#36#Message:#⸮⸮H⸮⸮G⸮⸮´⸮B⸮# 7.77# 143#41320#41320#41320
+Packet Sent:#170#Round Trip Time#149679#Encryption Time Sender#72#Encryption Time Sender#33#Message:#⸮(⸮zV(p0X⸮# 7.01# 145#41320#41320#41320
+Packet Sent:#171#Round Trip Time#151567#Encryption Time Sender#84#Encryption Time Sender#36#Message:#⸮耮⸮ќ⸮⸮⸮⸮⸮0⸮# 7.31# 142#41320#41320#41320
+Packet Sent:#172#Round Trip Time#137794#Encryption Time Sender#95#Encryption Time Sender#36#Message:#⸮⸮⸮⸮⸮⸮Ȭ⸮´⸮B⸮# 7.18# 143#41320#41320#41320
+Packet Sent:#173#Round Trip Time#150121#Encryption Time Sender#68#Encryption Time Sender#32#Message:#⸮⸮⸮⸮F⸮f⸮⸮⸮⸮0⸮# 7.23# 142#41320#41320#41320
+Packet Sent:#174#Round Trip Time#149626#Encryption Time Sender#84#Encryption Time Sender#36#Message:#⸮A?X|⸮⸮⸮⸮⸮e⸮V8# 7.20#  52#41320#41208#41208
+Packet Sent:#175#Round Trip Time#145426#Encryption Time Sender#72#Encryption Time Sender#36#Message:#⸮wSY⸮⸮y,⸮⸮´⸮B⸮# 7.90# 143#41320#41320#41320
+Packet Sent:#176#Round Trip Time#151430#Encryption Time Sender#107#Encryption Time Sender#37#Message:#⸮⸮⸮C⸮⸮⸮⸮´⸮B⸮# 7.49# 143#41208#41320#41320
+Packet Sent:#177#Round Trip Time#148526#Encryption Time Sender#72#Encryption Time Sender#32#Message:#⸮8|⸮⸮k~⸮⸮⸮⸮⸮# 7.28#  64#41320#41320#41320
+Packet Sent:#178#Round Trip Time#148088#Encryption Time Sender#95#Encryption Time Sender#37#Message:#⸮⸮⸮<0}⸮⸮´⸮B⸮# 8.09# 143#41320#41320#41320
+Packet Sent:#179#Round Trip Time#151887#Encryption Time Sender#72#Encryption Time Sender#33#Message:#⸮⸮$ &m⸮⸮⸮⸮⸮0⸮# 7.55# 142#41320#41320#41320
+Packet Sent:#180#Round Trip Time#148972#Encryption Time Sender#83#Encryption Time Sender#36#Message:#.fy⸮⸮k⸮⸮⸮⸮⸮⸮# 7.54#  64#41320#41320#41320
+Packet Sent:#181#Round Trip Time#147511#Encryption Time Sender#68#Encryption Time Sender#37#Message:#⸮⸮IcJ⸮⸮⸮⸮0⸮# 8.40# 142#41320#41320#41320
+Packet Sent:#182#Round Trip Time#152090#Encryption Time Sender#95#Encryption Time Sender#37#Message:#⸮耮⸮ќج⸮´⸮B⸮# 7.31# 143#41208#41320#41320
+Packet Sent:#183#Round Trip Time#145994#Encryption Time Sender#76#Encryption Time Sender#33#Message:#t⸮Xhώ⸮^⸮⸮Zv⸮u# 7.94#  60#41320#41320#41320
+Packet Sent:#184#Round Trip Time#154667#Encryption Time Sender#92#Encryption Time Sender#36#Message:#⸮h⸮l⸮⸮⸮⸮⸮0⸮# 7.87# 142#41320#41320#41320
+Packet Sent:#185#Round Trip Time#148566#Encryption Time Sender#68#Encryption Time Sender#32#Message:#⸮⸮E⸮⸮⸮⸮⸮⸮0⸮# 8.22# 142#41320#41320#41320
+Packet Sent:#186#Round Trip Time#147271#Encryption Time Sender#84#Encryption Time Sender#40#Message:#⸮⸮Ug⸮S%⸮⸮^⸮⸮Zv⸮u# 8.49#  60#41320#41320#41320
+Packet Sent:#187#Round Trip Time#152312#Encryption Time Sender#76#Encryption Time Sender#33#Message:#⸮)9⸮0⸮⸮´⸮B⸮# 8.03# 143#41320#41320#41320
+Packet Sent:#188#Round Trip Time#148003#Encryption Time Sender#84#Encryption Time Sender#36#Message:#KvT⸮⸮ڶ⸮⸮´⸮B⸮# 7.53# 143#41208#41320#41320
+Packet Sent:#189#Round Trip Time#144467#Encryption Time Sender#84#Encryption Time Sender#36#Message:#^⸮⸮⸮⸮_⸮⸮⸮^⸮⸮Zv⸮u# 7.16#  60#41320#41208#41208
+Packet Sent:#190#Round Trip Time#150494#Encryption Time Sender#92#Encryption Time Sender#32#Message:#'⸮⸮k⸮y⸮⸮´⸮B⸮# 7.20# 143#41320#41320#41320
+Packet Sent:#191#Round Trip Time#150788#Encryption Time Sender#68#Encryption Time Sender#36#Message:#⸮k⸮9I⸮O⸮⸮⸮´⸮B⸮# 7.34# 143#41320#41320#41320
+Packet Sent:#192#Round Trip Time#144981#Encryption Time Sender#84#Encryption Time Sender#32#Message:#⸮gh&⸮y_⸮⸮´⸮B⸮# 7.82# 143#41320#41320#41320
+Packet Sent:#193#Round Trip Time#150066#Encryption Time Sender#72#Encryption Time Sender#40#Message:#s⸮⸮⸮+⸮Z⸮⸮⸮´⸮B⸮# 7.57# 143#41320#41320#41320
+Packet Sent:#194#Round Trip Time#149698#Encryption Time Sender#88#Encryption Time Sender#32#Message:#⸮⸮K⸮n⸮&[⸮⸮⸮⸮0⸮# 7.95# 142#41320#41320#41320
+Packet Sent:#195#Round Trip Time#149916#Encryption Time Sender#96#Encryption Time Sender#36#Message:#⸮⸮b⸮⸮⸮⸮⸮⸮0⸮# 7.64# 142#41320#41320#41208
+Packet Sent:#196#Round Trip Time#147957#Encryption Time Sender#76#Encryption Time Sender#36#Message:#⸮⸮OXMy⸮k⸮⸮⸮⸮0⸮# 8.15# 142#41208#41320#41320
+Packet Sent:#197#Round Trip Time#145431#Encryption Time Sender#84#Encryption Time Sender#32#Message:#qS⸮⸮8⸮⸮⸮´⸮B⸮# 8.44# 143#41320#41320#41320
+Packet Sent:#198#Round Trip Time#154462#Encryption Time Sender#84#Encryption Time Sender#36#Message:#⸮8|⸮⸮k~⸮⸮⸮⸮rM⸮# 7.28#  48#41320#41320#41320
+Packet Sent:#199#Round Trip Time#144279#Encryption Time Sender#72#Encryption Time Sender#32#Message:#⸮wSY⸮⸮y,⸮⸮⸮⸮0⸮# 7.90# 142#41320#41320#41320
+Packet Sent:#200#Round Trip Time#148099#Encryption Time Sender#84#Encryption Time Sender#36#Message:#⸮⸮lQ⸮U⸮0⸮⸮´⸮B⸮# 8.51# 143#41320#41320#41320
