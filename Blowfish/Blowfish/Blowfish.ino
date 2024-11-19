@@ -3,10 +3,10 @@
 
 byte keyMemory[16];
 char key[] = "Thisisatestaaaa!";
-byte messageMemory[16];
-char message[] = "SendDistAndTimes";
-byte encryptedData[16];
-byte decryptedData[16];
+byte messageMemory[96];
+char message[] = "This is a long sentence that is encrypted and then transmitted using the MQTT protocol for test.";
+byte encryptedData[96];
+byte decryptedData[96];
 float startTime = 0;
 float totalTime = 0;
 int j = 0;

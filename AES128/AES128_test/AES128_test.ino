@@ -2,16 +2,14 @@
 #include <Crypto.h>
 #include <AES.h> 
 
-byte keyMemory[16];
-char key[] = "Thisisatestaaaa!";
-byte messageMemory[16];
-char message[] = "SendDistAndTimes";
-byte encryptedData[16];
-byte decryptedData[16];
-float startTime;
-float totalTime;
-AES128 aes;
-//AES256 aes;
+char keyMemory[32] = {'T','h','i','s','i','s','a','t','e','s','t','a','a','a','a','!','T','h','i','s','i','s','a','t','e','s','t','a','a','a','a','!'};
+byte messageMemory[96] = {'T','h','i','s',' ','i','s',' ','a',' ','l','o','n','g',' ','s','e','n','t','e','n','c','e',' ','t','h','a','t',' ','i','s',' ','e','n','c','r','y','p','t','e','d',' ','a','n','d',' ','t','h','e','n',' ','t','r','a','n','s','m','i','t','t','e','d',' ','u','s','i','n','g',' ','t','h','e',' ','M','Q','T','T',' ','p','r','o','t','o','c','o','l',' ','f','o','r',' ','t','e','s','t','.'};
+byte encryptedData[96];
+byte decryptedData[96];
+//float startTime;
+//float totalTime;
+//AES128 aes;
+AES256 aes;
 int j = 0;
 
 void convertFromString( const char* info, byte* memory ) {
@@ -30,10 +28,10 @@ void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
   
-  convertFromString(key, keyMemory);
+  //convertFromString(key, keyMemory);
   printByte(keyMemory, sizeof(keyMemory));
   aes.setKey(keyMemory, sizeof(keyMemory));
-  convertFromString(message, messageMemory);
+  //convertFromString(message, messageMemory);
   printByte(messageMemory, sizeof(messageMemory));
   Serial.println();
   delay(5000);
@@ -47,13 +45,13 @@ void loop() {
     Serial.print(j);
 
     delay(1000);
-    startTime = micros();
+    float startTime = micros();
     for(int i = 0; i < sizeof(messageMemory); i += 16) {
      aes.encryptBlock(encryptedData + i, messageMemory + i);                     //Encrypt the char array
     }
-    totalTime = micros() - startTime;
+    float totalTime = micros() - startTime;
     Serial.print("#Encrypted Message#");
-    printByte(encryptedData, sizeof(encryptedData));
+    //printByte(encryptedData, sizeof(encryptedData));
     Serial.print("#EncryptTime#");
     Serial.print(totalTime);
     Serial.print("#");

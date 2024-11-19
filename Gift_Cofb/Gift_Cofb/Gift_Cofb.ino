@@ -3,12 +3,12 @@
 
 byte keyMemory[16];
 char key[] = "Thisisatestaaaa!";
-byte messageMemory[16];
-char message[] = "SendDistAndTimes";
-byte encryptedData[32];
-byte decryptedData[16];
+byte messageMemory[96];
+char message[] = "This is a long sentence that is encrypted and then transmitted using the MQTT protocol for test.";
+byte encryptedData[112];
+byte decryptedData[96];
 //byte authMemory[16];
-int authenticated;
+//int authenticated;
 //char auth[] = "passwordpassword";
 float startTime;
 float totalTime;
@@ -65,7 +65,8 @@ void loop() {
     delay(1000);
     size_t sizeOfDecrypted = sizeof(decryptedData);
     startTime = micros();
-    authenticated = gift_cofb_aead_decrypt(decryptedData, &sizeOfDecrypted, encryptedData, sizeof(encryptedData), 0, 0, 0, keyMemory);
+    //authenticated = gift_cofb_aead_decrypt(decryptedData, &sizeOfDecrypted, encryptedData, sizeof(encryptedData), authMemory, 16, IV, keyMemory);
+    gift_cofb_aead_decrypt(decryptedData, &sizeOfDecrypted, encryptedData, sizeof(encryptedData), 0, 0, 0, keyMemory);
     totalTime = micros() - startTime;
     Serial.print("#Decrypted Message#");
     printByte(decryptedData, sizeof(decryptedData));
@@ -73,8 +74,8 @@ void loop() {
     Serial.print(totalTime);
     Serial.print("#");
     //MEMORY_PRINT_FREERAM;
-    Serial.print("#Authenticated#");
-    if(authenticated == 0){ Serial.print("True"); } else { Serial.print("False"); }
+    //Serial.print("#Authenticated#");
+    //if(authenticated == 0){ Serial.print("True"); } else { Serial.print("False"); }
     Serial.println("");
   }
 }

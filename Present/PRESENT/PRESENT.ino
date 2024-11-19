@@ -2,10 +2,10 @@
 #include <present.h>
 
 char key[] = "Thisisatestaaaa!";
-char message[] = "SendDistAndTimes";
+char message[] = "This is a long sentence that is encrypted and then transmitted using the MQTT protocol for test.";
 byte keyMemory[16];
-byte encryptedMemory[16];
-byte decryptedMemory[16];
+byte encryptedMemory[96];
+byte decryptedMemory[96];
 float startTime;
 float totalTime;
 int length = 0;

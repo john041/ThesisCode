@@ -20,12 +20,12 @@ unsigned long freeMemoryDecrypt = 0;
 int number = 0;
 int nextNum = 1;
 
-char key[] = "Thisisatestaaaa!";               //Key used in encryption process
+char key[] = "Thisisat";               //Key used in encryption process
 
-byte keyMemory[16];                           //Variables to store encryption information
-byte messageMemory[16];
-byte encryptedData[16];
-byte decryptedData[16];
+byte keyMemory[8];                           //Variables to store encryption information
+byte messageMemory[96];
+byte encryptedData[96];
+byte decryptedData[12];
 
 //Converts a string into a byte array
 //  parameter 1 string to convert
@@ -86,9 +86,9 @@ void recieve(char* topic, byte* message, unsigned int length) {
   Serial.print("#Decryption Time Sender#");
   Serial.print(decryptTime);
   Serial.print("#Message:#");
-  printByte(message, length);
+  //printByte(message, length);
   Serial.print("#");
-  printByte(decryptedData, 10);              //Print decrypted message and memory messurments
+  printByte(decryptedData, 12);              //Print decrypted message and memory messurments
   Serial.print("#");
   Serial.print(freeMemoryEncrypt);
   Serial.print("#");
@@ -129,7 +129,7 @@ void loop() {
   if(number < 200) {                                           //Send 200 packets every 1 second
     if(number == (nextNum - 1)) {
       nextNum = nextNum + 1;
-      convertFromString("SendDistAndTimes", messageMemory);
+      convertFromString("This is a long sentence that is encrypted and then transmitted using the MQTT protocol for test.", messageMemory);
       startRoundTripTime = micros();
       runEncryption(messageMemory, sizeof(messageMemory));                              //Encrypt message and send message
       MQTTClient.publish("/test/sender", encryptedData, sizeof(encryptedData), false);                 

@@ -22,7 +22,7 @@ int nextNum = 1;
 char key[] = "Thisisatestaaaa!";               //Key used in encryption process
 
 byte keyMemory[16];
-byte encryptedMemory[16];                           //Variables to store encryption information
+byte encryptedMemory[96];                           //Variables to store encryption information
 byte decryptedMemory[16];
 
 //Converts a string into a byte array
@@ -125,7 +125,7 @@ void loop() {
   if(number < 200) {                                           //Send 200 packets every 1 second
     if(number == (nextNum - 1)) {
       nextNum = nextNum + 1;
-      convertFromString("SendDistAndTimes", encryptedMemory);
+      convertFromString("This is a long sentence that is encrypted and then transmitted using the MQTT protocol for test.", encryptedMemory);
       startRoundTripTime = micros();
       runEncryption();                                    //Encrypt message and send message
       bool result = MQTTClient.publish("/test/sender", encryptedMemory, sizeof(encryptedMemory), false);                 

@@ -25,7 +25,7 @@ char key[] = "Thisisatestaaaa!";          //Key used in encryption process
 byte keyMemory[16];                       //Variables to store encryption information
 byte messageMemory[16];
 byte encryptedData[16];
-byte decryptedData[16];
+byte decryptedData[96];
 
 //Converts a string into a byte array
 //  parameter 1 string to convert
@@ -135,7 +135,7 @@ void setup() {
 
   MQTTClient.subscribe("/test/sender");                   //Subscribe to topic to listen to
   convertFromString(key, keyMemory);                      //Set up encryption key
-  speck.setKey(keyMemory,16);
+  speck.setKey(keyMemory, sizeof(keyMemory));
   digitalWrite(trigPin, 0);                               //Set output pin to zero
 }
 

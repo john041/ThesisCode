@@ -20,12 +20,12 @@ unsigned long startEncryptTime = 0;
 unsigned long decryptTime = 0;
 unsigned long startDecryptTime = 0;
 
-char key[] = "Thisisatestaaaa!";          //Key used in encryption process
+char key[] = "Thisisat";          //Key used in encryption process
 
-byte keyMemory[16];                       //Variables to store encryption information
+byte keyMemory[8];                       //Variables to store encryption information
 byte messageMemory[16];
 byte encryptedData[16];
-byte decryptedData[16];
+byte decryptedData[96];
 
 //Converts a string into a byte array
 //  parameter 1 string to convert
@@ -96,17 +96,17 @@ void recieve(char* topic, byte* message, unsigned int length) {
   Serial.println();
   char tempDistance[5];
   char tempEncryption[5];
-  byte messageToEncrypt[11];
+  byte messageToEncrypt[12];
   dtostrf(distance, 5, 2, tempDistance);                            //Puts distance and decryption time in byte array
-  memcpy(messageToEncrypt, tempDistance, strlen(tempDistance));
-  dtostrf(decryptTime, 4, 0, tempEncryption);
+  memcpy(messageToEncrypt, tempDistance, sizeof(tempDistance));
+  dtostrf(decryptTime, 5, 0, tempEncryption);
   messageToEncrypt[5] = '#';
   memcpy(messageToEncrypt + 6, tempEncryption, sizeof(tempEncryption));
   runEncryption(messageToEncrypt, sizeof(messageToEncrypt));                                  //Encrypts new message
   printByte(messageToEncrypt, sizeof(messageToEncrypt));
   Serial.println();
   printByte(encryptedData, sizeof(encryptedData));
-  Serial.println();
+  Serial.println();   
   MQTTClient.publish("/test/reciever", encryptedData, sizeof(encryptedData), false);         //Sends MQTT message
 }
 

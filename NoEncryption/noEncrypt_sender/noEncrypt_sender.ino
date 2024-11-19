@@ -12,7 +12,7 @@ unsigned long startRoundTripTime = 0;
 int number = 0;
 int nextNum = 1;
 
-byte messageMemory[16];
+byte messageMemory[96];
 
 //Converts a string into a byte array
 //  parameter 1 string to convert
@@ -80,7 +80,7 @@ void loop() {
   if(number < 200) {                                           //Send 200 packets every 1 second
     if(number == (nextNum - 1)) {
       nextNum = nextNum + 1;
-      convertFromString("SendDistAndTimes", messageMemory);
+      convertFromString("This is a long sentence that is encrypted and then transmitted using the MQTT protocol for test.", messageMemory);
       startRoundTripTime = micros();
       MQTTClient.publish("/test/sender", messageMemory, sizeof(messageMemory), false);                 
     }

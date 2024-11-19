@@ -22,8 +22,8 @@ unsigned long freeMemoryDecrypt = 0;
 char key[] = "Thisisatestaaaa!";
 
 byte keyMemory[16];                           //Variables to store encryption information
-byte messageMemory[16];
-byte encryptedData[16];
+byte messageMemory[96];
+byte encryptedData[96];
 int len = 16;
 
 //Converts a string into a byte array
@@ -51,8 +51,9 @@ void runEncryption(unsigned char* payload, int length) {
    int num = length;
    startEncryptTime = micros();
    for(int i = 0; i < length; i += 80) {
+     len = 96;
      if(num > 80){
-        xxtea_encrypt(payload + i, num % 80, encryptedData + i, &len);                                //Encrypt the char array
+        xxtea_encrypt(payload + i, 80, encryptedData + i, &len);                                //Encrypt the char array
         num = num - 80;
      } else {
         xxtea_encrypt(payload + i, num, encryptedData + i, &len);
@@ -70,7 +71,7 @@ void runDecryption(unsigned char* payload, int length) {
    startDecryptTime = micros();
    for(int i = 0; i < length; i += 80) {
      if(num > 80){
-       xxtea_decrypt(payload + i, num % 80);                     //Encrypt the char array
+       xxtea_decrypt(payload + i, 80);                     //Encrypt the char array
        num = num - 80;
      } else {
        xxtea_decrypt(payload + i, num);
@@ -85,8 +86,6 @@ void runDecryption(unsigned char* payload, int length) {
 //  parameter 2 byte pointer that contains the message of MQTT messsage
 //  parameter 3 unsigned int of the length of the message
 void recieve(char* topic, byte* message, unsigned int length) {
-  Serial.print("Message:#");
-  printByte(message, length);
   runDecryption(message, length);
   roundTripTime = micros() - startRoundTripTime;
   number = number + 1;
@@ -106,6 +105,8 @@ void recieve(char* topic, byte* message, unsigned int length) {
   Serial.print(freeMemoryDecrypt);
   Serial.print("#");
   Serial.println(ESP.getFreeHeap());
+  //Serial.print("Message:#");
+  //printByte(message, length);
 }
 
 //Setup code here, to run once:
@@ -140,7 +141,7 @@ void loop() {
   if(number < 200) {                                           //Send 200 packets every 1 second
     if(number == (nextNum - 1)) {
       nextNum = nextNum + 1;
-      convertFromString("SendDistAndTimes", messageMemory);
+      convertFromString("This is a long sentence that is encrypted and then transmitted using the MQTT protocol for test.", messageMemory);
       startRoundTripTime = micros();
       runEncryption(messageMemory, sizeof(messageMemory));                              //Encrypt message and send message
       MQTTClient.publish("/test/sender", encryptedData, sizeof(encryptedData), false);                 

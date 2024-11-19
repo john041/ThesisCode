@@ -8,8 +8,8 @@ const char* password = "TempPassword";
 
 WiFiClient wifiClient;                        //Object to set up Wifi
 PubSubClient MQTTClient(wifiClient);          //Object to set up MQTT client
-AES128 aes;                                   //Object of AES encryption
-//AES256 aes;
+//AES128 aes;                                   //Object of AES encryption
+AES256 aes;
 
 unsigned long roundTripTime = 0;              //Variables to keep track of time, number of packets sent, and free memory
 unsigned long startRoundTripTime = 0;
@@ -25,8 +25,8 @@ int nextNum = 1;
 char key[] = "Thisisatestaaaa!";               //Key used in encryption process
 
 byte keyMemory[16];                           //Variables to store encryption information
-byte messageMemory[16];
-byte encryptedData[16];
+byte messageMemory[96];
+byte encryptedData[96];
 byte decryptedData[16];
 
 //Converts a string into a byte array
@@ -121,7 +121,7 @@ void setup() {
 
   MQTTClient.subscribe("/test/reciever");                       //Subscribe to topic to listen to
   convertFromString(key, keyMemory);                            //Set up encryption key
-  aes.setKey(keyMemory, 16);
+  aes.setKey(keyMemory, sizeof(keyMemory));
   delay(5000);
 }
 
@@ -132,7 +132,7 @@ void loop() {
   if(number < 200) {                                           //Send 200 packets every 1 second
     if(number == (nextNum - 1)) {
       nextNum = nextNum + 1;
-      convertFromString("SendDistAndTimes", messageMemory);
+      convertFromString("This is a long sentence that is encrypted and then transmitted using the MQTT protocol for test.", messageMemory);
       startRoundTripTime = micros();
       runEncryption(messageMemory, sizeof(messageMemory));                              //Encrypt message and send message
       MQTTClient.publish("/test/sender", encryptedData, sizeof(encryptedData), false);                 

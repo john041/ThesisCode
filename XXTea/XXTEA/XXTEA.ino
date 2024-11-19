@@ -1,15 +1,16 @@
 #include <MemoryUsage.h>
 #include <xxtea-iot-crypt.h>
 
+
 byte key[] = "Thisisatestaaaa!";
-byte message[] = "SendDistAndTimes";
-byte messageMemory[16];
-byte dataBuffer[16];
-long int len = 16;
+byte message[] = "This is a long sentence that is encrypted and then transmitted using the MQTT protocol for test.";
+byte messageMemory[96];
+byte dataBuffer[96];
 int num = 0;
 float startTime;
 float totalTime;
 int j = 0;
+int32_t len = 96;
 
 void convertFromString( const char* info, byte* memory ) {
   for( int i = 0; i < strlen(info); i++ ) {
@@ -46,8 +47,9 @@ void loop() {
     num = sizeof(messageMemory);
     startTime = micros();
     for(int i = 0; i < sizeof(messageMemory); i += 80) {
+       len = 96;
        if(num > 80){
-          xxtea_encrypt(messageMemory + i, num % 80, dataBuffer + i, &len);                                //Encrypt the char array
+          int temp  = xxtea_encrypt(messageMemory + i, 80, dataBuffer + i, &len);                                //Encrypt the char array
           num = num - 80;
        } else {
           xxtea_encrypt(messageMemory + i, num, dataBuffer + i, &len);
@@ -66,7 +68,7 @@ void loop() {
     startTime = micros();
     for(int i = 0; i < sizeof(dataBuffer); i += 80) {
        if(num > 80){
-         xxtea_decrypt(dataBuffer + i, num % 80);                     //Encrypt the char array
+         xxtea_decrypt(dataBuffer + i, 80);                     //Encrypt the char array
          num = num - 80;
        } else {
          xxtea_decrypt(dataBuffer + i, num);

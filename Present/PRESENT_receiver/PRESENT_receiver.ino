@@ -21,7 +21,7 @@ unsigned long startDecryptTime = 0;
 char key[] = "Thisisatestaaaa!";          //Key used in encryption process
 
 byte keyMemory[16];                       //Variables to store encryption information
-byte decryptedMemory[16];
+byte decryptedMemory[96];
 byte encryptedMemory[16];
 
 //Converts a string into a byte array

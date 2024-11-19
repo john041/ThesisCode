@@ -50,8 +50,9 @@ void runEncryption(unsigned char* payload, int length) {
    int num = length;
    startEncryptTime = micros();
    for(int i = 0; i < length; i += 80) {
+     len = 96;
      if(num > 80){
-        xxtea_encrypt(payload + i, num % 80, encryptedData + i, &len);                                //Encrypt the char array
+        xxtea_encrypt(payload + i, 80, encryptedData + i, &len);                                //Encrypt the char array
         num = num - 80;
      } else {
         xxtea_encrypt(payload + i, num, encryptedData + i, &len);
@@ -68,7 +69,7 @@ void runDecryption(unsigned char* payload, int length) {
    startDecryptTime = micros();
    for(int i = 0; i < length; i += 80) {
      if(num > 80){
-       xxtea_decrypt(payload + i, num % 80);                     //Encrypt the char array
+       xxtea_decrypt(payload + i, 80);                     //Encrypt the char array
        num = num - 80;
      } else {
        xxtea_decrypt(payload + i, num);

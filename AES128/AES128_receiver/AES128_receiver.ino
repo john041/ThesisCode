@@ -8,8 +8,8 @@ const char* password = "TempPassword";
 
 WiFiClient wifiClient;                    //Object to set up Wifi
 PubSubClient MQTTClient(wifiClient);      //Object to set up MQTT client
-AES128 aes;                               //Object of AES encryption
-//AES256 aes;
+//AES128 aes;                               //Object of AES encryption
+AES256 aes;
 
 const int trigPin = 12;                   //Define what pins are used to control distance sensor
 const int echoPin = 13;
@@ -136,7 +136,7 @@ void setup() {
 
   MQTTClient.subscribe("/test/sender");                   //Subscribe to topic to listen to
   convertFromString(key, keyMemory);                      //Set up encryption key
-  aes.setKey(keyMemory, 16);
+  aes.setKey(keyMemory, sizeof(keyMemory));
   digitalWrite(trigPin, 0);                               //Set output pin to zero
 }
 

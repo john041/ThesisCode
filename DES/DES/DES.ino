@@ -3,10 +3,10 @@
 
 byte keyMemory[8];
 char key[] = "Thisisat";
-byte messageMemory[16];
-char message[] = "SendDistAndTimes";
-byte encryptedData[16];
-byte decryptedData[16];
+byte messageMemory[96];
+char message[] = "This is a long sentence that is encrypted and then transmitted using the MQTT protocol for test.";
+byte encryptedData[96];
+byte decryptedData[96];
 float startTime;
 float totalTime;
 DES des;
@@ -50,7 +50,7 @@ void loop() {
     }  
     totalTime = micros() - startTime;
     Serial.print("#Encrypted Message#");
-    printByte(encryptedData, sizeof(encryptedData));
+    //printByte(encryptedData, sizeof(encryptedData));
     Serial.print("#EncryptTime#");
     Serial.print(totalTime);
     Serial.print("#");

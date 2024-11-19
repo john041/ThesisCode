@@ -20,7 +20,7 @@ void loop() {
     Serial.print(j);
     
     delay(1000);
-    tinyEcc.plaintext = "SendDistAndTimes";
+    tinyEcc.plaintext = "This is a long sentence that is encrypted and then transmitted using the MQTT protocol for test.";
     startTime = micros();
     tinyEcc.encrypt();  
     totalTime = micros() - startTime;
