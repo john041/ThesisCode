@@ -26,10 +26,10 @@ const char authData[] = "password";
 char key[] = "Thisisatestaaaa!";               //Key used in encryption process
 
 byte keyMemory[16];                           //Variables to store encryption information
-byte messageMemory[16];
+byte messageMemory[96];
 byte decryptedData[16];
 byte tag[16];
-byte encryptedData[32];
+byte encryptedData[112];
 
 //Converts a string into a byte array
 //  parameter 1 string to convert
@@ -141,7 +141,7 @@ void loop() {
   if(number < 200) {                                           //Send 200 packets every 1 second
     if(number == (nextNum - 1)) {
       nextNum = nextNum + 1;
-      convertFromString("SendDistAndTimes", messageMemory);
+      convertFromString("This is a long sentence that is encrypted and then transmitted using the MQTT protocol for test.", messageMemory);
       startRoundTripTime = micros();
       runEncryption(messageMemory, sizeof(messageMemory));                              //Encrypt message and send message
       bool result = MQTTClient.publish("/test/sender", encryptedData, sizeof(encryptedData), false);                 

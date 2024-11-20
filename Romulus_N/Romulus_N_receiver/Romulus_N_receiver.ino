@@ -23,7 +23,7 @@ char key[] = "Thisisatestaaaa!";          //Key used in encryption process
 byte keyMemory[16];                       //Variables to store encryption information
 byte messageMemory[16];
 byte encryptedData[28];
-byte decryptedData[16];
+byte decryptedData[96];
 char auth[] = "passwordpassword";
 byte authMemory[16];
 bool tag;
@@ -63,7 +63,8 @@ void runEncryption(const unsigned char* payload, int length) {
 void runDecryption(byte* payload, int length) {
    size_t sizeOfDecrypted = sizeof(decryptedData);
    startDecryptTime = micros();
-   byte IV[16] = {(rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32)};
+   //byte IV[16] = {(rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32)};
+   byte IV[16] = {0};
    tag = romulus_n_aead_decrypt(decryptedData, &sizeOfDecrypted, payload, length, authMemory, 16, IV, keyMemory);  //Encrypt the char array
    decryptTime = micros() - startDecryptTime;                        //Messure the time to encrypt
 }

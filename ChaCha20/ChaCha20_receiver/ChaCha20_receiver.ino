@@ -20,11 +20,11 @@ unsigned long startEncryptTime = 0;
 unsigned long decryptTime = 0;
 unsigned long startDecryptTime = 0;
 
-char key[] = "Thisisatestaaaa!";          //Key used in encryption process
+char key[] = "Thisisatestaaaa!Thisisatestaaaa!";          //Key used in encryption process
 
-byte keyMemory[16];                       //Variables to store encryption information
+byte keyMemory[32];                       //Variables to store encryption information
 byte messageMemory[16];
-byte decryptedData[16];
+byte decryptedData[96];
 byte encryptedData[12];
 
 //Converts a string into a byte array

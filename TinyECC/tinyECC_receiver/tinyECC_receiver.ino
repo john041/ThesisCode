@@ -19,8 +19,9 @@ unsigned long startEncryptTime = 0;
 unsigned long decryptTime = 0;
 unsigned long startDecryptTime = 0;
 
+char decryptedData[96];
 char encryptedData[300];
-char decryptedData[16];
+
 
 //Converts a string into a byte array
 //  parameter 1 string to convert

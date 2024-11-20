@@ -26,7 +26,7 @@ char key[] = "Thisisatestaaaa!";          //Key used in encryption process
 
 byte keyMemory[16];                       //Variables to store encryption information
 byte messageMemory[16];
-byte decryptedData[16];
+byte decryptedData[96];
 byte tag[16];
 byte encryptedData[28];
 

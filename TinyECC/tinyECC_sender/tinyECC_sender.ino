@@ -20,7 +20,7 @@ unsigned long freeMemoryDecrypt = 0;
 int number = 0;
 int nextNum = 1;
 
-char encryptedData[300];
+char encryptedData[1800];
 char decryptedData[16];
 
 //Converts a string into a byte array
@@ -110,7 +110,7 @@ void setup() {
   } else {
     Serial.println("Problem connecting to Broker");
   }
-  MQTTClient.setBufferSize(2024);
+  MQTTClient.setBufferSize(100000);
   Serial.println(MQTTClient.getBufferSize());
   MQTTClient.subscribe("/test/reciever");                       //Subscribe to topic to listen to
   delay(5000);
@@ -123,7 +123,7 @@ void loop() {
     if(number == (nextNum - 1)) {
       nextNum = nextNum + 1;
       startRoundTripTime = micros();
-      runEncryption("SendDistAndTimes");                              //Encrypt message and send message
+      runEncryption("This is a long sentence that is encrypted and then transmitted .");                              //Encrypt message and send message
       MQTTClient.publish("/test/sender", encryptedData);                 
     }
   }

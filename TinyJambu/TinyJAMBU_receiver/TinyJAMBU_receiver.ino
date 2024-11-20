@@ -23,7 +23,7 @@ char key[] = "Thisisatestaaaa!";          //Key used in encryption process
 byte keyMemory[16];                       //Variables to store encryption information
 byte messageMemory[16];
 byte encryptedData[20];
-byte decryptedData[16];
+byte decryptedData[96];
 char auth[] = "password";
 byte authMemory[8];
 bool tag;
@@ -53,7 +53,7 @@ void runEncryption(const unsigned char* payload, int length) {
    size_t sizeOfEncrypted = sizeof(encryptedData);
    startEncryptTime = micros();
    byte IV[12] = {(rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32)};
-   tiny_jambu_128_aead_encrypt(encryptedData, &sizeOfEncrypted, payload, length, authMemory, 8, IV, keyMemory);    //Encrypt the char array
+   tiny_jambu_256_aead_encrypt(encryptedData, &sizeOfEncrypted, payload, length, authMemory, 8, IV, keyMemory);    //Encrypt the char array
    encryptTime = micros() - startEncryptTime;
 }
 
@@ -64,7 +64,7 @@ void runDecryption(byte* payload, int length) {
    size_t sizeOfDecrypted = sizeof(decryptedData);
    startDecryptTime = micros();
    byte IV[12] = {(rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32), (rand()%(127-32+1)+32)};
-   tag = tiny_jambu_128_aead_decrypt(decryptedData, &sizeOfDecrypted, payload, length, authMemory, 8, IV, keyMemory);  //Encrypt the char array
+   tag = tiny_jambu_256_aead_decrypt(decryptedData, &sizeOfDecrypted, payload, length, authMemory, 8, IV, keyMemory);  //Encrypt the char array
    decryptTime = micros() - startDecryptTime;                        //Messure the time to encrypt
 }
 
