@@ -8,8 +8,8 @@ const char* password = "TempPassword";
 
 WiFiClient wifiClient;                    //Object to set up Wifi
 PubSubClient MQTTClient(wifiClient);      //Object to set up MQTT client
-//AES128 aes;                               //Object of AES encryption
-AES256 aes;
+AES128 aes;                               //Object of AES encryption
+//AES256 aes;
 
 const int trigPin = 12;                   //Define what pins are used to control distance sensor
 const int echoPin = 13;

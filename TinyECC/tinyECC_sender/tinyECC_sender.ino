@@ -9,6 +9,10 @@ WiFiClient wifiClient;                        //Object to set up Wifi
 PubSubClient MQTTClient(wifiClient);          //Object to set up MQTT client
 tinyECC tinyEcc;                              //Object of AES encryption
 
+char decryptedData[16];
+char encryptedData[1800];
+//char encryptedData[300];
+
 unsigned long roundTripTime = 0;              //Variables to keep track of time, number of packets sent, and free memory
 unsigned long startRoundTripTime = 0;
 unsigned long encryptTime = 0;
@@ -20,8 +24,6 @@ unsigned long freeMemoryDecrypt = 0;
 int number = 0;
 int nextNum = 1;
 
-char encryptedData[1800];
-char decryptedData[16];
 
 //Converts a string into a byte array
 //  parameter 1 string to convert
@@ -110,7 +112,7 @@ void setup() {
   } else {
     Serial.println("Problem connecting to Broker");
   }
-  MQTTClient.setBufferSize(100000);
+  MQTTClient.setBufferSize(11000);
   Serial.println(MQTTClient.getBufferSize());
   MQTTClient.subscribe("/test/reciever");                       //Subscribe to topic to listen to
   delay(5000);
@@ -123,7 +125,9 @@ void loop() {
     if(number == (nextNum - 1)) {
       nextNum = nextNum + 1;
       startRoundTripTime = micros();
+      //runEncryption("SendDistAndTimes");
       runEncryption("This is a long sentence that is encrypted and then transmitted .");                              //Encrypt message and send message
+      //runEncryption("This is a long sentence that is encrypted and then transmitted using the MQTT protocol for test.");
       MQTTClient.publish("/test/sender", encryptedData);                 
     }
   }

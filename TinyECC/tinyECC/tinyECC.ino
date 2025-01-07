@@ -1,4 +1,4 @@
-#include <MemoryUsage.h>
+//#include <MemoryUsage.h>
 #include <tinyECC.h> 
 
 float startTime;
@@ -15,32 +15,32 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   if(j < 200) {
-    j++;
-    Serial.print("Number#");
-    Serial.print(j);
+    //j++;
+    //Serial.print("Number#");
+    //Serial.print(j);
     
-    delay(1000);
-    tinyEcc.plaintext = "This is a long sentence that is encrypted and then transmitted using the MQTT protocol for test.";
+    //delay(1000);
+    tinyEcc.plaintext = "The data that is collected will come from two sources.";
     startTime = micros();
     tinyEcc.encrypt();  
     totalTime = micros() - startTime;
-    Serial.print("#Encrypted Message#");
-    Serial.print(tinyEcc.ciphertext);
-    Serial.print("#EncryptTime#");
-    Serial.print(totalTime);
-    Serial.print("#");
-    MEMORY_PRINT_FREERAM;
+    //Serial.print("#Encrypted Message#");
+    //Serial.print(tinyEcc.ciphertext);
+    //Serial.print("#EncryptTime#");
+    //Serial.print(totalTime);
+    //Serial.print("#");
+    //MEMORY_PRINT_FREERAM;
 
-    delay(1000);
+    //delay(1000);
     startTime = micros();
-    tinyEcc.decrypt();  
-    totalTime = micros() - startTime;
-    Serial.print("#Decrypted Message#");
-    Serial.print(tinyEcc.plaintext);
-    Serial.print("#DecryptTime#");
-    Serial.print(totalTime);
-    Serial.print("#");
-    MEMORY_PRINT_FREERAM;
-    Serial.println("");
+    tinyEcc.decrypt();
+    totalTime = micros() - startTime; 
+    //Serial.print("#Decrypted Message#");
+    //Serial.print(tinyEcc.plaintext);
+    //Serial.print("#DecryptTime#");
+    //Serial.print(totalTime);
+    //Serial.print("#");
+    //MEMORY_PRINT_FREERAM;
+    //Serial.println("");
   }
 }
